@@ -871,6 +871,7 @@ func (p *Proxy) makeUpgradeRequest(ctx *context, req *http.Request) error {
 		auditLogHook:    p.auditLogHook,
 	}
 
+	p.log.Debugf("connection will be upgraded")
 	upgradeProxy.serveHTTP(ctx.responseWriter, req)
 	ctx.successfulUpgrade = true
 	p.log.Debugf("finished upgraded protocol %s session", getUpgradeRequest(ctx.request))
@@ -891,10 +892,13 @@ func (p *Proxy) makeBackendRequest(ctx *context) (*http.Response, *proxyError) {
 	}
 
 	if p.experimentalUpgrade && isUpgradeRequest(req) {
+		p.log.Debugf("upgrade is needed %v", req)
 		if err = p.makeUpgradeRequest(ctx, req); err != nil {
+			p.log.Debugf("update request error occurred %v", err)
 			return nil, &proxyError{err: err}
 		}
 
+		p.log.Debugf("no upgrade error occurred and returned")
 		// We are not owner of the connection anymore.
 		return nil, &proxyError{handled: true}
 	}
@@ -1162,13 +1166,16 @@ func (p *Proxy) do(ctx *context) error {
 		backendStart := time.Now()
 		rsp, perr := p.makeBackendRequest(ctx)
 		if perr != nil {
+			p.log.Debugf("perr1")
 			if done != nil {
 				done(false)
 			}
 
 			p.metrics.IncErrorsBackend(ctx.route.Id)
 
+			p.log.Debugf("perr2")
 			if retryable(ctx.Request()) && perr.DialError() && ctx.route.BackendType == eskip.LBBackend {
+				p.log.Debugf("perr3")
 				if ctx.proxySpan != nil {
 					ctx.proxySpan.Finish()
 					ctx.proxySpan = nil
@@ -1187,10 +1194,12 @@ func (p *Proxy) do(ctx *context) error {
 					return perr2
 				}
 			} else {
+				p.log.Debugf("perr4")
 				return perr
 			}
 		}
 
+		p.log.Debugf("perr5")
 		if rsp.StatusCode >= http.StatusInternalServerError {
 			p.metrics.MeasureBackend5xx(backendStart)
 		}
@@ -1199,11 +1208,13 @@ func (p *Proxy) do(ctx *context) error {
 			done(rsp.StatusCode < http.StatusInternalServerError)
 		}
 
+		p.log.Debugf("perr6")
 		ctx.setResponse(rsp, p.flags.PreserveOriginal())
 		p.metrics.MeasureBackend(ctx.route.Id, backendStart)
 		p.metrics.MeasureBackendHost(ctx.route.Host, backendStart)
 	}
 
+	p.log.Debugf("perr7")
 	addBranding(ctx.response.Header)
 	p.applyFiltersToResponse(processedFilters, ctx)
 	return nil
@@ -1411,6 +1422,7 @@ func shouldLog(statusCode int, filter *al.AccessLogFilter) bool {
 
 // http.Handler implementation
 func (p *Proxy) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	p.log.Debugf("ServeHTTP %+v", w)
 	lw := logging.NewLoggingWriter(w)
 
 	p.metrics.IncCounter("incoming." + r.Proto)
@@ -1425,6 +1437,7 @@ func (p *Proxy) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		err = nil
 	}
 	defer func() {
+		p.log.Debugf("Defer func 1")
 		if ctx != nil && ctx.proxySpan != nil {
 			ctx.proxySpan.Finish()
 		}
@@ -1432,6 +1445,7 @@ func (p *Proxy) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	}()
 
 	defer func() {
+		p.log.Debugf("Defer func 2")
 		accessLogEnabled, ok := ctx.stateBag[al.AccessLogEnabledKey].(*al.AccessLogFilter)
 
 		if !ok {
@@ -1458,10 +1472,12 @@ func (p *Proxy) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		}
 		// This flush is required in I/O error
 		if ctx.successfulUpgrade {
+			p.log.Debugf("ctx.successfulUpgrade enabled %+v", lw)
 			lw.Flush()
 		}
 	}()
 
+	p.log.Debugf("ServeHTTP patchPath")
 	if p.flags.patchPath() {
 		r.URL.Path = rfc.PatchPath(r.URL.Path, r.URL.RawPath)
 	}
@@ -1470,24 +1486,31 @@ func (p *Proxy) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	p.setCommonSpanInfo(r.URL, r, span)
 	r = r.WithContext(ot.ContextWithSpan(r.Context(), span))
 
+	p.log.Debugf("ServeHTTP created new context")
 	ctx = newContext(lw, r, p)
 	ctx.startServe = time.Now()
 	ctx.tracer = p.tracing.tracer
 
 	defer func() {
+		p.log.Debugf("ServeHTTP Defer Func 3")
 		if ctx.response != nil && ctx.response.Body != nil {
+			p.log.Debugf("ServeHTTP Defer Func response closed")
 			err := ctx.response.Body.Close()
 			if err != nil {
-				p.log.Errorf("error during closing the response body: %v", err)
+				p.log.Errorf("error during closing the response body: %+v", err)
 			}
 		}
 	}()
 
+	p.log.Debugf("ServeHTTP before do")
 	err = p.do(ctx)
+	p.log.Debugf("ServeHTTP after do")
 
 	if err != nil {
+		p.log.Debugf("ServeHTTP do err %+v", err)
 		p.tracing.setTag(span, ErrorTag, true)
 		p.errorResponse(ctx, err)
+		p.log.Debugf("ServeHTTP %+v", lw)
 		return
 	}
 
