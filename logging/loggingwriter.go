@@ -37,7 +37,7 @@ func (lw *LoggingWriter) Header() http.Header {
 
 func (lw *LoggingWriter) Flush() {
 	fl := lw.writer.(http.Flusher)
-	fmt.Printf("LoggingWriter %+v", fl)
+	fmt.Printf("LoggingWriter %+v\n", fl)
 	fl.Flush()
 }
 

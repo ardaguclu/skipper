@@ -208,6 +208,7 @@ func copyAsync(wg *sync.WaitGroup, src io.Reader, dst ...io.Writer) {
 	go func() {
 		w := io.MultiWriter(dst...)
 		_, err := io.Copy(w, src)
+		log.Errorf("copyAsync error %+v ", err)
 		if err != nil && !strings.Contains(err.Error(), "use of closed network connection") {
 			log.Errorf("error proxying data from src to dst: %v", err)
 		}
