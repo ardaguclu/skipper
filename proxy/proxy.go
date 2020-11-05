@@ -874,6 +874,7 @@ func (p *Proxy) makeUpgradeRequest(ctx *context, req *http.Request) error {
 	p.log.Debugf("connection will be upgraded")
 	upgradeProxy.serveHTTP(ctx.responseWriter, req)
 	ctx.successfulUpgrade = true
+	p.log.Debugf("makeUpgradeRequest %+v", ctx.responseWriter)
 	p.log.Debugf("finished upgraded protocol %s session", getUpgradeRequest(ctx.request))
 	return nil
 }
@@ -1422,7 +1423,6 @@ func shouldLog(statusCode int, filter *al.AccessLogFilter) bool {
 
 // http.Handler implementation
 func (p *Proxy) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	p.log.Debugf("ServeHTTP %+v", w)
 	lw := logging.NewLoggingWriter(w)
 
 	p.metrics.IncCounter("incoming." + r.Proto)
@@ -1472,7 +1472,6 @@ func (p *Proxy) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		}
 		// This flush is required in I/O error
 		if ctx.successfulUpgrade {
-			p.log.Debugf("ctx.successfulUpgrade enabled %+v", lw)
 			lw.Flush()
 		}
 	}()
@@ -1502,15 +1501,11 @@ func (p *Proxy) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		}
 	}()
 
-	p.log.Debugf("ServeHTTP before do")
 	err = p.do(ctx)
-	p.log.Debugf("ServeHTTP after do")
 
 	if err != nil {
-		p.log.Debugf("ServeHTTP do err %+v", err)
 		p.tracing.setTag(span, ErrorTag, true)
 		p.errorResponse(ctx, err)
-		p.log.Debugf("ServeHTTP %+v", lw)
 		return
 	}
 

@@ -154,8 +154,10 @@ func (p *upgradeProxy) serveHTTP(w http.ResponseWriter, req *http.Request) {
 	wg.Add(2)
 
 	if p.useAuditLog {
+		log.Debugf("Upgrade use audit log")
 		copyAsync(&wg, backendConn, requestHijackedConn, p.auditLogOut)
 	} else {
+		log.Debugf("Upgrade not use audit log")
 		copyAsync(&wg, backendConn, requestHijackedConn)
 	}
 

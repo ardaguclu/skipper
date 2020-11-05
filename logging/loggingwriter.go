@@ -36,7 +36,9 @@ func (lw *LoggingWriter) Header() http.Header {
 }
 
 func (lw *LoggingWriter) Flush() {
-	lw.writer.(http.Flusher).Flush()
+	fl := lw.writer.(http.Flusher)
+	fmt.Printf("LoggingWriter %+v", fl)
+	fl.Flush()
 }
 
 func (lw *LoggingWriter) Hijack() (net.Conn, *bufio.ReadWriter, error) {
