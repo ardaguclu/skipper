@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/zalando/skipper/filters"
+	"github.com/ardaguclu/skipper/filters"
 )
 
 type inlineContent struct {

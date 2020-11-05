@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/filters/builtin"
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/filters/builtin"
 )
 
 type (

@@ -3,7 +3,7 @@ package builtin
 import (
 	"fmt"
 
-	"github.com/zalando/skipper/filters"
+	"github.com/ardaguclu/skipper/filters"
 )
 
 type (

@@ -6,8 +6,8 @@ import (
 
 	"gopkg.in/yaml.v2"
 
+	"github.com/ardaguclu/skipper/circuit"
 	"github.com/google/go-cmp/cmp"
-	"github.com/zalando/skipper/circuit"
 )
 
 func Test_breakerFlags_String(t *testing.T) {

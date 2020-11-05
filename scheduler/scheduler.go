@@ -7,10 +7,10 @@ import (
 	"sync"
 	"time"
 
+	"github.com/ardaguclu/skipper/metrics"
+	"github.com/ardaguclu/skipper/routing"
 	"github.com/aryszka/jobqueue"
 	log "github.com/sirupsen/logrus"
-	"github.com/zalando/skipper/metrics"
-	"github.com/zalando/skipper/routing"
 )
 
 // note: Config must stay comparable because it is used to detect changes in route specific LIFO config

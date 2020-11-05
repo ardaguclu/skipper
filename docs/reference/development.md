@@ -186,7 +186,7 @@ index 0000000..f0632a6
 +	"net/http"
 +	"time"
 +
-+	"github.com/zalando/skipper/filters"
++	"github.com/ardaguclu/skipper/filters"
 +)
 +
 +const (
@@ -300,9 +300,9 @@ index 0000000..d43c4ea
 +	"testing"
 +	"time"
 +
-+	"github.com/zalando/skipper/eskip"
-+	"github.com/zalando/skipper/filters"
-+	"github.com/zalando/skipper/proxy/proxytest"
++	"github.com/ardaguclu/skipper/eskip"
++	"github.com/ardaguclu/skipper/filters"
++	"github.com/ardaguclu/skipper/proxy/proxytest"
 +)
 +
 +func TestWebhook(t *testing.T) {
@@ -438,8 +438,8 @@ index 837b6cf..aa69f09 100644
  	"fmt"
  	"io/ioutil"
 @@ -13,8 +14,13 @@ import (
- 	"github.com/zalando/skipper/filters"
- 	"github.com/zalando/skipper/routing"
+ 	"github.com/ardaguclu/skipper/filters"
+ 	"github.com/ardaguclu/skipper/routing"
  )
 +*/
 

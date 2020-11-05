@@ -13,9 +13,9 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/filters/serve"
 	log "github.com/sirupsen/logrus"
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/filters/serve"
 )
 
 const defaultChunkSize = 512

@@ -5,9 +5,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/zalando/skipper/dataclients/routestring"
-	"github.com/zalando/skipper/filters/builtin"
-	"github.com/zalando/skipper/routing"
+	"github.com/ardaguclu/skipper/dataclients/routestring"
+	"github.com/ardaguclu/skipper/filters/builtin"
+	"github.com/ardaguclu/skipper/routing"
 )
 
 func testPatch(t *testing.T, title string, f Flags, expectedStatus int) {

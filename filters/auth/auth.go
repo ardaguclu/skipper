@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/ardaguclu/skipper/filters"
+	logfilter "github.com/ardaguclu/skipper/filters/log"
 	log "github.com/sirupsen/logrus"
-	"github.com/zalando/skipper/filters"
-	logfilter "github.com/zalando/skipper/filters/log"
 )
 
 type roleCheckType int

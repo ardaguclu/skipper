@@ -45,8 +45,8 @@ import (
 	"net/http"
 	"strings"
 
-	snet "github.com/zalando/skipper/net"
-	"github.com/zalando/skipper/routing"
+	snet "github.com/ardaguclu/skipper/net"
+	"github.com/ardaguclu/skipper/routing"
 )
 
 const (

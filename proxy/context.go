@@ -9,10 +9,10 @@ import (
 	"net/url"
 	"time"
 
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/metrics"
+	"github.com/ardaguclu/skipper/routing"
 	"github.com/opentracing/opentracing-go"
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/metrics"
-	"github.com/zalando/skipper/routing"
 )
 
 const unknownHost = "_unknownhost_"

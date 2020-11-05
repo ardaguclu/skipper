@@ -9,9 +9,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/zalando/skipper"
-	"github.com/zalando/skipper/dataclients/routestring"
-	"github.com/zalando/skipper/routing"
+	"github.com/ardaguclu/skipper"
+	"github.com/ardaguclu/skipper/dataclients/routestring"
+	"github.com/ardaguclu/skipper/routing"
 )
 
 func Example() {

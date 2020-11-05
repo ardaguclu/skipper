@@ -31,10 +31,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/zalando/skipper/dataclients/kubernetes/definitions"
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/filters/builtin"
-	"github.com/zalando/skipper/predicates/source"
+	"github.com/ardaguclu/skipper/dataclients/kubernetes/definitions"
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/filters/builtin"
+	"github.com/ardaguclu/skipper/predicates/source"
 )
 
 type testAPI struct {

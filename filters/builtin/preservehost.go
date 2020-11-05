@@ -15,9 +15,10 @@
 package builtin
 
 import (
-	log "github.com/sirupsen/logrus"
-	"github.com/zalando/skipper/filters"
 	"net/url"
+
+	"github.com/ardaguclu/skipper/filters"
+	log "github.com/sirupsen/logrus"
 )
 
 type spec struct{}

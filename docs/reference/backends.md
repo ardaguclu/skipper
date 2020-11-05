@@ -259,7 +259,7 @@ Current implemented algorithms:
 - `random`: backend is chosen at random
 - `consistentHash`: backend is chosen by a consistent hashing algorithm with the client X-Forwarded-For header with remote IP as the fallback as input to the hash function
 - `powerOfRandomNChoices`: backend is chosen by powerOfRandomNChoices algorithm with selecting N random endpoints and picking the one with least outstanding requests from them. (http://www.eecs.harvard.edu/~michaelm/postscripts/handbook2001.pdf)
-- __TODO__: https://github.com/zalando/skipper/issues/557
+- __TODO__: https://github.com/ardaguclu/skipper/issues/557
 
 Route example with 2 backends and the `roundRobin` algorithm:
 ```

@@ -15,9 +15,10 @@
 package builtin
 
 import (
-	"github.com/zalando/skipper/filters/filtertest"
 	"net/http"
 	"testing"
+
+	"github.com/ardaguclu/skipper/filters/filtertest"
 )
 
 func TestCreate(t *testing.T) {

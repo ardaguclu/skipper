@@ -7,10 +7,10 @@ import (
 	"sort"
 	"time"
 
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/logging"
-	"github.com/zalando/skipper/predicates"
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/logging"
+	"github.com/ardaguclu/skipper/predicates"
 )
 
 type incomingType uint

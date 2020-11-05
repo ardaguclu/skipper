@@ -172,7 +172,7 @@ This will send production traffic to app-default.example.org and
 copies incoming requests to https://app.shadow.example.org, but drops
 responses from shadow URL. This is helpful to test your next
 generation software with production workload. See also
-https://godoc.org/github.com/zalando/skipper/filters/tee for details.
+https://godoc.org/github.com/ardaguclu/skipper/filters/tee for details.
 
     apiVersion: extensions/v1beta1
     kind: Ingress

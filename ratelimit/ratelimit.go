@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/ardaguclu/skipper/net"
 	log "github.com/sirupsen/logrus"
 	circularbuffer "github.com/szuecs/rate-limit-buffer"
-	"github.com/zalando/skipper/net"
 )
 
 const (

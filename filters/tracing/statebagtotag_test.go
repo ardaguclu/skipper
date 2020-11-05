@@ -8,9 +8,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/filters/filtertest"
-	"github.com/zalando/skipper/tracing/tracingtest"
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/filters/filtertest"
+	"github.com/ardaguclu/skipper/tracing/tracingtest"
 )
 
 func TestStateBagToTag(t *testing.T) {

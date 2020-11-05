@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/zalando/skipper/filters/filtertest"
+	"github.com/ardaguclu/skipper/filters/filtertest"
 )
 
 func TestDropQuery(t *testing.T) {

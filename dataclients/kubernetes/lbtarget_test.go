@@ -3,7 +3,7 @@ package kubernetes
 import (
 	"testing"
 
-	"github.com/zalando/skipper/dataclients/kubernetes/definitions"
+	"github.com/ardaguclu/skipper/dataclients/kubernetes/definitions"
 )
 
 func testSingleIngressWithTargets(t *testing.T, targets []string, expectedRoutes string) {

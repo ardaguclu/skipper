@@ -1,4 +1,4 @@
-module github.com/zalando/skipper
+module github.com/ardaguclu/skipper
 
 require (
 	github.com/abbot/go-http-auth v0.4.0

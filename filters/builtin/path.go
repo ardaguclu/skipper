@@ -3,8 +3,8 @@ package builtin
 import (
 	"regexp"
 
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/filters"
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/filters"
 )
 
 type modPathBehavior int
@@ -36,12 +36,12 @@ func NewModPath() filters.Spec { return &modPath{behavior: regexpReplace} }
 // be replaced with the values of the same name from the wildcards in the
 // Path() predicate.
 //
-// See: https://godoc.org/github.com/zalando/skipper/routing#hdr-Wildcards
+// See: https://godoc.org/github.com/ardaguclu/skipper/routing#hdr-Wildcards
 //
 // The templating feature will stay in Skipper, but the syntax of the
 // templating may change.
 //
-// See also: https://github.com/zalando/skipper/issues/182
+// See also: https://github.com/ardaguclu/skipper/issues/182
 //
 // Instances expect one parameter: the new path to be set, or the path
 // template to be evaluated.

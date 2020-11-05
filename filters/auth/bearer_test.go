@@ -7,10 +7,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/proxy/proxytest"
-	"github.com/zalando/skipper/secrets"
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/proxy/proxytest"
+	"github.com/ardaguclu/skipper/secrets"
 )
 
 func Test_bearerInjectorSpec_Name(t *testing.T) {

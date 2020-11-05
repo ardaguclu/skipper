@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/zalando/skipper/eskip"
+	"github.com/ardaguclu/skipper/eskip"
 )
 
 func eastWestRouteID(rid string) string {

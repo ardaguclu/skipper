@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/zalando/skipper/filters"
+	"github.com/ardaguclu/skipper/filters"
 )
 
 const (

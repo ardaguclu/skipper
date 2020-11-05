@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # shellcheck source=./benchmark.inc
-source "$GOPATH/src/github.com/zalando/skipper/skptesting/benchmark.inc"
+source "$GOPATH/src/github.com/ardaguclu/skipper/skptesting/benchmark.inc"
 
 if [ "$1" == -help ] || [ "$1" == --help ] || [ "$1" == -h ]; then
 	log "$0 [duration] [connections] [warmup-duration]"

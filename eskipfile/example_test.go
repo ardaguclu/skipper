@@ -1,9 +1,9 @@
 package eskipfile_test
 
 import (
-	"github.com/zalando/skipper/eskipfile"
-	"github.com/zalando/skipper/proxy"
-	"github.com/zalando/skipper/routing"
+	"github.com/ardaguclu/skipper/eskipfile"
+	"github.com/ardaguclu/skipper/proxy"
+	"github.com/ardaguclu/skipper/routing"
 )
 
 func Example() {

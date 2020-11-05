@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/ardaguclu/skipper/dataclients/kubernetes/definitions"
 	"github.com/prometheus/client_golang/prometheus"
 	log "github.com/sirupsen/logrus"
-	"github.com/zalando/skipper/dataclients/kubernetes/definitions"
 	admissionsv1 "k8s.io/api/admission/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/types"

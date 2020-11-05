@@ -3,7 +3,7 @@ package sed
 import (
 	"regexp"
 
-	"github.com/zalando/skipper/filters"
+	"github.com/ardaguclu/skipper/filters"
 )
 
 const (

@@ -32,7 +32,7 @@ Skipper is 'go get' compatible. If needed, create a 'go workspace' first:
 
 Get the Skipper packages:
 
-    go get github.com/zalando/skipper/...
+    go get github.com/ardaguclu/skipper/...
 
 Create a file with a route:
 
@@ -169,7 +169,7 @@ Authentication and Authorization
 
 Skipper has filter implementations of basic auth and OAuth2. It can be
 integrated with tokeninfo based OAuth2 providers. For details, see:
-https://godoc.org/github.com/zalando/skipper/filters/auth.
+https://godoc.org/github.com/ardaguclu/skipper/filters/auth.
 
 
 Data Sources
@@ -207,7 +207,7 @@ Skipper provides circuit breakers, configured either globally, based on
 backend hosts or based on individual routes. It supports two types of
 circuit breaker behavior: open on N consecutive failures, or open on N
 failures out of M requests. For details, see:
-https://godoc.org/github.com/zalando/skipper/circuit.
+https://godoc.org/github.com/ardaguclu/skipper/circuit.
 
 
 Running Skipper
@@ -250,7 +250,7 @@ Example, randompredicate.go:
     package main
 
     import (
-        "github.com/zalando/skipper/routing"
+        "github.com/ardaguclu/skipper/routing"
         "math/rand"
         "net/http"
     )
@@ -298,7 +298,7 @@ Example, hellofilter.go:
 
     import (
         "fmt"
-        "github.com/zalando/skipper/filters"
+        "github.com/ardaguclu/skipper/filters"
     )
 
     type helloSpec struct {}
@@ -348,9 +348,9 @@ Example, hello.go:
     import (
         "log"
 
-        "github.com/zalando/skipper"
-        "github.com/zalando/skipper/filters"
-        "github.com/zalando/skipper/routing"
+        "github.com/ardaguclu/skipper"
+        "github.com/ardaguclu/skipper/filters"
+        "github.com/ardaguclu/skipper/routing"
     )
 
     func main() {
@@ -401,7 +401,7 @@ lookup tree in a single structure.
 
 Benchmarks for the tree lookup can be run by:
 
-    go test github.com/zalando/skipper/routing -bench=Tree
+    go test github.com/ardaguclu/skipper/routing -bench=Tree
 
 In case more aggressive scale is needed, it is possible to setup Skipper
 in a cascade model, with multiple Skipper instances for specific route

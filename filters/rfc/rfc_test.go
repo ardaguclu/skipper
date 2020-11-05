@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/zalando/skipper/filters/filtertest"
+	"github.com/ardaguclu/skipper/filters/filtertest"
 )
 
 func TestPatch(t *testing.T) {

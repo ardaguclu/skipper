@@ -6,8 +6,8 @@ import (
 	"regexp"
 	"testing"
 
+	"github.com/ardaguclu/skipper/routing"
 	"github.com/stretchr/testify/require"
-	"github.com/zalando/skipper/routing"
 )
 
 func Test_spec(t *testing.T) {

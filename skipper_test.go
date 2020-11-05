@@ -12,10 +12,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zalando/skipper/dataclients/routestring"
-	"github.com/zalando/skipper/filters/builtin"
-	"github.com/zalando/skipper/proxy"
-	"github.com/zalando/skipper/routing"
+	"github.com/ardaguclu/skipper/dataclients/routestring"
+	"github.com/ardaguclu/skipper/filters/builtin"
+	"github.com/ardaguclu/skipper/proxy"
+	"github.com/ardaguclu/skipper/routing"
 )
 
 const (

@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zalando/skipper/routing"
+	"github.com/ardaguclu/skipper/routing"
 )
 
 const (

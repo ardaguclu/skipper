@@ -2,7 +2,7 @@
 
 ## Kubernetes Race Condition problem
 
-As described in [#652](https://github.com/zalando/skipper/issues/652),
+As described in [#652](https://github.com/ardaguclu/skipper/issues/652),
 there is a problem that exists in Kubernetes, while terminating Pods.
 Terminating Pods could be graceful, but the nature of distributed
 environments will show failures, because not all components in the

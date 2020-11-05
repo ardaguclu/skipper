@@ -11,9 +11,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/filters/filtertest"
-	"github.com/zalando/skipper/metrics/metricstest"
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/filters/filtertest"
+	"github.com/ardaguclu/skipper/metrics/metricstest"
 )
 
 var defaultArgs = []interface{}{`{

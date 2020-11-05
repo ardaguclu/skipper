@@ -10,8 +10,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/etcd/etcdtest"
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/etcd/etcdtest"
 )
 
 func TestMain(m *testing.M) {

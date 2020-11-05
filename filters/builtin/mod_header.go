@@ -5,7 +5,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/zalando/skipper/filters"
+	"github.com/ardaguclu/skipper/filters"
 )
 
 type modRequestHeader struct {

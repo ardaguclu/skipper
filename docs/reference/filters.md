@@ -1246,7 +1246,7 @@ Parameters:
 * half-open requests (int) - optional
 * idle-ttl (time string, parseable by [time.Duration](https://godoc.org/time#ParseDuration)) - optional
 
-See also the [circuit breaker docs](https://godoc.org/github.com/zalando/skipper/circuit).
+See also the [circuit breaker docs](https://godoc.org/github.com/ardaguclu/skipper/circuit).
 
 Can be used as [egress](egress.md) feature.
 
@@ -1265,7 +1265,7 @@ Parameters:
 * half-open requests (int) - optional
 * idle-ttl (time string, parseable by [time.Duration](https://godoc.org/time#ParseDuration)) - optional
 
-See also the [circuit breaker docs](https://godoc.org/github.com/zalando/skipper/circuit).
+See also the [circuit breaker docs](https://godoc.org/github.com/ardaguclu/skipper/circuit).
 
 Can be used as [egress](egress.md) feature.
 
@@ -1283,7 +1283,7 @@ backendHealthcheck: Path("/healthcheck")
   -> "https://foo.backend.net";
 ```
 
-See also the [circuit breaker docs](https://godoc.org/github.com/zalando/skipper/circuit).
+See also the [circuit breaker docs](https://godoc.org/github.com/ardaguclu/skipper/circuit).
 
 Can be used as [egress](egress.md) feature.
 
@@ -1315,7 +1315,7 @@ clientRatelimit(3, "1m", "Authorization")
 clientRatelimit(3, "1m", "X-Foo,Authorization,X-Bar")
 ```
 
-See also the [ratelimit docs](https://godoc.org/github.com/zalando/skipper/ratelimit).
+See also the [ratelimit docs](https://godoc.org/github.com/ardaguclu/skipper/ratelimit).
 
 ## ratelimit
 
@@ -1333,7 +1333,7 @@ ratelimit(20, "1m")
 ratelimit(300, "1h")
 ```
 
-See also the [ratelimit docs](https://godoc.org/github.com/zalando/skipper/ratelimit).
+See also the [ratelimit docs](https://godoc.org/github.com/ardaguclu/skipper/ratelimit).
 
 ## clusterClientRatelimit
 
@@ -1361,7 +1361,7 @@ clusterClientRatelimit("groupA", 10, "1h", "Authorization")
 clusterClientRatelimit("groupA", 10, "1h", "X-Forwarded-For,Authorization,User-Agent")
 ```
 
-See also the [ratelimit docs](https://godoc.org/github.com/zalando/skipper/ratelimit).
+See also the [ratelimit docs](https://godoc.org/github.com/ardaguclu/skipper/ratelimit).
 
 ## clusterRatelimit
 
@@ -1384,7 +1384,7 @@ clusterRatelimit("groupB", 20, "1m")
 clusterRatelimit("groupB", 300, "1h")
 ```
 
-See also the [ratelimit docs](https://godoc.org/github.com/zalando/skipper/ratelimit).
+See also the [ratelimit docs](https://godoc.org/github.com/ardaguclu/skipper/ratelimit).
 
 ## lua
 

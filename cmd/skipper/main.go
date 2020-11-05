@@ -17,9 +17,9 @@ package main
 import (
 	"fmt"
 
+	"github.com/ardaguclu/skipper"
+	"github.com/ardaguclu/skipper/config"
 	log "github.com/sirupsen/logrus"
-	"github.com/zalando/skipper"
-	"github.com/zalando/skipper/config"
 )
 
 var (

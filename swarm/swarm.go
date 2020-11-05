@@ -7,7 +7,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/zalando/skipper/metrics"
+	"github.com/ardaguclu/skipper/metrics"
 
 	"github.com/hashicorp/memberlist"
 	log "github.com/sirupsen/logrus"

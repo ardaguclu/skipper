@@ -3,10 +3,11 @@ package proxy
 import (
 	"bytes"
 	"errors"
-	"github.com/zalando/skipper/eskip"
 	"io/ioutil"
 	"net/http"
 	"testing"
+
+	"github.com/ardaguclu/skipper/eskip"
 )
 
 func takePt(n int) *int { return &n }

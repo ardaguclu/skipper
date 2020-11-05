@@ -1,6 +1,6 @@
 package apiusagemonitoring
 
-import "github.com/zalando/skipper/filters"
+import "github.com/ardaguclu/skipper/filters"
 
 type noopSpec struct {
 	filter filters.Filter

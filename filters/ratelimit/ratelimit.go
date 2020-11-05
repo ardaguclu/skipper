@@ -1,7 +1,7 @@
 /*
 Package ratelimit provides filters to control the rate limitter settings on the route level.
 
-For detailed documentation of the ratelimit, see https://godoc.org/github.com/zalando/skipper/ratelimit.
+For detailed documentation of the ratelimit, see https://godoc.org/github.com/ardaguclu/skipper/ratelimit.
 */
 package ratelimit
 
@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/ratelimit"
 	log "github.com/sirupsen/logrus"
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/ratelimit"
 )
 
 // RetryAfterKey is used as key in the context state bag

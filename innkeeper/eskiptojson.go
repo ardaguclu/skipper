@@ -1,8 +1,9 @@
 package innkeeper
 
 import (
-	"github.com/zalando/skipper/eskip"
 	"log"
+
+	"github.com/ardaguclu/skipper/eskip"
 )
 
 type matchType string

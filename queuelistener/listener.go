@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/zalando/skipper/logging"
-	"github.com/zalando/skipper/metrics"
+	"github.com/ardaguclu/skipper/logging"
+	"github.com/ardaguclu/skipper/metrics"
 )
 
 const (

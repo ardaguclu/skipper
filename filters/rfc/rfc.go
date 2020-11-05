@@ -1,8 +1,8 @@
 package rfc
 
 import (
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/rfc"
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/rfc"
 )
 
 const Name = "rfcPath"

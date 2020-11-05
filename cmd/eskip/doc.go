@@ -90,7 +90,7 @@ const (
 	help1 = `Usage: eskip <command> [media flags] [--] [file]
 Commands: check|print|upsert|reset|delete|patch
 Verify, print, update or delete Skipper routes.
-See more: https://github.com/zalando/skipper
+See more: https://github.com/ardaguclu/skipper
 
 Media types:
 

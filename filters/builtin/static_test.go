@@ -15,9 +15,6 @@
 package builtin
 
 import (
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/proxy/proxytest"
 	"io"
 	"io/ioutil"
 	"mime"
@@ -25,6 +22,10 @@ import (
 	"net/http"
 	"os"
 	"testing"
+
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/proxy/proxytest"
 )
 
 func TestStatic(t *testing.T) {

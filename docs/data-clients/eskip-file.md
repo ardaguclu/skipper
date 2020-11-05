@@ -1,7 +1,7 @@
 # Eskip File
 
 Eskip file dataclient can be used to serve static defined routes, read
-from an eskip file. The [file format eskip](https://godoc.org/github.com/zalando/skipper/eskip)
+from an eskip file. The [file format eskip](https://godoc.org/github.com/ardaguclu/skipper/eskip)
 shows your route definitions in a clear way:
 
 ```
@@ -9,9 +9,9 @@ shows your route definitions in a clear way:
 hello: Path("/hello") -> "https://www.example.org"'
 ```
 
-The [Skipper project](https://github.com/zalando/skipper) has two
+The [Skipper project](https://github.com/ardaguclu/skipper) has two
 binaries, one is `skipper`, the other is `eskip`.
-[Eskip](https://godoc.org/github.com/zalando/skipper/cmd/eskip)
+[Eskip](https://godoc.org/github.com/ardaguclu/skipper/cmd/eskip)
 can be used to validate the syntax of your routes file before
 reloading a production server:
 
@@ -24,8 +24,8 @@ To run Skipper serving routes from an `eskip` file you have to use
 
 
 A more complicated example with different routes, matches,
-[predicates](https://godoc.org/github.com/zalando/skipper/predicates) and
-[filters](https://godoc.org/github.com/zalando/skipper/filters) shows that
+[predicates](https://godoc.org/github.com/ardaguclu/skipper/predicates) and
+[filters](https://godoc.org/github.com/ardaguclu/skipper/filters) shows that
 you can name your route and use preconditions and create, change, delete
 HTTP headers as you like:
 
@@ -79,9 +79,9 @@ baiduPathMatch, googleWildcardMatch and yandexWildcardIfCookie.
     * it will send a copy of the modified request to http://127.0.0.1:12345/ (similar to unix `tee`) and drop the response and
     * sends the modified request to https://yandex.ru
 
-More examples you find in [eskip file format](https://godoc.org/github.com/zalando/skipper/eskip)
-description, in [filters](https://godoc.org/github.com/zalando/skipper/filters)
-and in [predicates](https://godoc.org/github.com/zalando/skipper/predicates).
+More examples you find in [eskip file format](https://godoc.org/github.com/ardaguclu/skipper/eskip)
+description, in [filters](https://godoc.org/github.com/ardaguclu/skipper/filters)
+and in [predicates](https://godoc.org/github.com/ardaguclu/skipper/predicates).
 
 
 Eskip file format is also used if you print your current routes in skipper,

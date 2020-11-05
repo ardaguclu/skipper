@@ -3,7 +3,7 @@ package config
 import (
 	"fmt"
 
-	"github.com/zalando/skipper/eskip"
+	"github.com/ardaguclu/skipper/eskip"
 )
 
 const (

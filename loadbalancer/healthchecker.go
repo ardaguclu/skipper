@@ -13,9 +13,9 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/routing"
 	log "github.com/sirupsen/logrus"
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/routing"
 )
 
 type state int

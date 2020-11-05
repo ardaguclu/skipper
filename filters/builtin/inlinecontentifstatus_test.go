@@ -1,13 +1,14 @@
 package builtin
 
 import (
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/proxy/proxytest"
 	"io/ioutil"
 	"net/http"
 	"strconv"
 	"strings"
 	"testing"
+
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/proxy/proxytest"
 )
 
 func TestInlineContentIfStatusArgs(t *testing.T) {

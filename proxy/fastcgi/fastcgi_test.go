@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/zalando/skipper/logging"
+	"github.com/ardaguclu/skipper/logging"
 )
 
 func TestFastCgi(t *testing.T) {

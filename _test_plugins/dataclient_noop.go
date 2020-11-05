@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/routing"
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/routing"
 )
 
 type DataClient string

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/zalando/skipper/dataclients/kubernetes/definitions"
+	"github.com/ardaguclu/skipper/dataclients/kubernetes/definitions"
 )
 
 type servicePort struct {
@@ -83,7 +83,7 @@ func (ep endpoint) targets(svcPortName, svcPortTarget, protocol string) []string
 			// primarily when the service references the target port by name. Changes have
 			// been started in this branch:
 			//
-			// https://github.com/zalando/skipper/tree/improvement/service-port-fallback-handling
+			// https://github.com/ardaguclu/skipper/tree/improvement/service-port-fallback-handling
 			//
 			if port.Name == svcPortName || port.Name == svcPortTarget || strconv.Itoa(port.Port) == svcPortTarget {
 				for _, addr := range s.Addresses {

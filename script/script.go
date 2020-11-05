@@ -5,7 +5,6 @@ import (
 	"bufio"
 	"bytes"
 	"errors"
-	log "github.com/sirupsen/logrus"
 	"io"
 	"io/ioutil"
 	"net/http"
@@ -13,10 +12,12 @@ import (
 	"os"
 	"strings"
 
+	log "github.com/sirupsen/logrus"
+
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/script/base64"
 	lua "github.com/yuin/gopher-lua"
 	lua_parse "github.com/yuin/gopher-lua/parse"
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/script/base64"
 
 	"github.com/cjoudrey/gluahttp"
 	"github.com/cjoudrey/gluaurl"
@@ -242,7 +243,7 @@ func serveRequest(f filters.FilterContext) func(*lua.LState) int {
 		t := s.Get(-1)
 		r, ok := t.(*lua.LTable)
 		if !ok {
-			// TODO(sszuecs): https://github.com/zalando/skipper/issues/1487
+			// TODO(sszuecs): https://github.com/ardaguclu/skipper/issues/1487
 			// s.RaiseError("unsupported type %v, need a table", t.Type())
 			// return 0
 			s.Push(lua.LString("invalid type, need a table"))
@@ -259,7 +260,7 @@ func serveTableWalk(s *lua.LState, res *http.Response) func(lua.LValue, lua.LVal
 	return func(k, v lua.LValue) {
 		sk, ok := k.(lua.LString)
 		if !ok {
-			// TODO(sszuecs): https://github.com/zalando/skipper/issues/1487
+			// TODO(sszuecs): https://github.com/ardaguclu/skipper/issues/1487
 			// s.RaiseError("unsupported key type %v, need a string", k.Type())
 			return
 		}
@@ -267,7 +268,7 @@ func serveTableWalk(s *lua.LState, res *http.Response) func(lua.LValue, lua.LVal
 		case "status_code":
 			n, ok := v.(lua.LNumber)
 			if !ok {
-				// TODO(sszuecs): https://github.com/zalando/skipper/issues/1487
+				// TODO(sszuecs): https://github.com/ardaguclu/skipper/issues/1487
 				// s.RaiseError("unsupported status_code type %v, need a number", v.Type())
 				return
 			}
@@ -276,7 +277,7 @@ func serveTableWalk(s *lua.LState, res *http.Response) func(lua.LValue, lua.LVal
 		case "header":
 			t, ok := v.(*lua.LTable)
 			if !ok {
-				// TODO(sszuecs): https://github.com/zalando/skipper/issues/1487
+				// TODO(sszuecs): https://github.com/ardaguclu/skipper/issues/1487
 				// s.RaiseError("unsupported header type %v, need a table", v.Type())
 				return
 			}
@@ -294,7 +295,7 @@ func serveTableWalk(s *lua.LState, res *http.Response) func(lua.LValue, lua.LVal
 			case lua.LTTable:
 				body, err = gjson.Encode(v.(*lua.LTable))
 				if err != nil {
-					// TODO(sszuecs): https://github.com/zalando/skipper/issues/1487
+					// TODO(sszuecs): https://github.com/ardaguclu/skipper/issues/1487
 					// s.RaiseError("%v", err)
 					return
 				}
@@ -429,7 +430,7 @@ func setRequestValue(f filters.FilterContext) func(*lua.LState) int {
 		case "url":
 			u, err := url.Parse(s.ToString(-1))
 			if err != nil {
-				// TODO(sszuecs): https://github.com/zalando/skipper/issues/1487
+				// TODO(sszuecs): https://github.com/ardaguclu/skipper/issues/1487
 				// s.RaiseError("%v", err)
 				return 0
 			}
@@ -439,7 +440,7 @@ func setRequestValue(f filters.FilterContext) func(*lua.LState) int {
 		case "url_raw_query":
 			f.Request().URL.RawQuery = s.ToString(-1)
 		default:
-			// TODO(sszuecs): https://github.com/zalando/skipper/issues/1487
+			// TODO(sszuecs): https://github.com/ardaguclu/skipper/issues/1487
 			// s.RaiseError("unsupported request field %s", key)
 			// do nothing for now
 		}
@@ -526,7 +527,7 @@ func setStateBag(f filters.FilterContext) func(*lua.LState) int {
 		case lua.LTNumber:
 			res = float64(val.(lua.LNumber))
 		default:
-			// TODO(sszuecs): https://github.com/zalando/skipper/issues/1487
+			// TODO(sszuecs): https://github.com/ardaguclu/skipper/issues/1487
 			// s.RaiseError("unsupported state bag value type %v, need a string or a number", val.Type())
 			return 0
 		}
@@ -539,7 +540,7 @@ func getRequestHeader(f filters.FilterContext) func(*lua.LState) int {
 	return func(s *lua.LState) int {
 		hdr := s.ToString(-1)
 		res := f.Request().Header.Get(hdr)
-		// TODO(sszuecs): https://github.com/zalando/skipper/issues/1487
+		// TODO(sszuecs): https://github.com/ardaguclu/skipper/issues/1487
 		// if res != "" {
 		//	s.Push(lua.LString(res))
 		//	return 1
@@ -584,7 +585,7 @@ func getResponseHeader(f filters.FilterContext) func(*lua.LState) int {
 	return func(s *lua.LState) int {
 		hdr := s.ToString(-1)
 		res := f.Response().Header.Get(hdr)
-		// TODO(sszuecs): https://github.com/zalando/skipper/issues/1487
+		// TODO(sszuecs): https://github.com/ardaguclu/skipper/issues/1487
 		// if res != "" {
 		//	s.Push(lua.LString(res))
 		//	return 1

@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zalando/skipper/metrics"
+	"github.com/ardaguclu/skipper/metrics"
 )
 
 func TestPrometheusMetrics(t *testing.T) {

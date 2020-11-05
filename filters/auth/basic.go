@@ -1,9 +1,10 @@
 package auth
 
 import (
-	auth "github.com/abbot/go-http-auth"
-	"github.com/zalando/skipper/filters"
 	"net/http"
+
+	auth "github.com/abbot/go-http-auth"
+	"github.com/ardaguclu/skipper/filters"
 )
 
 const (

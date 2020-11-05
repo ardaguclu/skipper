@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/zalando/skipper/metrics"
+	"github.com/ardaguclu/skipper/metrics"
 )
 
 func TestHandlerPrometheusBadRequests(t *testing.T) {

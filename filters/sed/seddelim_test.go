@@ -6,7 +6,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/zalando/skipper/filters/sed"
+	"github.com/ardaguclu/skipper/filters/sed"
 )
 
 func TestSedDelim(t *testing.T) {

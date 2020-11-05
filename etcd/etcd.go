@@ -30,8 +30,8 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/ardaguclu/skipper/eskip"
 	log "github.com/sirupsen/logrus"
-	"github.com/zalando/skipper/eskip"
 )
 
 const (

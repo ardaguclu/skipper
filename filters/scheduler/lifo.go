@@ -4,10 +4,10 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/scheduler"
 	"github.com/aryszka/jobqueue"
 	log "github.com/sirupsen/logrus"
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/scheduler"
 )
 
 type (

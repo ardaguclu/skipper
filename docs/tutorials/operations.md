@@ -70,7 +70,7 @@ The option `-max-audit-body=0`, won't log the HTTP body, if you would
 do audit logging, to have a safe default.
 
 The last option `-idle-timeout-server=62s` was chosen, because of a
-[known issue](https://github.com/zalando/skipper/issues/964), if you
+[known issue](https://github.com/ardaguclu/skipper/issues/964), if you
 run in a multi layer loadbalancer, with ALBs in front of Skipper.
 [ALBs idle connection timeout is 60s](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/application-load-balancers.html#connection-idle-timeout)
 and AWS support told us to run the backends with a bigger timeout,
@@ -105,7 +105,7 @@ setup](../../kubernetes/ingress-controller/#run-as-api-gateway-with-east-west-se
 You have to add `-enable-kubernetes-east-west` and optionally choose a
 domain
 `-kubernetes-east-west-domain=.ingress.cluster.local`. Be warned: There is a
-[known bug](https://github.com/zalando/skipper/issues/1024), if you
+[known bug](https://github.com/ardaguclu/skipper/issues/1024), if you
 combine it with custom routes.
 
 As part of API Gateway features, skipper supports [API

@@ -9,7 +9,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/zalando/skipper/dataclients/kubernetes"
+	"github.com/ardaguclu/skipper/dataclients/kubernetes"
 )
 
 const testAPISpec1 = `

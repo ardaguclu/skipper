@@ -15,11 +15,12 @@
 package etcd_test
 
 import (
-	"github.com/zalando/skipper/etcd"
-	"github.com/zalando/skipper/filters/builtin"
-	"github.com/zalando/skipper/proxy"
-	"github.com/zalando/skipper/routing"
 	"log"
+
+	"github.com/ardaguclu/skipper/etcd"
+	"github.com/ardaguclu/skipper/filters/builtin"
+	"github.com/ardaguclu/skipper/proxy"
+	"github.com/ardaguclu/skipper/routing"
 )
 
 func Example() {

@@ -9,9 +9,9 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/pathmux"
-	"github.com/zalando/skipper/routing/pathgen"
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/pathmux"
+	"github.com/ardaguclu/skipper/routing/pathgen"
 )
 
 type truePredicate struct{}

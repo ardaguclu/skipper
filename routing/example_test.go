@@ -20,9 +20,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/zalando/skipper/filters/builtin"
-	"github.com/zalando/skipper/routing"
-	"github.com/zalando/skipper/routing/testdataclient"
+	"github.com/ardaguclu/skipper/filters/builtin"
+	"github.com/ardaguclu/skipper/routing"
+	"github.com/ardaguclu/skipper/routing/testdataclient"
 )
 
 func Example() {

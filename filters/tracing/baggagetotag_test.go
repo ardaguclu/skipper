@@ -1,12 +1,13 @@
 package tracing
 
 import (
-	"github.com/opentracing/opentracing-go"
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/filters/filtertest"
-	"github.com/zalando/skipper/tracing/tracingtest"
 	"net/http"
 	"testing"
+
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/filters/filtertest"
+	"github.com/ardaguclu/skipper/tracing/tracingtest"
+	"github.com/opentracing/opentracing-go"
 )
 
 func TestBaggageItemNameToTag(t *testing.T) {

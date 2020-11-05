@@ -6,11 +6,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zalando/skipper/filters/builtin"
-	"github.com/zalando/skipper/filters/filtertest"
-	"github.com/zalando/skipper/routing"
-	"github.com/zalando/skipper/routing/testdataclient"
-	"github.com/zalando/skipper/scheduler"
+	"github.com/ardaguclu/skipper/filters/builtin"
+	"github.com/ardaguclu/skipper/filters/filtertest"
+	"github.com/ardaguclu/skipper/routing"
+	"github.com/ardaguclu/skipper/routing/testdataclient"
+	"github.com/ardaguclu/skipper/scheduler"
 )
 
 func TestScheduler(t *testing.T) {

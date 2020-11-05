@@ -4,7 +4,6 @@ import (
 	"bytes"
 	"crypto/md5"
 	"fmt"
-	"github.com/zalando/skipper/tracing/tracingtest"
 	"io"
 	"math/rand"
 	"net/http"
@@ -12,6 +11,8 @@ import (
 	"net/url"
 	"testing"
 	"time"
+
+	"github.com/ardaguclu/skipper/tracing/tracingtest"
 
 	"github.com/opentracing/opentracing-go/mocktracer"
 )

@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/ardaguclu/skipper/filters"
 	log "github.com/sirupsen/logrus"
-	"github.com/zalando/skipper/filters"
 	"golang.org/x/net/http/httpguts"
 )
 

@@ -1,11 +1,12 @@
 package builtin
 
 import (
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/filters/filtertest"
 	"net/http"
 	"reflect"
 	"testing"
+
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/filters/filtertest"
 )
 
 func TestDynamicBackendFilters(t *testing.T) {

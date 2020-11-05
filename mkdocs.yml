@@ -48,7 +48,7 @@ theme:
   - yaml
   - go
 repo_name: GitHub
-repo_url: https://github.com/zalando/skipper/
+repo_url: https://github.com/ardaguclu/skipper/
 edit_uri: edit/master/docs/
 markdown_extensions:
 - toc:

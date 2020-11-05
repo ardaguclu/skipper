@@ -10,8 +10,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zalando/skipper/logging/loggingtest"
-	"github.com/zalando/skipper/metrics/metricstest"
+	"github.com/ardaguclu/skipper/logging/loggingtest"
+	"github.com/ardaguclu/skipper/metrics/metricstest"
 )
 
 type testConnection struct {

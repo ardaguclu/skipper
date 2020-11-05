@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/routing"
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/routing"
 )
 
 func TestSelectAlgorithm(t *testing.T) {

@@ -1,11 +1,12 @@
 package cookie
 
 import (
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/filters/filtertest"
 	"net/http"
 	"testing"
 	"time"
+
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/filters/filtertest"
 )
 
 func TestCreateFilter(t *testing.T) {

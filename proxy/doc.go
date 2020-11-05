@@ -136,7 +136,7 @@ sending out the backend request. On connection errors and responses
 with a status code higher than 499, it reports a failure to the
 current breaker, otherwise it reports a success.
 
-For details, see: https://godoc.org/github.com/zalando/skipper/circuit.
+For details, see: https://godoc.org/github.com/ardaguclu/skipper/circuit.
 
 
 Proxy Example

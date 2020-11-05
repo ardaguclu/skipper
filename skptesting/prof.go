@@ -9,7 +9,7 @@ import (
 	"runtime/pprof"
 	"syscall"
 
-	"github.com/zalando/skipper"
+	"github.com/ardaguclu/skipper"
 )
 
 func main() {

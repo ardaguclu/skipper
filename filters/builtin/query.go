@@ -1,8 +1,8 @@
 package builtin
 
 import (
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/filters"
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/filters"
 )
 
 type modQueryBehavior int
@@ -29,7 +29,7 @@ type modQuery struct {
 // The templating feature will stay in Skipper, but the syntax of the
 // templating may change.
 //
-// See also: https://github.com/zalando/skipper/issues/182
+// See also: https://github.com/ardaguclu/skipper/issues/182
 //
 // Name: "dropQuery".
 func NewDropQuery() filters.Spec { return &modQuery{behavior: drop} }
@@ -43,12 +43,12 @@ func NewDropQuery() filters.Spec { return &modQuery{behavior: drop} }
 // be replaced with the values of the same name from the wildcards in the
 // Path() predicate.
 //
-// See: https://godoc.org/github.com/zalando/skipper/routing#hdr-Wildcards
+// See: https://godoc.org/github.com/ardaguclu/skipper/routing#hdr-Wildcards
 //
 // The templating feature will stay in Skipper, but the syntax of the
 // templating may change.
 //
-// See also: https://github.com/zalando/skipper/issues/182
+// See also: https://github.com/ardaguclu/skipper/issues/182
 //
 // Instances expect two parameters: the name and the value to be set, either
 // strings or templates are valid.

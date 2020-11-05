@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zalando/skipper/logging/loggingtest"
-	"github.com/zalando/skipper/routing/testdataclient"
+	"github.com/ardaguclu/skipper/logging/loggingtest"
+	"github.com/ardaguclu/skipper/routing/testdataclient"
 )
 
 type closer interface {

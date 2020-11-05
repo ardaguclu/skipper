@@ -35,7 +35,7 @@ Service type | supported | workaround
 --- | --- | ---
 ClusterIP | yes | ---
 NodePort | yes | ---
-ExternalName | no, [related issue](https://github.com/zalando/skipper/issues/549) | [use deployment with routestring](../data-clients/route-string.md#proxy-to-a-given-url)
+ExternalName | no, [related issue](https://github.com/ardaguclu/skipper/issues/549) | [use deployment with routestring](../data-clients/route-string.md#proxy-to-a-given-url)
 LoadBalancer | no | it should not, because Kubernetes cloud-controller-manager will maintain it
 
 
@@ -243,7 +243,7 @@ You will get an error in Skipper logs, similar to:
 
 #### Overwrite the current ingress with a redirect
 
-[Sometimes](https://github.com/zalando/skipper/issues/867) you want to
+[Sometimes](https://github.com/ardaguclu/skipper/issues/867) you want to
 overwrite the current ingress with a redirect to a nicer downtime
 page.
 
@@ -401,7 +401,7 @@ metadata:
                 servicePort: 80
 ```
 
-A possible solution will be a skipper route CRD: https://github.com/zalando/skipper/issues/660
+A possible solution will be a skipper route CRD: https://github.com/ardaguclu/skipper/issues/660
 
 ## Filters - Basic HTTP manipulations
 
@@ -473,7 +473,7 @@ Set a Cookie in the response path of your clients.
 ### Authorization
 
 Our [authentication and authorization tutorial](../../tutorials/auth/)
-or [filter auth godoc](https://godoc.org/github.com/zalando/skipper/filters/auth)
+or [filter auth godoc](https://godoc.org/github.com/ardaguclu/skipper/filters/auth)
 shows how to use filters for authorization.
 
 #### Basic Auth
@@ -506,7 +506,7 @@ by the filters mentioned above.
 
 For diagnosis purpose there are filters that enable you to throttle
 the bandwidth or add latency. For the full list of filters see our
-[diag filter godoc page](https://godoc.org/github.com/zalando/skipper/filters/diag).
+[diag filter godoc page](https://godoc.org/github.com/ardaguclu/skipper/filters/diag).
 
     bandwidth(30) // incoming in kb/s
     backendBandwidth(30) // outgoing in kb/s
@@ -528,7 +528,7 @@ HTTP request that it receives. You can then find the trace of the
 request in all your access logs.  Skipper sets the X-Flow-Id header to
 a unique value. Read more about this in our
 [flowid filter](../reference/filters.md#flowid)
-and [godoc](https://godoc.org/github.com/zalando/skipper/filters/flowid).
+and [godoc](https://godoc.org/github.com/ardaguclu/skipper/filters/flowid).
 
      flowId("reuse")
 
@@ -616,7 +616,7 @@ side as described above.
 Ratelimits are enforced per route.
 
 More details you will find in [ratelimit
-package](https://godoc.org/github.com/zalando/skipper/filters/ratelimit)
+package](https://godoc.org/github.com/ardaguclu/skipper/filters/ratelimit)
 and in our [ratelimit tutorial](../tutorials/ratelimit.md).
 
 #### Client Ratelimits
@@ -976,7 +976,7 @@ For more advanced blue-green deployments, check out our [stackset-controller](ht
 
 ## Chaining Filters and Predicates
 
-You can set multiple filters in a chain similar to the [eskip format](https://godoc.org/github.com/zalando/skipper/eskip).
+You can set multiple filters in a chain similar to the [eskip format](https://godoc.org/github.com/ardaguclu/skipper/eskip).
 
 ```yaml
 apiVersion: extensions/v1beta1

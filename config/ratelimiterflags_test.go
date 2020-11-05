@@ -6,8 +6,8 @@ import (
 
 	"gopkg.in/yaml.v2"
 
+	"github.com/ardaguclu/skipper/ratelimit"
 	"github.com/google/go-cmp/cmp"
-	"github.com/zalando/skipper/ratelimit"
 )
 
 func Test_ratelimitFlags_String(t *testing.T) {

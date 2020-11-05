@@ -18,11 +18,11 @@ import (
 	"sync"
 	"time"
 
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/secrets"
 	"github.com/coreos/go-oidc"
 	log "github.com/sirupsen/logrus"
 	"github.com/tidwall/gjson"
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/secrets"
 	"golang.org/x/oauth2"
 )
 

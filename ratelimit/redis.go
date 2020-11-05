@@ -8,12 +8,12 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/ardaguclu/skipper/metrics"
 	"github.com/cenkalti/backoff"
 	"github.com/go-redis/redis/v7"
 	"github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/ext"
 	log "github.com/sirupsen/logrus"
-	"github.com/zalando/skipper/metrics"
 )
 
 // RedisOptions is used to configure the redis.Ring

@@ -8,7 +8,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	logFilter "github.com/zalando/skipper/filters/log"
+	logFilter "github.com/ardaguclu/skipper/filters/log"
 )
 
 const logOutput = `127.0.0.1 - - [10/Oct/2000:13:55:36 -0700] "GET /apache_pb.gif HTTP/1.1" 418 2326 "-" "-" 42 example.com - -`

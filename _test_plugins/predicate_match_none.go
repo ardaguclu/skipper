@@ -3,7 +3,7 @@ package main
 import (
 	"net/http"
 
-	"github.com/zalando/skipper/routing"
+	"github.com/ardaguclu/skipper/routing"
 )
 
 type noneSpec struct{}

@@ -1,9 +1,10 @@
 package innkeeper
 
 import (
-	"github.com/stretchr/testify/assert"
-	"github.com/zalando/skipper/eskip"
 	"testing"
+
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestConvertPathMatcherStrict(t *testing.T) {

@@ -9,8 +9,8 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/zalando/skipper/dataclients/kubernetes"
-	"github.com/zalando/skipper/dataclients/kubernetes/kubernetestest"
+	"github.com/ardaguclu/skipper/dataclients/kubernetes"
+	"github.com/ardaguclu/skipper/dataclients/kubernetes/kubernetestest"
 )
 
 func containsCount(s, substr string, count int) bool {

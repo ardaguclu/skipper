@@ -1,9 +1,9 @@
 package tee
 
 import (
+	"github.com/ardaguclu/skipper/filters"
+	teepredicate "github.com/ardaguclu/skipper/predicates/tee"
 	log "github.com/sirupsen/logrus"
-	"github.com/zalando/skipper/filters"
-	teepredicate "github.com/zalando/skipper/predicates/tee"
 )
 
 const FilterName = "teeLoopback"

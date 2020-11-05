@@ -5,7 +5,7 @@ import (
 
 	"gopkg.in/yaml.v2"
 
-	"github.com/zalando/skipper/eskip"
+	"github.com/ardaguclu/skipper/eskip"
 )
 
 func Test_defaultFiltersFlags_String(t *testing.T) {

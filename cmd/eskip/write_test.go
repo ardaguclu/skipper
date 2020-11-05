@@ -20,7 +20,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/zalando/skipper/etcd/etcdtest"
+	"github.com/ardaguclu/skipper/etcd/etcdtest"
 )
 
 var testEtcdUrls []*url.URL

@@ -11,11 +11,12 @@ documentation (https://github.com/sarslanhan/cronmask).
 package cron
 
 import (
-	"github.com/sarslanhan/cronmask"
-	"github.com/zalando/skipper/predicates"
-	"github.com/zalando/skipper/routing"
 	"net/http"
 	"time"
+
+	"github.com/ardaguclu/skipper/predicates"
+	"github.com/ardaguclu/skipper/routing"
+	"github.com/sarslanhan/cronmask"
 )
 
 type clock func() time.Time

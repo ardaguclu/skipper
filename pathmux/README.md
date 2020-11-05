@@ -10,7 +10,7 @@ In addition to having the original httptreemux logic, pathmux offers one small f
 path is matched, it is possible to instruct the lookup not to return the found object when other, custom
 conditions are not met, but instead continue the lookup by backtracking from the current point in the tree.
 
-Pathmux is used by [Skipper](https://github.com/zalando/skipper), an extensible HTTP routing server used in production at Zalando.
+Pathmux is used by [Skipper](https://github.com/ardaguclu/skipper), an extensible HTTP routing server used in production at Zalando.
 
 ### When to Use pathmux Instead of httptreemux
 

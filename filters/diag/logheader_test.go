@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/ardaguclu/skipper/filters/filtertest"
 	log "github.com/sirupsen/logrus"
-	"github.com/zalando/skipper/filters/filtertest"
 )
 
 func TestLogHeader(t *testing.T) {

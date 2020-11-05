@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"regexp"
 
-	"github.com/zalando/skipper/predicates"
-	"github.com/zalando/skipper/routing"
+	"github.com/ardaguclu/skipper/predicates"
+	"github.com/ardaguclu/skipper/routing"
 )
 
 // The predicate can be referenced in eskip by the name "Cookie".

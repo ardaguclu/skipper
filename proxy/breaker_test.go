@@ -9,12 +9,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zalando/skipper/circuit"
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/filters/builtin"
-	circuitfilters "github.com/zalando/skipper/filters/circuit"
-	"github.com/zalando/skipper/proxy"
-	"github.com/zalando/skipper/proxy/proxytest"
+	"github.com/ardaguclu/skipper/circuit"
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/filters/builtin"
+	circuitfilters "github.com/ardaguclu/skipper/filters/circuit"
+	"github.com/ardaguclu/skipper/proxy"
+	"github.com/ardaguclu/skipper/proxy/proxytest"
 )
 
 type breakerTestContext struct {

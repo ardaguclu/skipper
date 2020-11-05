@@ -9,8 +9,8 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	flowidFilter "github.com/zalando/skipper/filters/flowid"
-	logFilter "github.com/zalando/skipper/filters/log"
+	flowidFilter "github.com/ardaguclu/skipper/filters/flowid"
+	logFilter "github.com/ardaguclu/skipper/filters/log"
 )
 
 const (

@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zalando/skipper/circuit"
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/filters/filtertest"
+	"github.com/ardaguclu/skipper/circuit"
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/filters/filtertest"
 )
 
 func TestArgs(t *testing.T) {

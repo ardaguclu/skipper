@@ -10,8 +10,8 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/ardaguclu/skipper/filters"
 	log "github.com/sirupsen/logrus"
-	"github.com/zalando/skipper/filters"
 )
 
 const (
@@ -51,7 +51,7 @@ var supportedEncodingsDecompress = map[string]*sync.Pool{
 func init() {
 	// #cpu * 4: pool size decided based on some
 	// simple tests, checking performance by binary
-	// steps (https://github.com/zalando/skipper)
+	// steps (https://github.com/ardaguclu/skipper)
 	for enc, pool := range supportedEncodingsDecompress {
 		for i := 0; i < runtime.NumCPU()*4; i++ {
 			pool.Put(newDecoder(enc))

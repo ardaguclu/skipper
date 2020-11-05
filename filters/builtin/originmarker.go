@@ -3,8 +3,8 @@ package builtin
 import (
 	"time"
 
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/filters"
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/filters"
 )
 
 const (

@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 	// "github.com/google/go-cmp/cmp"
-	// "github.com/zalando/skipper/eskip"
+	// "github.com/ardaguclu/skipper/eskip"
 )
 
 var testlb *LB

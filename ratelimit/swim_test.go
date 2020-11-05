@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/ardaguclu/skipper/swarm"
 	log "github.com/sirupsen/logrus"
-	"github.com/zalando/skipper/swarm"
 )
 
 var fakeRand *rand.Rand = rand.New(rand.NewSource(23))

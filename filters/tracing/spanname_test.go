@@ -3,7 +3,7 @@ package tracing
 import (
 	"testing"
 
-	"github.com/zalando/skipper/filters/filtertest"
+	"github.com/ardaguclu/skipper/filters/filtertest"
 )
 
 func Test(t *testing.T) {

@@ -7,8 +7,8 @@ package filtertest
 import (
 	"net/http"
 
+	"github.com/ardaguclu/skipper/filters"
 	"github.com/opentracing/opentracing-go"
-	"github.com/zalando/skipper/filters"
 )
 
 // Noop filter, used to verify the filter name and the args in the route.

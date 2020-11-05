@@ -2,12 +2,13 @@ package builtin
 
 import (
 	"bytes"
-	log "github.com/sirupsen/logrus"
 	"io/ioutil"
 	"net/http"
 	"strconv"
 
-	"github.com/zalando/skipper/filters"
+	log "github.com/sirupsen/logrus"
+
+	"github.com/ardaguclu/skipper/filters"
 )
 
 type inlineContentIfStatus struct {

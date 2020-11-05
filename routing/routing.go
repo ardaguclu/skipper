@@ -9,20 +9,20 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/logging"
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/logging"
 )
 
 const (
 	// PathName represents the name of builtin path predicate.
 	// (See more details about the Path and PathSubtree predicates
-	// at https://godoc.org/github.com/zalando/skipper/eskip)
+	// at https://godoc.org/github.com/ardaguclu/skipper/eskip)
 	PathName = "Path"
 
 	// PathSubtreeName represents the name of the builtin path subtree predicate.
 	// (See more details about the Path and PathSubtree predicates
-	// at https://godoc.org/github.com/zalando/skipper/eskip)
+	// at https://godoc.org/github.com/ardaguclu/skipper/eskip)
 	PathSubtreeName = "PathSubtree"
 
 	WeightPredicateName = "Weight"

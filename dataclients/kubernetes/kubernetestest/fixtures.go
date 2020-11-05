@@ -13,11 +13,11 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/ardaguclu/skipper/dataclients/kubernetes"
+	"github.com/ardaguclu/skipper/eskip"
 	"github.com/go-yaml/yaml"
 	"github.com/google/go-cmp/cmp"
 	log "github.com/sirupsen/logrus"
-	"github.com/zalando/skipper/dataclients/kubernetes"
-	"github.com/zalando/skipper/eskip"
 )
 
 type fixtureSet struct {

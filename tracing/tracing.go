@@ -56,11 +56,11 @@ import (
 	"path/filepath"
 	"plugin"
 
+	"github.com/ardaguclu/skipper/tracing/tracers/basic"
+	"github.com/ardaguclu/skipper/tracing/tracers/instana"
+	"github.com/ardaguclu/skipper/tracing/tracers/jaeger"
+	"github.com/ardaguclu/skipper/tracing/tracers/lightstep"
 	ot "github.com/opentracing/opentracing-go"
-	"github.com/zalando/skipper/tracing/tracers/basic"
-	"github.com/zalando/skipper/tracing/tracers/instana"
-	"github.com/zalando/skipper/tracing/tracers/jaeger"
-	"github.com/zalando/skipper/tracing/tracers/lightstep"
 )
 
 // InitTracer initializes an opentracing tracer. The first option item is the

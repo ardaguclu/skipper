@@ -5,7 +5,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/zalando/skipper/eskip"
+	"github.com/ardaguclu/skipper/eskip"
 )
 
 // the filter and predicate annotations are in the first ingress with the same host

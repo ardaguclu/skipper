@@ -12,8 +12,8 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/ardaguclu/skipper/filters"
 	log "github.com/sirupsen/logrus"
-	"github.com/zalando/skipper/filters"
 )
 
 const bufferSize = 8192

@@ -5,8 +5,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/filters/filtertest"
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/filters/filtertest"
 )
 
 func Test_copySpec_CreateFilter(t *testing.T) {

@@ -1,8 +1,9 @@
 package innkeeper
 
 import (
-	"github.com/zalando/skipper/oauth"
 	"testing"
+
+	"github.com/ardaguclu/skipper/oauth"
 )
 
 func TestCreateInnkeeperAuthenticationFixedToken(t *testing.T) {

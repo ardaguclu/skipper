@@ -9,9 +9,9 @@ import (
 	"plugin"
 	"strings"
 
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/routing"
 	log "github.com/sirupsen/logrus"
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/routing"
 )
 
 func (o *Options) findAndLoadPlugins() error {

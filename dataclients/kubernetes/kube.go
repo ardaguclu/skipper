@@ -12,10 +12,10 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/filters/builtin"
-	"github.com/zalando/skipper/predicates/primitive"
-	"github.com/zalando/skipper/predicates/source"
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/filters/builtin"
+	"github.com/ardaguclu/skipper/predicates/primitive"
+	"github.com/ardaguclu/skipper/predicates/source"
 )
 
 const (

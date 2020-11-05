@@ -1,11 +1,12 @@
 package accesslog
 
 import (
-	"github.com/google/go-cmp/cmp"
 	"testing"
 
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/filters/filtertest"
+	"github.com/google/go-cmp/cmp"
+
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/filters/filtertest"
 )
 
 func TestAccessLogDisabled(t *testing.T) {

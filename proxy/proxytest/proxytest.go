@@ -4,13 +4,13 @@ import (
 	"net/http/httptest"
 	"time"
 
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/loadbalancer"
-	"github.com/zalando/skipper/logging/loggingtest"
-	"github.com/zalando/skipper/proxy"
-	"github.com/zalando/skipper/routing"
-	"github.com/zalando/skipper/routing/testdataclient"
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/loadbalancer"
+	"github.com/ardaguclu/skipper/logging/loggingtest"
+	"github.com/ardaguclu/skipper/proxy"
+	"github.com/ardaguclu/skipper/routing"
+	"github.com/ardaguclu/skipper/routing/testdataclient"
 )
 
 type TestProxy struct {

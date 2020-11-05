@@ -9,7 +9,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/zalando/skipper/filters/flowid"
+	"github.com/ardaguclu/skipper/filters/flowid"
 )
 
 const duplicateHeaderPredicateErrorFmt = "duplicate header predicate: %s"
@@ -320,7 +320,7 @@ func getStringArgs(n int, args []interface{}) ([]string, error) {
 
 // Checks and sets the different predicates taken from the yacc result.
 // As the syntax is getting stabilized, this logic soon should be defined as
-// yacc rules. (https://github.com/zalando/skipper/issues/89)
+// yacc rules. (https://github.com/ardaguclu/skipper/issues/89)
 func applyPredicates(route *Route, proute *parsedRoute) error {
 	var (
 		err       error

@@ -1,7 +1,7 @@
 package innkeeper
 
 import (
-	"github.com/zalando/skipper/oauth"
+	"github.com/ardaguclu/skipper/oauth"
 )
 
 // An Authentication object provides authentication to Innkeeper.

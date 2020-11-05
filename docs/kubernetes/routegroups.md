@@ -66,7 +66,7 @@ document.)
 Links:
 
 - [RouteGroup semantics](../routegroup-crd/)
-- [CRD definition](https://github.com/zalando/skipper/blob/master/dataclients/kubernetes/deploy/apply/routegroups_crd.yaml)
+- [CRD definition](https://github.com/ardaguclu/skipper/blob/master/dataclients/kubernetes/deploy/apply/routegroups_crd.yaml)
 
 ## Requirements
 
@@ -77,7 +77,7 @@ Links:
 
 The definition file of the CRD can be found as part of Skipper's source code, at:
 
-https://github.com/zalando/skipper/blob/master/dataclients/kubernetes/deploy/apply/routegroups_crd.yaml
+https://github.com/ardaguclu/skipper/blob/master/dataclients/kubernetes/deploy/apply/routegroups_crd.yaml
 
 To install it manually in a cluster, assuming the current directory is the root of Skipper's source, call this
 command:

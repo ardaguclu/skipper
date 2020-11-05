@@ -8,9 +8,9 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/ardaguclu/skipper/filters"
 	"github.com/opentracing/opentracing-go"
 	log "github.com/sirupsen/logrus"
-	"github.com/zalando/skipper/filters"
 )
 
 type luaContext struct {

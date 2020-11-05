@@ -2,17 +2,18 @@ package tee
 
 import (
 	"fmt"
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/filters"
-	teePredicate "github.com/zalando/skipper/predicates/tee"
-	"github.com/zalando/skipper/predicates/traffic"
-	"github.com/zalando/skipper/proxy/backendtest"
-	"github.com/zalando/skipper/proxy/proxytest"
-	"github.com/zalando/skipper/routing"
 	"net/http"
 	"net/http/httptest"
 	"testing"
 	"time"
+
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/filters"
+	teePredicate "github.com/ardaguclu/skipper/predicates/tee"
+	"github.com/ardaguclu/skipper/predicates/traffic"
+	"github.com/ardaguclu/skipper/proxy/backendtest"
+	"github.com/ardaguclu/skipper/proxy/proxytest"
+	"github.com/ardaguclu/skipper/routing"
 )
 
 const listenFor = 10 * time.Millisecond

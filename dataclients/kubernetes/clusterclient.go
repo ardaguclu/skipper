@@ -17,8 +17,8 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/zalando/skipper/dataclients/kubernetes/definitions"
-	"github.com/zalando/skipper/secrets"
+	"github.com/ardaguclu/skipper/dataclients/kubernetes/definitions"
+	"github.com/ardaguclu/skipper/secrets"
 )
 
 const (

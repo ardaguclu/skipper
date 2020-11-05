@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/zalando/skipper/eskip"
+	"github.com/ardaguclu/skipper/eskip"
 )
 
 func Example() {

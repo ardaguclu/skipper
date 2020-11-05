@@ -10,11 +10,11 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/zalando/skipper/dataclients/kubernetes/definitions"
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/filters/builtin"
-	"github.com/zalando/skipper/logging/loggingtest"
-	"github.com/zalando/skipper/routing"
+	"github.com/ardaguclu/skipper/dataclients/kubernetes/definitions"
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/filters/builtin"
+	"github.com/ardaguclu/skipper/logging/loggingtest"
+	"github.com/ardaguclu/skipper/routing"
 )
 
 type redirectTest struct {

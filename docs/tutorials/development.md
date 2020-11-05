@@ -4,7 +4,7 @@ We have user documentation and developer documentation separated.
 In `docs/` you find the user documentation in [mkdocs](https://www.mkdocs.org/) format and
 rendered at [https://opensource.zalando.com/skipper](https://opensource.zalando.com/skipper).
 Developer documentation for skipper as library users
-[godoc format](https://blog.golang.org/godoc-documenting-go-code) is used and rendered at [https://godoc.org/github.com/zalando/skipper](https://godoc.org/github.com/zalando/skipper).
+[godoc format](https://blog.golang.org/godoc-documenting-go-code) is used and rendered at [https://godoc.org/github.com/ardaguclu/skipper](https://godoc.org/github.com/ardaguclu/skipper).
 
 ### User documentation
 
@@ -127,7 +127,7 @@ returns immediately, or blocks until there is a change. The routing
 package will regularly call the `LoadUpdate()` method with a small
 delay between the calls.
 
-A complete example is the [routestring implementation](https://github.com/zalando/skipper/blob/master/dataclients/routestring/string.go), which fits in
+A complete example is the [routestring implementation](https://github.com/ardaguclu/skipper/blob/master/dataclients/routestring/string.go), which fits in
 less than 50 lines of code.
 
 ## Opentracing
@@ -135,8 +135,8 @@ less than 50 lines of code.
 Your custom Opentracing implementations need to satisfy the `opentracing.Tracer` interface from
 https://github.com/opentracing/opentracing-go and need to be loaded as
 a plugin, which might change in the future.
-Please check the [tracing package](https://github.com/zalando/skipper/blob/master/tracing)
-and ask for further guidance in our [community channels](https://github.com/zalando/skipper#community).
+Please check the [tracing package](https://github.com/ardaguclu/skipper/blob/master/tracing)
+and ask for further guidance in our [community channels](https://github.com/ardaguclu/skipper#community).
 
 ## Core
 
@@ -144,7 +144,7 @@ Non trivial changes, proposals and enhancements to the core of skipper
 should be discussed first in a Github issue, such that we can think
 about how this fits best in the project and how to achieve the most
 useful result. Feel also free to reach out to our [community
-channels](https://github.com/zalando/skipper#community) and discuss
+channels](https://github.com/ardaguclu/skipper#community) and discuss
 there your idea.
 
 Every change in core has to have tests included and should be a non

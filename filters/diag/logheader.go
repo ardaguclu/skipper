@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"strings"
 
+	"github.com/ardaguclu/skipper/filters"
 	log "github.com/sirupsen/logrus"
-	"github.com/zalando/skipper/filters"
 )
 
 type logHeader struct {

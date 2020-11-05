@@ -354,7 +354,7 @@ function handleMouseUp(evt) {
 <!-- N2 -->
 <g id="node2" class="node">
 <title>N2</title>
-<g id="a_node2"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).ServeHTTP (1.83s)">
+<g id="a_node2"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).ServeHTTP (1.83s)">
 <polygon fill="#eddad5" stroke="#b22800" points="1057.4572,-1790 977.4572,-1790 977.4572,-1746 1057.4572,-1746 1057.4572,-1790"/>
 <text text-anchor="middle" x="1017.4572" y="-1779.6" font-family="Times,serif" font-size="8.00" fill="#000000">proxy</text>
 <text text-anchor="middle" x="1017.4572" y="-1770.6" font-family="Times,serif" font-size="8.00" fill="#000000">(*Proxy)</text>
@@ -366,7 +366,7 @@ function handleMouseUp(evt) {
 <!-- N4 -->
 <g id="node4" class="node">
 <title>N4</title>
-<g id="a_node4"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).do (1.13s)">
+<g id="a_node4"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).do (1.13s)">
 <polygon fill="#edddd5" stroke="#b23a00" points="1057.4572,-1695 977.4572,-1695 977.4572,-1651 1057.4572,-1651 1057.4572,-1695"/>
 <text text-anchor="middle" x="1017.4572" y="-1684.6" font-family="Times,serif" font-size="8.00" fill="#000000">proxy</text>
 <text text-anchor="middle" x="1017.4572" y="-1675.6" font-family="Times,serif" font-size="8.00" fill="#000000">(*Proxy)</text>
@@ -378,12 +378,12 @@ function handleMouseUp(evt) {
 <!-- N2&#45;&gt;N4 -->
 <g id="edge3" class="edge">
 <title>N2-&gt;N4</title>
-<g id="a_edge3"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).ServeHTTP -&gt; github.com/zalando/skipper/proxy.(*Proxy).do (1.13s)">
+<g id="a_edge3"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).ServeHTTP -&gt; github.com/ardaguclu/skipper/proxy.(*Proxy).do (1.13s)">
 <path fill="none" stroke="#b23a00" stroke-width="2" d="M1017.4572,-1745.9663C1017.4572,-1733.9427 1017.4572,-1718.8283 1017.4572,-1705.4785"/>
 <polygon fill="#b23a00" stroke="#b23a00" stroke-width="2" points="1020.9573,-1705.2433 1017.4572,-1695.2433 1013.9573,-1705.2433 1020.9573,-1705.2433"/>
 </a>
 </g>
-<g id="a_edge3-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).ServeHTTP -&gt; github.com/zalando/skipper/proxy.(*Proxy).do (1.13s)">
+<g id="a_edge3-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).ServeHTTP -&gt; github.com/ardaguclu/skipper/proxy.(*Proxy).do (1.13s)">
 <text text-anchor="middle" x="1034.4572" y="-1716.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 1.13s</text>
 </a>
 </g>
@@ -402,12 +402,12 @@ function handleMouseUp(evt) {
 <!-- N2&#45;&gt;N12 -->
 <g id="edge86" class="edge">
 <title>N2-&gt;N12</title>
-<g id="a_edge86"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).ServeHTTP ... time.Now (0.04s)">
+<g id="a_edge86"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).ServeHTTP ... time.Now (0.04s)">
 <path fill="none" stroke="#b2b0aa" stroke-dasharray="1,5" d="M977.3318,-1767.3905C817.5871,-1764.4424 235.4572,-1748.5183 235.4572,-1673 235.4572,-1673 235.4572,-1673 235.4572,-1136.5 235.4572,-1068.3684 298.0726,-1010.1891 339.5529,-979.1225"/>
 <polygon fill="#b2b0aa" stroke="#b2b0aa" points="341.7917,-981.8214 347.7977,-973.0934 337.6597,-976.171 341.7917,-981.8214"/>
 </a>
 </g>
-<g id="a_edge86-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).ServeHTTP ... time.Now (0.04s)">
+<g id="a_edge86-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).ServeHTTP ... time.Now (0.04s)">
 <text text-anchor="middle" x="252.4572" y="-1363.3" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.04s</text>
 </a>
 </g>
@@ -415,7 +415,7 @@ function handleMouseUp(evt) {
 <!-- N15 -->
 <g id="node15" class="node">
 <title>N15</title>
-<g id="a_node15"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).serveResponse (0.51s)">
+<g id="a_node15"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).serveResponse (0.51s)">
 <polygon fill="#ede5df" stroke="#b27a48" points="1485.4572,-1695 1405.4572,-1695 1405.4572,-1651 1485.4572,-1651 1485.4572,-1695"/>
 <text text-anchor="middle" x="1445.4572" y="-1684.6" font-family="Times,serif" font-size="8.00" fill="#000000">proxy</text>
 <text text-anchor="middle" x="1445.4572" y="-1675.6" font-family="Times,serif" font-size="8.00" fill="#000000">(*Proxy)</text>
@@ -427,12 +427,12 @@ function handleMouseUp(evt) {
 <!-- N2&#45;&gt;N15 -->
 <g id="edge5" class="edge">
 <title>N2-&gt;N15</title>
-<g id="a_edge5"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).ServeHTTP -&gt; github.com/zalando/skipper/proxy.(*Proxy).serveResponse (0.51s)">
+<g id="a_edge5"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).ServeHTTP -&gt; github.com/ardaguclu/skipper/proxy.(*Proxy).serveResponse (0.51s)">
 <path fill="none" stroke="#b27a48" d="M1057.708,-1767.0967C1141.8425,-1764.6631 1333.3344,-1756.1166 1391.4572,-1728 1403.5287,-1722.1604 1414.424,-1712.4649 1423.2142,-1702.827"/>
 <polygon fill="#b27a48" stroke="#b27a48" points="1425.9219,-1705.0464 1429.7947,-1695.1847 1420.6174,-1700.4788 1425.9219,-1705.0464"/>
 </a>
 </g>
-<g id="a_edge5-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).ServeHTTP -&gt; github.com/zalando/skipper/proxy.(*Proxy).serveResponse (0.51s)">
+<g id="a_edge5-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).ServeHTTP -&gt; github.com/ardaguclu/skipper/proxy.(*Proxy).serveResponse (0.51s)">
 <text text-anchor="middle" x="1428.4572" y="-1716.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.51s</text>
 </a>
 </g>
@@ -452,12 +452,12 @@ function handleMouseUp(evt) {
 <!-- N2&#45;&gt;N23 -->
 <g id="edge129" class="edge">
 <title>N2-&gt;N23</title>
-<g id="a_edge129"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).ServeHTTP ... runtime.newobject (0.01s)">
+<g id="a_edge129"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).ServeHTTP ... runtime.newobject (0.01s)">
 <path fill="none" stroke="#b2b2b0" stroke-dasharray="1,5" d="M1041.0813,-1745.9387C1046.2318,-1740.4015 1051.36,-1734.2476 1055.4572,-1728 1140.8365,-1597.8079 1136.6578,-1549.9747 1178.4572,-1400 1199.5679,-1324.2554 1216.4602,-1307.8587 1227.4572,-1230 1239.3994,-1145.4492 1259.9347,-1113.7165 1220.4572,-1038 1207.2848,-1012.7358 1182.5238,-993.3527 1159.3422,-979.696"/>
 <polygon fill="#b2b2b0" stroke="#b2b2b0" points="1160.9916,-976.608 1150.5624,-974.742 1157.5516,-982.7045 1160.9916,-976.608"/>
 </a>
 </g>
-<g id="a_edge129-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).ServeHTTP ... runtime.newobject (0.01s)">
+<g id="a_edge129-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).ServeHTTP ... runtime.newobject (0.01s)">
 <text text-anchor="middle" x="1210.4572" y="-1363.3" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.01s</text>
 </a>
 </g>
@@ -477,12 +477,12 @@ function handleMouseUp(evt) {
 <!-- N2&#45;&gt;N38 -->
 <g id="edge128" class="edge">
 <title>N2-&gt;N38</title>
-<g id="a_edge128"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).ServeHTTP ... runtime.makeslice (0.01s)">
+<g id="a_edge128"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).ServeHTTP ... runtime.makeslice (0.01s)">
 <path fill="none" stroke="#b2b2b0" stroke-dasharray="1,5" d="M1057.6819,-1757.1997C1123.4276,-1737.4163 1253.4764,-1688.9883 1322.4572,-1600 1362.9407,-1547.7745 1351.1695,-1521.5571 1359.4572,-1456 1362.5788,-1431.3076 1368.3022,-1423.2642 1359.4572,-1400 1355.6533,-1389.9951 1348.1706,-1391.61 1343.4572,-1382 1333.8992,-1362.5127 1336.4658,-1355.612 1334.4572,-1334 1332.2773,-1310.5455 1329.374,-1304.0005 1334.4572,-1281 1352.4364,-1199.6478 1395.478,-1192.3522 1413.4572,-1111 1420.4586,-1079.32 1423.0677,-1068.9884 1413.4572,-1038 1405.3139,-1011.7428 1386.6004,-1013.2572 1378.4572,-987 1351.6597,-900.5938 1365.0843,-792.5639 1375.3703,-736.2164"/>
 <polygon fill="#b2b2b0" stroke="#b2b2b0" points="1378.8238,-736.7898 1377.244,-726.3134 1371.9458,-735.4884 1378.8238,-736.7898"/>
 </a>
 </g>
-<g id="a_edge128-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).ServeHTTP ... runtime.makeslice (0.01s)">
+<g id="a_edge128-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).ServeHTTP ... runtime.makeslice (0.01s)">
 <text text-anchor="middle" x="1360.4572" y="-1251.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.01s</text>
 </a>
 </g>
@@ -502,12 +502,12 @@ function handleMouseUp(evt) {
 <!-- N2&#45;&gt;N69 -->
 <g id="edge127" class="edge">
 <title>N2-&gt;N69</title>
-<g id="a_edge127"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).ServeHTTP ... runtime.convTstring (0.01s)">
+<g id="a_edge127"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).ServeHTTP ... runtime.convTstring (0.01s)">
 <path fill="none" stroke="#b2b2b0" stroke-dasharray="1,5" d="M977.2841,-1755.6802C908.399,-1733.1285 765.6869,-1680.047 667.4572,-1600 573.052,-1523.0696 540.3891,-1497.3903 501.4572,-1382 486.7998,-1338.5571 489.4066,-1312.777 522.4572,-1281 545.9239,-1258.4375 565.4391,-1279.5752 593.4572,-1263 663.5545,-1221.5313 646.5331,-1167.2128 718.4572,-1129 763.7552,-1104.9335 782.9823,-1124.5407 832.4572,-1111 844.7503,-1107.6355 857.6429,-1103.1566 869.7558,-1098.4915"/>
 <polygon fill="#b2b2b0" stroke="#b2b2b0" points="871.2634,-1101.6592 879.2765,-1094.728 868.69,-1095.1493 871.2634,-1101.6592"/>
 </a>
 </g>
-<g id="a_edge127-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).ServeHTTP ... runtime.convTstring (0.01s)">
+<g id="a_edge127-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).ServeHTTP ... runtime.convTstring (0.01s)">
 <text text-anchor="middle" x="548.4572" y="-1424.3" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.01s</text>
 </a>
 </g>
@@ -575,7 +575,7 @@ function handleMouseUp(evt) {
 <!-- N10 -->
 <g id="node10" class="node">
 <title>N10</title>
-<g id="a_node10"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).makeBackendRequest (0.39s)">
+<g id="a_node10"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).makeBackendRequest (0.39s)">
 <polygon fill="#ede7e2" stroke="#b28a61" points="1075.4572,-1595 959.4572,-1595 959.4572,-1527 1075.4572,-1527 1075.4572,-1595"/>
 <text text-anchor="middle" x="1017.4572" y="-1582.2" font-family="Times,serif" font-size="11.00" fill="#000000">proxy</text>
 <text text-anchor="middle" x="1017.4572" y="-1570.2" font-family="Times,serif" font-size="11.00" fill="#000000">(*Proxy)</text>
@@ -588,12 +588,12 @@ function handleMouseUp(evt) {
 <!-- N4&#45;&gt;N10 -->
 <g id="edge8" class="edge">
 <title>N4-&gt;N10</title>
-<g id="a_edge8"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).do -&gt; github.com/zalando/skipper/proxy.(*Proxy).makeBackendRequest (0.39s)">
+<g id="a_edge8"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).do -&gt; github.com/ardaguclu/skipper/proxy.(*Proxy).makeBackendRequest (0.39s)">
 <path fill="none" stroke="#b28a61" d="M1017.4572,-1650.8724C1017.4572,-1637.9032 1017.4572,-1621.0514 1017.4572,-1605.45"/>
 <polygon fill="#b28a61" stroke="#b28a61" points="1020.9573,-1605.4316 1017.4572,-1595.4316 1013.9573,-1605.4317 1020.9573,-1605.4316"/>
 </a>
 </g>
-<g id="a_edge8-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).do -&gt; github.com/zalando/skipper/proxy.(*Proxy).makeBackendRequest (0.39s)">
+<g id="a_edge8-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).do -&gt; github.com/ardaguclu/skipper/proxy.(*Proxy).makeBackendRequest (0.39s)">
 <text text-anchor="middle" x="1034.4572" y="-1621.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.39s</text>
 </a>
 </g>
@@ -601,12 +601,12 @@ function handleMouseUp(evt) {
 <!-- N4&#45;&gt;N12 -->
 <g id="edge107" class="edge">
 <title>N4-&gt;N12</title>
-<g id="a_edge107"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).do -&gt; time.Now (0.02s)">
+<g id="a_edge107"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).do -&gt; time.Now (0.02s)">
 <path fill="none" stroke="#b2b1ae" d="M977.4533,-1668.7119C876.7531,-1656.5097 607.0928,-1615.0154 414.4572,-1504 385.1686,-1487.1211 376.7723,-1482.237 355.4572,-1456 237.8066,-1311.1823 277.5438,-1220.4817 316.4572,-1038 319.6815,-1022.8799 319.464,-1018.2333 327.4572,-1005 332.6657,-996.377 339.601,-988.0465 346.5766,-980.7395"/>
 <polygon fill="#b2b1ae" stroke="#b2b1ae" points="349.4776,-982.789 354.0819,-973.2469 344.5321,-977.835 349.4776,-982.789"/>
 </a>
 </g>
-<g id="a_edge107-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).do -&gt; time.Now (0.02s)">
+<g id="a_edge107-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).do -&gt; time.Now (0.02s)">
 <text text-anchor="middle" x="304.4572" y="-1303.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.02s</text>
 </a>
 </g>
@@ -614,7 +614,7 @@ function handleMouseUp(evt) {
 <!-- N24 -->
 <g id="node24" class="node">
 <title>N24</title>
-<g id="a_node24"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToResponse (0.36s)">
+<g id="a_node24"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToResponse (0.36s)">
 <polygon fill="#ede8e3" stroke="#b28e67" points="770.4572,-1583 676.4572,-1583 676.4572,-1539 770.4572,-1539 770.4572,-1583"/>
 <text text-anchor="middle" x="723.4572" y="-1572.6" font-family="Times,serif" font-size="8.00" fill="#000000">proxy</text>
 <text text-anchor="middle" x="723.4572" y="-1563.6" font-family="Times,serif" font-size="8.00" fill="#000000">(*Proxy)</text>
@@ -626,12 +626,12 @@ function handleMouseUp(evt) {
 <!-- N4&#45;&gt;N24 -->
 <g id="edge10" class="edge">
 <title>N4-&gt;N24</title>
-<g id="a_edge10"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).do -&gt; github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToResponse (0.36s)">
+<g id="a_edge10"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).do -&gt; github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToResponse (0.36s)">
 <path fill="none" stroke="#b28e67" d="M977.3498,-1662.4634C931.8505,-1649.9337 855.8691,-1627.2505 793.4572,-1600 785.3056,-1596.4408 776.8593,-1592.2267 768.7741,-1587.9069"/>
 <polygon fill="#b28e67" stroke="#b28e67" points="770.2865,-1584.7448 759.8339,-1583.014 766.9258,-1590.8853 770.2865,-1584.7448"/>
 </a>
 </g>
-<g id="a_edge10-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).do -&gt; github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToResponse (0.36s)">
+<g id="a_edge10-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).do -&gt; github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToResponse (0.36s)">
 <text text-anchor="middle" x="895.4572" y="-1621.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.36s</text>
 </a>
 </g>
@@ -639,7 +639,7 @@ function handleMouseUp(evt) {
 <!-- N27 -->
 <g id="node27" class="node">
 <title>N27</title>
-<g id="a_node27"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToRequest (0.28s)">
+<g id="a_node27"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToRequest (0.28s)">
 <polygon fill="#ede9e5" stroke="#b29878" points="891.9572,-1583 802.9572,-1583 802.9572,-1539 891.9572,-1539 891.9572,-1583"/>
 <text text-anchor="middle" x="847.4572" y="-1572.6" font-family="Times,serif" font-size="8.00" fill="#000000">proxy</text>
 <text text-anchor="middle" x="847.4572" y="-1563.6" font-family="Times,serif" font-size="8.00" fill="#000000">(*Proxy)</text>
@@ -651,12 +651,12 @@ function handleMouseUp(evt) {
 <!-- N4&#45;&gt;N27 -->
 <g id="edge15" class="edge">
 <title>N4-&gt;N27</title>
-<g id="a_edge15"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).do -&gt; github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToRequest (0.28s)">
+<g id="a_edge15"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).do -&gt; github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToRequest (0.28s)">
 <path fill="none" stroke="#b29878" d="M983.8707,-1650.8724C956.8614,-1633.0781 918.7583,-1607.9748 889.6846,-1588.8204"/>
 <polygon fill="#b29878" stroke="#b29878" points="891.2501,-1585.6605 880.9739,-1583.0816 887.399,-1591.506 891.2501,-1585.6605"/>
 </a>
 </g>
-<g id="a_edge15-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).do -&gt; github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToRequest (0.28s)">
+<g id="a_edge15-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).do -&gt; github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToRequest (0.28s)">
 <text text-anchor="middle" x="970.4572" y="-1621.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.28s</text>
 </a>
 </g>
@@ -725,12 +725,12 @@ function handleMouseUp(evt) {
 <!-- N7&#45;&gt;N2 -->
 <g id="edge2" class="edge">
 <title>N7-&gt;N2</title>
-<g id="a_edge2"><a xlink:title="net/http.serverHandler.ServeHTTP -&gt; github.com/zalando/skipper/proxy.(*Proxy).ServeHTTP (1.83s)">
+<g id="a_edge2"><a xlink:title="net/http.serverHandler.ServeHTTP -&gt; github.com/ardaguclu/skipper/proxy.(*Proxy).ServeHTTP (1.83s)">
 <path fill="none" stroke="#b22800" stroke-width="3" d="M1017.4572,-1840.9663C1017.4572,-1828.9427 1017.4572,-1813.8283 1017.4572,-1800.4785"/>
 <polygon fill="#b22800" stroke="#b22800" stroke-width="3" points="1020.9573,-1800.2433 1017.4572,-1790.2433 1013.9573,-1800.2433 1020.9573,-1800.2433"/>
 </a>
 </g>
-<g id="a_edge2-label"><a xlink:title="net/http.serverHandler.ServeHTTP -&gt; github.com/zalando/skipper/proxy.(*Proxy).ServeHTTP (1.83s)">
+<g id="a_edge2-label"><a xlink:title="net/http.serverHandler.ServeHTTP -&gt; github.com/ardaguclu/skipper/proxy.(*Proxy).ServeHTTP (1.83s)">
 <text text-anchor="middle" x="1034.4572" y="-1811.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 1.83s</text>
 </a>
 </g>
@@ -861,12 +861,12 @@ function handleMouseUp(evt) {
 <!-- N10&#45;&gt;N12 -->
 <g id="edge133" class="edge">
 <title>N10-&gt;N12</title>
-<g id="a_edge133"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).makeBackendRequest ... time.Now (0.01s)">
+<g id="a_edge133"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).makeBackendRequest ... time.Now (0.01s)">
 <path fill="none" stroke="#b2b2b0" stroke-dasharray="1,5" d="M1003.4804,-1526.892C980.0498,-1470.4802 933.8949,-1362.852 918.4572,-1352 850.874,-1304.492 800.0125,-1382.9376 733.4572,-1334 669.5138,-1286.9829 655.2761,-1055.9943 594.4572,-1005 569.0668,-983.7111 480.895,-968.6546 424.4726,-960.9364"/>
 <polygon fill="#b2b2b0" stroke="#b2b2b0" points="424.7046,-957.4364 414.3291,-959.5808 423.7773,-964.3747 424.7046,-957.4364"/>
 </a>
 </g>
-<g id="a_edge133-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).makeBackendRequest ... time.Now (0.01s)">
+<g id="a_edge133-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).makeBackendRequest ... time.Now (0.01s)">
 <text text-anchor="middle" x="707.4572" y="-1251.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.01s</text>
 </a>
 </g>
@@ -887,12 +887,12 @@ function handleMouseUp(evt) {
 <!-- N10&#45;&gt;N43 -->
 <g id="edge57" class="edge">
 <title>N10-&gt;N43</title>
-<g id="a_edge57"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).makeBackendRequest ... net/http.(*persistConn).roundTrip (0.10s)">
+<g id="a_edge57"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).makeBackendRequest ... net/http.(*persistConn).roundTrip (0.10s)">
 <path fill="none" stroke="#b2ab9d" stroke-dasharray="1,5" d="M973.1532,-1526.7725C964.664,-1519.5642 956.06,-1511.778 948.4572,-1504 907.3125,-1461.9072 918.7211,-1427.0772 866.4572,-1400 832.8669,-1382.5973 554.4669,-1407.4287 526.4572,-1382 487.8153,-1346.9189 486.5089,-1283.1456 490.9815,-1240.1785"/>
 <polygon fill="#b2ab9d" stroke="#b2ab9d" points="494.4861,-1240.345 492.1879,-1230.0024 487.5348,-1239.5208 494.4861,-1240.345"/>
 </a>
 </g>
-<g id="a_edge57-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).makeBackendRequest ... net/http.(*persistConn).roundTrip (0.10s)">
+<g id="a_edge57-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).makeBackendRequest ... net/http.(*persistConn).roundTrip (0.10s)">
 <text text-anchor="middle" x="543.4572" y="-1363.3" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.10s</text>
 </a>
 </g>
@@ -900,7 +900,7 @@ function handleMouseUp(evt) {
 <!-- N45 -->
 <g id="node45" class="node">
 <title>N45</title>
-<g id="a_node45"><a xlink:title="github.com/zalando/skipper/eskip.(*Route).Print (0.14s)">
+<g id="a_node45"><a xlink:title="github.com/ardaguclu/skipper/eskip.(*Route).Print (0.14s)">
 <polygon fill="#edebe9" stroke="#b2a895" points="1349.9572,-1450 1272.9572,-1450 1272.9572,-1406 1349.9572,-1406 1349.9572,-1450"/>
 <text text-anchor="middle" x="1311.4572" y="-1439.6" font-family="Times,serif" font-size="8.00" fill="#000000">eskip</text>
 <text text-anchor="middle" x="1311.4572" y="-1430.6" font-family="Times,serif" font-size="8.00" fill="#000000">(*Route)</text>
@@ -912,12 +912,12 @@ function handleMouseUp(evt) {
 <!-- N10&#45;&gt;N45 -->
 <g id="edge56" class="edge">
 <title>N10-&gt;N45</title>
-<g id="a_edge56"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).makeBackendRequest ... github.com/zalando/skipper/eskip.(*Route).Print (0.10s)">
+<g id="a_edge56"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).makeBackendRequest ... github.com/ardaguclu/skipper/eskip.(*Route).Print (0.10s)">
 <path fill="none" stroke="#b2ab9d" stroke-dasharray="1,5" d="M1075.4674,-1537.1686C1124.6302,-1516.6293 1196.7682,-1485.682 1258.4572,-1456 1260.2155,-1455.154 1262.0005,-1454.2817 1263.7989,-1453.3915"/>
 <polygon fill="#b2ab9d" stroke="#b2ab9d" points="1265.4889,-1456.4592 1272.841,-1448.8304 1262.3363,-1450.2093 1265.4889,-1456.4592"/>
 </a>
 </g>
-<g id="a_edge56-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).makeBackendRequest ... github.com/zalando/skipper/eskip.(*Route).Print (0.10s)">
+<g id="a_edge56-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).makeBackendRequest ... github.com/ardaguclu/skipper/eskip.(*Route).Print (0.10s)">
 <text text-anchor="middle" x="1236.4572" y="-1485.3" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.10s</text>
 </a>
 </g>
@@ -937,12 +937,12 @@ function handleMouseUp(evt) {
 <!-- N10&#45;&gt;N57 -->
 <g id="edge87" class="edge">
 <title>N10-&gt;N57</title>
-<g id="a_edge87"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).makeBackendRequest ... runtime.mapassign_faststr (0.04s)">
+<g id="a_edge87"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).makeBackendRequest ... runtime.mapassign_faststr (0.04s)">
 <path fill="none" stroke="#b2b0aa" stroke-dasharray="1,5" d="M1018.8605,-1526.9254C1020.8175,-1510.0552 1025.1355,-1489.9425 1034.4572,-1474 1036.5901,-1470.3521 1039.1214,-1466.8557 1041.9059,-1463.5357"/>
 <polygon fill="#b2b0aa" stroke="#b2b0aa" points="1044.5523,-1465.8295 1048.7945,-1456.121 1039.4239,-1461.065 1044.5523,-1465.8295"/>
 </a>
 </g>
-<g id="a_edge87-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).makeBackendRequest ... runtime.mapassign_faststr (0.04s)">
+<g id="a_edge87-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).makeBackendRequest ... runtime.mapassign_faststr (0.04s)">
 <text text-anchor="middle" x="1051.4572" y="-1485.3" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.04s</text>
 </a>
 </g>
@@ -962,12 +962,12 @@ function handleMouseUp(evt) {
 <!-- N10&#45;&gt;N71 -->
 <g id="edge132" class="edge">
 <title>N10-&gt;N71</title>
-<g id="a_edge132"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).makeBackendRequest -&gt; github.com/lightstep/lightstep-tracer-go.(*spanImpl).LogKV (0.01s)">
+<g id="a_edge132"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).makeBackendRequest -&gt; github.com/lightstep/lightstep-tracer-go.(*spanImpl).LogKV (0.01s)">
 <path fill="none" stroke="#b2b2b0" d="M1011.9078,-1526.7052C1005.7901,-1493.4112 994.3709,-1441.9043 976.4572,-1400 966.5684,-1376.8678 966.5566,-1367.1295 946.4572,-1352 923.1914,-1334.4871 903.7382,-1354.8969 883.4572,-1334 856.1247,-1305.8374 849.2331,-1259.5227 847.9407,-1228.4066"/>
 <polygon fill="#b2b2b0" stroke="#b2b2b0" points="851.4321,-1228.002 847.6927,-1218.089 844.4341,-1228.1702 851.4321,-1228.002"/>
 </a>
 </g>
-<g id="a_edge132-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).makeBackendRequest -&gt; github.com/lightstep/lightstep-tracer-go.(*spanImpl).LogKV (0.01s)">
+<g id="a_edge132-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).makeBackendRequest -&gt; github.com/lightstep/lightstep-tracer-go.(*spanImpl).LogKV (0.01s)">
 <text text-anchor="middle" x="986.4572" y="-1363.3" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.01s</text>
 </a>
 </g>
@@ -1085,7 +1085,7 @@ function handleMouseUp(evt) {
 <!-- N14 -->
 <g id="node14" class="node">
 <title>N14</title>
-<g id="a_node14"><a xlink:title="github.com/zalando/skipper/proxy.copyStream (0.32s)">
+<g id="a_node14"><a xlink:title="github.com/ardaguclu/skipper/proxy.copyStream (0.32s)">
 <polygon fill="#ede9e4" stroke="#b2936f" points="1533.4572,-1589 1443.4572,-1589 1443.4572,-1533 1533.4572,-1533 1533.4572,-1589"/>
 <text text-anchor="middle" x="1488.4572" y="-1576.2" font-family="Times,serif" font-size="11.00" fill="#000000">proxy</text>
 <text text-anchor="middle" x="1488.4572" y="-1564.2" font-family="Times,serif" font-size="11.00" fill="#000000">copyStream</text>
@@ -1097,7 +1097,7 @@ function handleMouseUp(evt) {
 <!-- N36 -->
 <g id="node36" class="node">
 <title>N36</title>
-<g id="a_node36"><a xlink:title="github.com/zalando/skipper/proxy.(*proxyTracing).logEvent (0.25s)">
+<g id="a_node36"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*proxyTracing).logEvent (0.25s)">
 <polygon fill="#edeae6" stroke="#b29c7e" points="969.9572,-1329.5 892.9572,-1329.5 892.9572,-1285.5 969.9572,-1285.5 969.9572,-1329.5"/>
 <text text-anchor="middle" x="931.4572" y="-1319.1" font-family="Times,serif" font-size="8.00" fill="#000000">proxy</text>
 <text text-anchor="middle" x="931.4572" y="-1310.1" font-family="Times,serif" font-size="8.00" fill="#000000">(*proxyTracing)</text>
@@ -1109,12 +1109,12 @@ function handleMouseUp(evt) {
 <!-- N14&#45;&gt;N36 -->
 <g id="edge88" class="edge">
 <title>N14-&gt;N36</title>
-<g id="a_edge88"><a xlink:title="github.com/zalando/skipper/proxy.copyStream ... github.com/zalando/skipper/proxy.(*proxyTracing).logEvent (0.04s)">
+<g id="a_edge88"><a xlink:title="github.com/ardaguclu/skipper/proxy.copyStream ... github.com/ardaguclu/skipper/proxy.(*proxyTracing).logEvent (0.04s)">
 <path fill="none" stroke="#b2b0aa" stroke-dasharray="1,5" d="M1443.1812,-1547.3875C1388.5255,-1530.0361 1294.7061,-1497.2774 1220.4572,-1456 1184.098,-1435.7867 1181.4615,-1420.8389 1145.4572,-1400 1091.1185,-1368.5494 1024.0603,-1341.251 979.6474,-1324.6201"/>
 <polygon fill="#b2b0aa" stroke="#b2b0aa" points="980.8437,-1321.3309 970.2507,-1321.1341 978.4089,-1327.8938 980.8437,-1321.3309"/>
 </a>
 </g>
-<g id="a_edge88-label"><a xlink:title="github.com/zalando/skipper/proxy.copyStream ... github.com/zalando/skipper/proxy.(*proxyTracing).logEvent (0.04s)">
+<g id="a_edge88-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.copyStream ... github.com/ardaguclu/skipper/proxy.(*proxyTracing).logEvent (0.04s)">
 <text text-anchor="middle" x="1242.4572" y="-1431.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.04s</text>
 <text text-anchor="middle" x="1242.4572" y="-1416.8" font-family="Times,serif" font-size="14.00" fill="#000000"> (inline)</text>
 </a>
@@ -1123,12 +1123,12 @@ function handleMouseUp(evt) {
 <!-- N14&#45;&gt;N38 -->
 <g id="edge82" class="edge">
 <title>N14-&gt;N38</title>
-<g id="a_edge82"><a xlink:title="github.com/zalando/skipper/proxy.copyStream -&gt; runtime.makeslice (0.05s)">
+<g id="a_edge82"><a xlink:title="github.com/ardaguclu/skipper/proxy.copyStream -&gt; runtime.makeslice (0.05s)">
 <path fill="none" stroke="#b2afa8" d="M1488.1242,-1532.9779C1487.8333,-1506.0624 1487.4572,-1464.2528 1487.4572,-1428 1487.4572,-1428 1487.4572,-1428 1487.4572,-1136.5 1487.4572,-1041.5268 1518.3596,-1015.4131 1496.4572,-923 1479.5757,-851.7716 1436.4259,-777.4508 1408.5986,-734.5631"/>
 <polygon fill="#b2afa8" stroke="#b2afa8" points="1411.4938,-732.5955 1403.0791,-726.1579 1405.6426,-736.4379 1411.4938,-732.5955"/>
 </a>
 </g>
-<g id="a_edge82-label"><a xlink:title="github.com/zalando/skipper/proxy.copyStream -&gt; runtime.makeslice (0.05s)">
+<g id="a_edge82-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.copyStream -&gt; runtime.makeslice (0.05s)">
 <text text-anchor="middle" x="1504.4572" y="-1132.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.05s</text>
 </a>
 </g>
@@ -1136,7 +1136,7 @@ function handleMouseUp(evt) {
 <!-- N42 -->
 <g id="node42" class="node">
 <title>N42</title>
-<g id="a_node42"><a xlink:title="github.com/zalando/skipper/logging.(*LoggingWriter).Flush (0.25s)">
+<g id="a_node42"><a xlink:title="github.com/ardaguclu/skipper/logging.(*LoggingWriter).Flush (0.25s)">
 <polygon fill="#edeae6" stroke="#b29c7e" points="1607.9572,-1450 1530.9572,-1450 1530.9572,-1406 1607.9572,-1406 1607.9572,-1450"/>
 <text text-anchor="middle" x="1569.4572" y="-1439.6" font-family="Times,serif" font-size="8.00" fill="#000000">logging</text>
 <text text-anchor="middle" x="1569.4572" y="-1430.6" font-family="Times,serif" font-size="8.00" fill="#000000">(*LoggingWriter)</text>
@@ -1148,12 +1148,12 @@ function handleMouseUp(evt) {
 <!-- N14&#45;&gt;N42 -->
 <g id="edge58" class="edge">
 <title>N14-&gt;N42</title>
-<g id="a_edge58"><a xlink:title="github.com/zalando/skipper/proxy.copyStream -&gt; github.com/zalando/skipper/logging.(*LoggingWriter).Flush (0.10s)">
+<g id="a_edge58"><a xlink:title="github.com/ardaguclu/skipper/proxy.copyStream -&gt; github.com/ardaguclu/skipper/logging.(*LoggingWriter).Flush (0.10s)">
 <path fill="none" stroke="#b2ab9d" d="M1495.6585,-1532.8557C1501.0294,-1515.0425 1509.511,-1492.0518 1521.4572,-1474 1525.3089,-1468.1797 1530.0192,-1462.5424 1534.9674,-1457.3265"/>
 <polygon fill="#b2ab9d" stroke="#b2ab9d" points="1537.6961,-1459.5488 1542.3151,-1450.0139 1532.7582,-1454.5872 1537.6961,-1459.5488"/>
 </a>
 </g>
-<g id="a_edge58-label"><a xlink:title="github.com/zalando/skipper/proxy.copyStream -&gt; github.com/zalando/skipper/logging.(*LoggingWriter).Flush (0.10s)">
+<g id="a_edge58-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.copyStream -&gt; github.com/ardaguclu/skipper/logging.(*LoggingWriter).Flush (0.10s)">
 <text text-anchor="middle" x="1538.4572" y="-1485.3" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.10s</text>
 </a>
 </g>
@@ -1173,12 +1173,12 @@ function handleMouseUp(evt) {
 <!-- N14&#45;&gt;N59 -->
 <g id="edge71" class="edge">
 <title>N14-&gt;N59</title>
-<g id="a_edge71"><a xlink:title="github.com/zalando/skipper/proxy.copyStream ... net/http.(*body).Read (0.07s)">
+<g id="a_edge71"><a xlink:title="github.com/ardaguclu/skipper/proxy.copyStream ... net/http.(*body).Read (0.07s)">
 <path fill="none" stroke="#b2aea3" stroke-dasharray="1,5" d="M1525.4919,-1532.929C1532.4969,-1528.6808 1539.9805,-1524.7922 1547.4572,-1522 1579.6028,-1509.9949 2071.2651,-1452.0934 2229.6762,-1433.6534"/>
 <polygon fill="#b2aea3" stroke="#b2aea3" points="2230.0915,-1437.1288 2239.6201,-1432.4968 2229.2826,-1430.1757 2230.0915,-1437.1288"/>
 </a>
 </g>
-<g id="a_edge71-label"><a xlink:title="github.com/zalando/skipper/proxy.copyStream ... net/http.(*body).Read (0.07s)">
+<g id="a_edge71-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.copyStream ... net/http.(*body).Read (0.07s)">
 <text text-anchor="middle" x="1901.4572" y="-1485.3" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.07s</text>
 </a>
 </g>
@@ -1186,12 +1186,12 @@ function handleMouseUp(evt) {
 <!-- N15&#45;&gt;N12 -->
 <g id="edge134" class="edge">
 <title>N15-&gt;N12</title>
-<g id="a_edge134"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).serveResponse -&gt; time.Now (0.01s)">
+<g id="a_edge134"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).serveResponse -&gt; time.Now (0.01s)">
 <path fill="none" stroke="#b2b2b0" d="M1405.3688,-1667.3516C1288.3198,-1650.8259 954.9828,-1603.5109 950.4572,-1600 874.2813,-1540.9047 944.2764,-1456.9138 866.4572,-1400 830.4382,-1373.6572 709.7409,-1392.8551 666.4572,-1382 613.5308,-1368.7267 583.568,-1379.5052 553.4572,-1334 540.4585,-1314.3557 546.2099,-1303.413 553.4572,-1281 556.4933,-1271.6104 563.3285,-1272.3592 566.4572,-1263 598.1643,-1168.1504 624.5372,-1121.4744 569.4572,-1038 537.3821,-989.3898 470.3295,-969.1453 424.1112,-960.7823"/>
 <polygon fill="#b2b2b0" stroke="#b2b2b0" points="424.4486,-957.29 414.0064,-959.0816 423.2867,-964.1929 424.4486,-957.29"/>
 </a>
 </g>
-<g id="a_edge134-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).serveResponse -&gt; time.Now (0.01s)">
+<g id="a_edge134-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).serveResponse -&gt; time.Now (0.01s)">
 <text text-anchor="middle" x="570.4572" y="-1303.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.01s</text>
 </a>
 </g>
@@ -1199,12 +1199,12 @@ function handleMouseUp(evt) {
 <!-- N15&#45;&gt;N14 -->
 <g id="edge12" class="edge">
 <title>N15-&gt;N14</title>
-<g id="a_edge12"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).serveResponse -&gt; github.com/zalando/skipper/proxy.copyStream (0.32s)">
+<g id="a_edge12"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).serveResponse -&gt; github.com/ardaguclu/skipper/proxy.copyStream (0.32s)">
 <path fill="none" stroke="#b2936f" d="M1450.5,-1650.748C1453.0565,-1640.615 1456.4674,-1628.554 1460.4572,-1618 1462.8932,-1611.556 1465.8082,-1604.8619 1468.8232,-1598.4237"/>
 <polygon fill="#b2936f" stroke="#b2936f" points="1472.065,-1599.7595 1473.2679,-1589.2331 1465.7632,-1596.7118 1472.065,-1599.7595"/>
 </a>
 </g>
-<g id="a_edge12-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).serveResponse -&gt; github.com/zalando/skipper/proxy.copyStream (0.32s)">
+<g id="a_edge12-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).serveResponse -&gt; github.com/ardaguclu/skipper/proxy.copyStream (0.32s)">
 <text text-anchor="middle" x="1477.4572" y="-1621.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.32s</text>
 </a>
 </g>
@@ -1212,12 +1212,12 @@ function handleMouseUp(evt) {
 <!-- N15&#45;&gt;N42 -->
 <g id="edge41" class="edge">
 <title>N15-&gt;N42</title>
-<g id="a_edge41"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).serveResponse -&gt; github.com/zalando/skipper/logging.(*LoggingWriter).Flush (0.15s)">
+<g id="a_edge41"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).serveResponse -&gt; github.com/ardaguclu/skipper/logging.(*LoggingWriter).Flush (0.15s)">
 <path fill="none" stroke="#b2a793" d="M1485.637,-1663.1464C1513.0164,-1655.5626 1545.8104,-1644.4677 1554.4572,-1633 1592.4657,-1582.5914 1585.105,-1503.9517 1576.9295,-1460.1738"/>
 <polygon fill="#b2a793" stroke="#b2a793" points="1580.3066,-1459.2122 1574.9156,-1450.0915 1573.4422,-1460.5833 1580.3066,-1459.2122"/>
 </a>
 </g>
-<g id="a_edge41-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).serveResponse -&gt; github.com/zalando/skipper/logging.(*LoggingWriter).Flush (0.15s)">
+<g id="a_edge41-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).serveResponse -&gt; github.com/ardaguclu/skipper/logging.(*LoggingWriter).Flush (0.15s)">
 <text text-anchor="middle" x="1600.4572" y="-1557.3" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.15s</text>
 </a>
 </g>
@@ -1225,12 +1225,12 @@ function handleMouseUp(evt) {
 <!-- N15&#45;&gt;N57 -->
 <g id="edge108" class="edge">
 <title>N15-&gt;N57</title>
-<g id="a_edge108"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).serveResponse ... runtime.mapassign_faststr (0.02s)">
+<g id="a_edge108"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).serveResponse ... runtime.mapassign_faststr (0.02s)">
 <path fill="none" stroke="#b2b1ae" stroke-dasharray="1,5" d="M1405.4031,-1658.6543C1371.7666,-1645.7307 1323.1403,-1624.9578 1284.4572,-1600 1222.2233,-1559.8477 1159.4886,-1500.7735 1122.3076,-1463.358"/>
 <polygon fill="#b2b1ae" stroke="#b2b1ae" points="1124.7352,-1460.8351 1115.2198,-1456.1757 1119.7527,-1465.752 1124.7352,-1460.8351"/>
 </a>
 </g>
-<g id="a_edge108-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).serveResponse ... runtime.mapassign_faststr (0.02s)">
+<g id="a_edge108-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).serveResponse ... runtime.mapassign_faststr (0.02s)">
 <text text-anchor="middle" x="1301.4572" y="-1557.3" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.02s</text>
 </a>
 </g>
@@ -1422,7 +1422,7 @@ function handleMouseUp(evt) {
 <!-- N19 -->
 <g id="node19" class="node">
 <title>N19</title>
-<g id="a_node19"><a xlink:title="github.com/zalando/skipper/proxy.tryCatch (0.34s)">
+<g id="a_node19"><a xlink:title="github.com/ardaguclu/skipper/proxy.tryCatch (0.34s)">
 <polygon fill="#ede8e3" stroke="#b2916b" points="753.9572,-1446 676.9572,-1446 676.9572,-1410 753.9572,-1410 753.9572,-1446"/>
 <text text-anchor="middle" x="715.4572" y="-1435.1" font-family="Times,serif" font-size="8.00" fill="#000000">proxy</text>
 <text text-anchor="middle" x="715.4572" y="-1426.1" font-family="Times,serif" font-size="8.00" fill="#000000">tryCatch</text>
@@ -1433,7 +1433,7 @@ function handleMouseUp(evt) {
 <!-- N34 -->
 <g id="node34" class="node">
 <title>N34</title>
-<g id="a_node34"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToResponse.func1 (0.23s)">
+<g id="a_node34"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToResponse.func1 (0.23s)">
 <polygon fill="#edeae6" stroke="#b29e82" points="836.4572,-1334 742.4572,-1334 742.4572,-1281 836.4572,-1281 836.4572,-1334"/>
 <text text-anchor="middle" x="789.4572" y="-1323.6" font-family="Times,serif" font-size="8.00" fill="#000000">proxy</text>
 <text text-anchor="middle" x="789.4572" y="-1314.6" font-family="Times,serif" font-size="8.00" fill="#000000">(*Proxy)</text>
@@ -1446,12 +1446,12 @@ function handleMouseUp(evt) {
 <!-- N19&#45;&gt;N34 -->
 <g id="edge27" class="edge">
 <title>N19-&gt;N34</title>
-<g id="a_edge27"><a xlink:title="github.com/zalando/skipper/proxy.tryCatch -&gt; github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToResponse.func1 (0.23s)">
+<g id="a_edge27"><a xlink:title="github.com/ardaguclu/skipper/proxy.tryCatch -&gt; github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToResponse.func1 (0.23s)">
 <path fill="none" stroke="#b29e82" d="M726.5357,-1409.9599C737.3794,-1392.3023 754.1926,-1364.9241 767.7118,-1342.9097"/>
 <polygon fill="#b29e82" stroke="#b29e82" points="770.8374,-1344.5083 773.088,-1334.1553 764.8723,-1340.8451 770.8374,-1344.5083"/>
 </a>
 </g>
-<g id="a_edge27-label"><a xlink:title="github.com/zalando/skipper/proxy.tryCatch -&gt; github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToResponse.func1 (0.23s)">
+<g id="a_edge27-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.tryCatch -&gt; github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToResponse.func1 (0.23s)">
 <text text-anchor="middle" x="778.4572" y="-1363.3" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.23s</text>
 </a>
 </g>
@@ -1459,7 +1459,7 @@ function handleMouseUp(evt) {
 <!-- N51 -->
 <g id="node51" class="node">
 <title>N51</title>
-<g id="a_node51"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToRequest.func1 (0.11s)">
+<g id="a_node51"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToRequest.func1 (0.11s)">
 <polygon fill="#edecea" stroke="#b2aa9b" points="685.9572,-1334 596.9572,-1334 596.9572,-1281 685.9572,-1281 685.9572,-1334"/>
 <text text-anchor="middle" x="641.4572" y="-1323.6" font-family="Times,serif" font-size="8.00" fill="#000000">proxy</text>
 <text text-anchor="middle" x="641.4572" y="-1314.6" font-family="Times,serif" font-size="8.00" fill="#000000">(*Proxy)</text>
@@ -1472,12 +1472,12 @@ function handleMouseUp(evt) {
 <!-- N19&#45;&gt;N51 -->
 <g id="edge52" class="edge">
 <title>N19-&gt;N51</title>
-<g id="a_edge52"><a xlink:title="github.com/zalando/skipper/proxy.tryCatch -&gt; github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToRequest.func1 (0.11s)">
+<g id="a_edge52"><a xlink:title="github.com/ardaguclu/skipper/proxy.tryCatch -&gt; github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToRequest.func1 (0.11s)">
 <path fill="none" stroke="#b2aa9b" d="M704.3786,-1409.9599C693.5349,-1392.3023 676.7218,-1364.9241 663.2025,-1342.9097"/>
 <polygon fill="#b2aa9b" stroke="#b2aa9b" points="666.042,-1340.8451 657.8264,-1334.1553 660.077,-1344.5083 666.042,-1340.8451"/>
 </a>
 </g>
-<g id="a_edge52-label"><a xlink:title="github.com/zalando/skipper/proxy.tryCatch -&gt; github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToRequest.func1 (0.11s)">
+<g id="a_edge52-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.tryCatch -&gt; github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToRequest.func1 (0.11s)">
 <text text-anchor="middle" x="702.4572" y="-1363.3" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.11s</text>
 </a>
 </g>
@@ -1648,12 +1648,12 @@ function handleMouseUp(evt) {
 <!-- N24&#45;&gt;N12 -->
 <g id="edge80" class="edge">
 <title>N24-&gt;N12</title>
-<g id="a_edge80"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToResponse -&gt; time.Now (0.05s)">
+<g id="a_edge80"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToResponse -&gt; time.Now (0.05s)">
 <path fill="none" stroke="#b2afa8" d="M676.3704,-1551.731C594.7453,-1534.778 431.8172,-1496.7507 391.4572,-1456 320.39,-1384.2448 301.4406,-1100.0906 335.4572,-1005 338.5252,-996.4236 343.727,-988.2151 349.3824,-981.0176"/>
 <polygon fill="#b2afa8" stroke="#b2afa8" points="352.3249,-982.9596 356.129,-973.0712 346.9888,-978.4291 352.3249,-982.9596"/>
 </a>
 </g>
-<g id="a_edge80-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToResponse -&gt; time.Now (0.05s)">
+<g id="a_edge80-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToResponse -&gt; time.Now (0.05s)">
 <text text-anchor="middle" x="344.4572" y="-1251.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.05s</text>
 </a>
 </g>
@@ -1661,12 +1661,12 @@ function handleMouseUp(evt) {
 <!-- N24&#45;&gt;N19 -->
 <g id="edge25" class="edge">
 <title>N24-&gt;N19</title>
-<g id="a_edge25"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToResponse -&gt; github.com/zalando/skipper/proxy.tryCatch (0.23s)">
+<g id="a_edge25"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToResponse -&gt; github.com/ardaguclu/skipper/proxy.tryCatch (0.23s)">
 <path fill="none" stroke="#b29e82" d="M693.7474,-1538.9728C683.3835,-1529.4935 672.9718,-1517.482 667.4572,-1504 662.4093,-1491.6592 662.224,-1486.2634 667.4572,-1474 670.7062,-1466.3863 675.902,-1459.4283 681.6989,-1453.3561"/>
 <polygon fill="#b29e82" stroke="#b29e82" points="684.4326,-1455.5861 689.2617,-1446.1558 679.6058,-1450.5163 684.4326,-1455.5861"/>
 </a>
 </g>
-<g id="a_edge25-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToResponse -&gt; github.com/zalando/skipper/proxy.tryCatch (0.23s)">
+<g id="a_edge25-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToResponse -&gt; github.com/ardaguclu/skipper/proxy.tryCatch (0.23s)">
 <text text-anchor="middle" x="684.4572" y="-1485.3" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.23s</text>
 </a>
 </g>
@@ -1674,7 +1674,7 @@ function handleMouseUp(evt) {
 <!-- N66 -->
 <g id="node66" class="node">
 <title>N66</title>
-<g id="a_node66"><a xlink:title="github.com/zalando/skipper/proxy.(*proxyTracing).logFilterEvent (0.20s)">
+<g id="a_node66"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*proxyTracing).logFilterEvent (0.20s)">
 <polygon fill="#edeae7" stroke="#b2a188" points="857.9572,-1450 780.9572,-1450 780.9572,-1406 857.9572,-1406 857.9572,-1450"/>
 <text text-anchor="middle" x="819.4572" y="-1439.6" font-family="Times,serif" font-size="8.00" fill="#000000">proxy</text>
 <text text-anchor="middle" x="819.4572" y="-1430.6" font-family="Times,serif" font-size="8.00" fill="#000000">(*proxyTracing)</text>
@@ -1686,12 +1686,12 @@ function handleMouseUp(evt) {
 <!-- N24&#45;&gt;N66 -->
 <g id="edge76" class="edge">
 <title>N24-&gt;N66</title>
-<g id="a_edge76"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToResponse ... github.com/zalando/skipper/proxy.(*proxyTracing).logFilterEvent (0.06s)">
+<g id="a_edge76"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToResponse ... github.com/ardaguclu/skipper/proxy.(*proxyTracing).logFilterEvent (0.06s)">
 <path fill="none" stroke="#b2afa5" stroke-dasharray="1,5" d="M717.6124,-1538.79C714.0132,-1520.0213 712.1496,-1493.2033 724.4572,-1474 734.5411,-1458.2663 745.6256,-1464.12 762.4572,-1456 765.4362,-1454.5628 768.4998,-1453.078 771.5873,-1451.5763"/>
 <polygon fill="#b2afa5" stroke="#b2afa5" points="773.4077,-1454.5826 780.8604,-1447.0521 770.3383,-1448.2914 773.4077,-1454.5826"/>
 </a>
 </g>
-<g id="a_edge76-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToResponse ... github.com/zalando/skipper/proxy.(*proxyTracing).logFilterEvent (0.06s)">
+<g id="a_edge76-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToResponse ... github.com/ardaguclu/skipper/proxy.(*proxyTracing).logFilterEvent (0.06s)">
 <text text-anchor="middle" x="746.4572" y="-1492.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.06s</text>
 <text text-anchor="middle" x="746.4572" y="-1477.8" font-family="Times,serif" font-size="14.00" fill="#000000"> (inline)</text>
 </a>
@@ -1865,12 +1865,12 @@ function handleMouseUp(evt) {
 <!-- N27&#45;&gt;N12 -->
 <g id="edge106" class="edge">
 <title>N27-&gt;N12</title>
-<g id="a_edge106"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToRequest -&gt; time.Now (0.02s)">
+<g id="a_edge106"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToRequest -&gt; time.Now (0.02s)">
 <path fill="none" stroke="#b2b1ae" d="M813.053,-1538.942C802.5551,-1532.8558 790.787,-1526.6539 779.4572,-1522 750.5387,-1510.1214 739.1338,-1518.5391 711.4572,-1504 693.3197,-1494.472 693.4091,-1485.506 676.4572,-1474 603.752,-1424.6519 562.7227,-1444.9907 501.4572,-1382 407.9125,-1285.8211 398.7988,-1241.6919 368.4572,-1111 358.2668,-1067.1066 364.2597,-1014.4495 369.7171,-982.9114"/>
 <polygon fill="#b2b1ae" stroke="#b2b1ae" points="373.1608,-983.5361 371.5232,-973.0686 366.2758,-982.2727 373.1608,-983.5361"/>
 </a>
 </g>
-<g id="a_edge106-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToRequest -&gt; time.Now (0.02s)">
+<g id="a_edge106-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToRequest -&gt; time.Now (0.02s)">
 <text text-anchor="middle" x="430.4572" y="-1251.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.02s</text>
 </a>
 </g>
@@ -1878,12 +1878,12 @@ function handleMouseUp(evt) {
 <!-- N27&#45;&gt;N19 -->
 <g id="edge51" class="edge">
 <title>N27-&gt;N19</title>
-<g id="a_edge51"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToRequest -&gt; github.com/zalando/skipper/proxy.tryCatch (0.11s)">
+<g id="a_edge51"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToRequest -&gt; github.com/ardaguclu/skipper/proxy.tryCatch (0.11s)">
 <path fill="none" stroke="#b2aa9b" d="M824.4557,-1538.8624C814.0688,-1528.5474 801.8294,-1515.9383 791.4572,-1504 780.4382,-1491.3172 779.9711,-1486.2352 768.4572,-1474 761.6509,-1466.7673 753.8054,-1459.4767 746.2725,-1452.8983"/>
 <polygon fill="#b2aa9b" stroke="#b2aa9b" points="748.1624,-1449.9096 738.2853,-1446.0761 743.616,-1455.2323 748.1624,-1449.9096"/>
 </a>
 </g>
-<g id="a_edge51-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToRequest -&gt; github.com/zalando/skipper/proxy.tryCatch (0.11s)">
+<g id="a_edge51-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToRequest -&gt; github.com/ardaguclu/skipper/proxy.tryCatch (0.11s)">
 <text text-anchor="middle" x="808.4572" y="-1485.3" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.11s</text>
 </a>
 </g>
@@ -1891,12 +1891,12 @@ function handleMouseUp(evt) {
 <!-- N27&#45;&gt;N66 -->
 <g id="edge44" class="edge">
 <title>N27-&gt;N66</title>
-<g id="a_edge44"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToRequest ... github.com/zalando/skipper/proxy.(*proxyTracing).logFilterEvent (0.14s)">
+<g id="a_edge44"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToRequest ... github.com/ardaguclu/skipper/proxy.(*proxyTracing).logFilterEvent (0.14s)">
 <path fill="none" stroke="#b2a895" stroke-dasharray="1,5" d="M842.7706,-1538.7388C838.2481,-1517.2566 831.3524,-1484.5023 826.2325,-1460.1827"/>
 <polygon fill="#b2a895" stroke="#b2a895" points="829.6442,-1459.3983 824.159,-1450.3338 822.7943,-1460.8404 829.6442,-1459.3983"/>
 </a>
 </g>
-<g id="a_edge44-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToRequest ... github.com/zalando/skipper/proxy.(*proxyTracing).logFilterEvent (0.14s)">
+<g id="a_edge44-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToRequest ... github.com/ardaguclu/skipper/proxy.(*proxyTracing).logFilterEvent (0.14s)">
 <text text-anchor="middle" x="857.4572" y="-1492.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.14s</text>
 <text text-anchor="middle" x="857.4572" y="-1477.8" font-family="Times,serif" font-size="14.00" fill="#000000"> (inline)</text>
 </a>
@@ -2020,12 +2020,12 @@ function handleMouseUp(evt) {
 <!-- N34&#45;&gt;N30 -->
 <g id="edge81" class="edge">
 <title>N34-&gt;N30</title>
-<g id="a_edge81"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToResponse.func1 ... runtime.selectgo (0.05s)">
+<g id="a_edge81"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToResponse.func1 ... runtime.selectgo (0.05s)">
 <path fill="none" stroke="#b2afa8" stroke-dasharray="1,5" d="M794.5663,-1280.8908C800.2599,-1242.8233 804.544,-1172.6124 769.4572,-1129 753.8634,-1109.6171 731.96,-1130.4558 716.4572,-1111 690.7028,-1078.6788 689.8654,-1029.8385 693.4507,-995.4334"/>
 <polygon fill="#b2afa8" stroke="#b2afa8" points="696.9557,-995.6018 694.6826,-985.2537 690.0064,-994.7607 696.9557,-995.6018"/>
 </a>
 </g>
-<g id="a_edge81-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToResponse.func1 ... runtime.selectgo (0.05s)">
+<g id="a_edge81-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToResponse.func1 ... runtime.selectgo (0.05s)">
 <text text-anchor="middle" x="796.4572" y="-1132.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.05s</text>
 </a>
 </g>
@@ -2033,7 +2033,7 @@ function handleMouseUp(evt) {
 <!-- N47 -->
 <g id="node47" class="node">
 <title>N47</title>
-<g id="a_node47"><a xlink:title="github.com/zalando/skipper/filters/apiusagemonitoring.(*apiUsageMonitoringFilter).Response (0.12s)">
+<g id="a_node47"><a xlink:title="github.com/ardaguclu/skipper/filters/apiusagemonitoring.(*apiUsageMonitoringFilter).Response (0.12s)">
 <polygon fill="#edece9" stroke="#b2a999" points="1085.4572,-1218 975.4572,-1218 975.4572,-1174 1085.4572,-1174 1085.4572,-1218"/>
 <text text-anchor="middle" x="1030.4572" y="-1207.6" font-family="Times,serif" font-size="8.00" fill="#000000">apiusagemonitoring</text>
 <text text-anchor="middle" x="1030.4572" y="-1198.6" font-family="Times,serif" font-size="8.00" fill="#000000">(*apiUsageMonitoringFilter)</text>
@@ -2045,12 +2045,12 @@ function handleMouseUp(evt) {
 <!-- N34&#45;&gt;N47 -->
 <g id="edge48" class="edge">
 <title>N34-&gt;N47</title>
-<g id="a_edge48"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToResponse.func1 -&gt; github.com/zalando/skipper/filters/apiusagemonitoring.(*apiUsageMonitoringFilter).Response (0.12s)">
+<g id="a_edge48"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToResponse.func1 -&gt; github.com/ardaguclu/skipper/filters/apiusagemonitoring.(*apiUsageMonitoringFilter).Response (0.12s)">
 <path fill="none" stroke="#b2a999" d="M836.5057,-1294.2673C861.8972,-1286.4473 893.4755,-1275.6126 920.4572,-1263 944.2788,-1251.8646 969.4266,-1236.8215 989.6555,-1223.8106"/>
 <polygon fill="#b2a999" stroke="#b2a999" points="991.8219,-1226.5765 998.2926,-1218.1872 988.0025,-1220.7103 991.8219,-1226.5765"/>
 </a>
 </g>
-<g id="a_edge48-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToResponse.func1 -&gt; github.com/zalando/skipper/filters/apiusagemonitoring.(*apiUsageMonitoringFilter).Response (0.12s)">
+<g id="a_edge48-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToResponse.func1 -&gt; github.com/ardaguclu/skipper/filters/apiusagemonitoring.(*apiUsageMonitoringFilter).Response (0.12s)">
 <text text-anchor="middle" x="966.4572" y="-1251.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.12s</text>
 </a>
 </g>
@@ -2084,12 +2084,12 @@ function handleMouseUp(evt) {
 <!-- N36&#45;&gt;N23 -->
 <g id="edge136" class="edge">
 <title>N36-&gt;N23</title>
-<g id="a_edge136"><a xlink:title="github.com/zalando/skipper/proxy.(*proxyTracing).logEvent -&gt; runtime.newobject (0.01s)">
+<g id="a_edge136"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*proxyTracing).logEvent -&gt; runtime.newobject (0.01s)">
 <path fill="none" stroke="#b2b2b0" d="M970.2813,-1301.1841C1009.2719,-1292.5499 1067.3435,-1272.9139 1094.4572,-1230 1110.6,-1204.4502 1095.3449,-1192.2092 1094.4572,-1162 1092.4072,-1092.2396 1081.96,-1074.1413 1091.4572,-1005 1092.0006,-1001.044 1092.7751,-996.9601 1093.6845,-992.9108"/>
 <polygon fill="#b2b2b0" stroke="#b2b2b0" points="1097.1298,-993.5608 1096.1679,-983.0097 1090.3401,-991.8577 1097.1298,-993.5608"/>
 </a>
 </g>
-<g id="a_edge136-label"><a xlink:title="github.com/zalando/skipper/proxy.(*proxyTracing).logEvent -&gt; runtime.newobject (0.01s)">
+<g id="a_edge136-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*proxyTracing).logEvent -&gt; runtime.newobject (0.01s)">
 <text text-anchor="middle" x="1110.4572" y="-1132.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.01s</text>
 </a>
 </g>
@@ -2097,12 +2097,12 @@ function handleMouseUp(evt) {
 <!-- N36&#45;&gt;N69 -->
 <g id="edge135" class="edge">
 <title>N36-&gt;N69</title>
-<g id="a_edge135"><a xlink:title="github.com/zalando/skipper/proxy.(*proxyTracing).logEvent -&gt; runtime.convTstring (0.01s)">
+<g id="a_edge135"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*proxyTracing).logEvent -&gt; runtime.convTstring (0.01s)">
 <path fill="none" stroke="#b2b2b0" d="M930.786,-1285.159C929.5905,-1245.3654 927.0798,-1161.7942 925.6053,-1112.7171"/>
 <polygon fill="#b2b2b0" stroke="#b2b2b0" points="929.0973,-1112.3924 925.2984,-1102.5021 922.1004,-1112.6027 929.0973,-1112.3924"/>
 </a>
 </g>
-<g id="a_edge135-label"><a xlink:title="github.com/zalando/skipper/proxy.(*proxyTracing).logEvent -&gt; runtime.convTstring (0.01s)">
+<g id="a_edge135-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*proxyTracing).logEvent -&gt; runtime.convTstring (0.01s)">
 <text text-anchor="middle" x="946.4572" y="-1192.3" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.01s</text>
 </a>
 </g>
@@ -2110,12 +2110,12 @@ function handleMouseUp(evt) {
 <!-- N36&#45;&gt;N71 -->
 <g id="edge26" class="edge">
 <title>N36-&gt;N71</title>
-<g id="a_edge26"><a xlink:title="github.com/zalando/skipper/proxy.(*proxyTracing).logEvent -&gt; github.com/lightstep/lightstep-tracer-go.(*spanImpl).LogKV (0.23s)">
+<g id="a_edge26"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*proxyTracing).logEvent -&gt; github.com/lightstep/lightstep-tracer-go.(*spanImpl).LogKV (0.23s)">
 <path fill="none" stroke="#b29e82" d="M903.5148,-1285.3186C896.121,-1278.6354 888.5199,-1270.9496 882.4572,-1263 874.2999,-1252.304 867.1974,-1239.353 861.6235,-1227.6996"/>
 <polygon fill="#b29e82" stroke="#b29e82" points="864.6605,-1225.9254 857.3114,-1218.2938 858.2973,-1228.8426 864.6605,-1225.9254"/>
 </a>
 </g>
-<g id="a_edge26-label"><a xlink:title="github.com/zalando/skipper/proxy.(*proxyTracing).logEvent -&gt; github.com/lightstep/lightstep-tracer-go.(*spanImpl).LogKV (0.23s)">
+<g id="a_edge26-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*proxyTracing).logEvent -&gt; github.com/lightstep/lightstep-tracer-go.(*spanImpl).LogKV (0.23s)">
 <text text-anchor="middle" x="899.4572" y="-1251.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.23s</text>
 </a>
 </g>
@@ -2123,7 +2123,7 @@ function handleMouseUp(evt) {
 <!-- N37 -->
 <g id="node37" class="node">
 <title>N37</title>
-<g id="a_node37"><a xlink:title="github.com/zalando/skipper/dataclients/kubernetes.(*Client).LoadUpdate (0.31s)">
+<g id="a_node37"><a xlink:title="github.com/ardaguclu/skipper/dataclients/kubernetes.(*Client).LoadUpdate (0.31s)">
 <polygon fill="#ede9e4" stroke="#b29571" points="2057.9572,-1790 1980.9572,-1790 1980.9572,-1746 2057.9572,-1746 2057.9572,-1790"/>
 <text text-anchor="middle" x="2019.4572" y="-1779.6" font-family="Times,serif" font-size="8.00" fill="#000000">kubernetes</text>
 <text text-anchor="middle" x="2019.4572" y="-1770.6" font-family="Times,serif" font-size="8.00" fill="#000000">(*Client)</text>
@@ -2135,12 +2135,12 @@ function handleMouseUp(evt) {
 <!-- N37&#45;&gt;N45 -->
 <g id="edge84" class="edge">
 <title>N37-&gt;N45</title>
-<g id="a_edge84"><a xlink:title="github.com/zalando/skipper/dataclients/kubernetes.(*Client).LoadUpdate ... github.com/zalando/skipper/eskip.(*Route).Print (0.04s)">
+<g id="a_edge84"><a xlink:title="github.com/ardaguclu/skipper/dataclients/kubernetes.(*Client).LoadUpdate ... github.com/ardaguclu/skipper/eskip.(*Route).Print (0.04s)">
 <path fill="none" stroke="#b2b0aa" stroke-dasharray="1,5" d="M1980.7676,-1766.8121C1895.3413,-1763.7417 1693.2169,-1753.8918 1630.4572,-1728 1558.5919,-1698.3516 1563.2045,-1654.2969 1494.4572,-1618 1469.8372,-1605.0012 1457.1045,-1616.193 1434.4572,-1600 1382.9768,-1563.1911 1345.0536,-1497.9599 1325.7735,-1459.2772"/>
 <polygon fill="#b2b0aa" stroke="#b2b0aa" points="1328.8033,-1457.5047 1321.2766,-1450.0481 1322.5105,-1460.5709 1328.8033,-1457.5047"/>
 </a>
 </g>
-<g id="a_edge84-label"><a xlink:title="github.com/zalando/skipper/dataclients/kubernetes.(*Client).LoadUpdate ... github.com/zalando/skipper/eskip.(*Route).Print (0.04s)">
+<g id="a_edge84-label"><a xlink:title="github.com/ardaguclu/skipper/dataclients/kubernetes.(*Client).LoadUpdate ... github.com/ardaguclu/skipper/eskip.(*Route).Print (0.04s)">
 <text text-anchor="middle" x="1534.4572" y="-1621.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.04s</text>
 </a>
 </g>
@@ -2161,12 +2161,12 @@ function handleMouseUp(evt) {
 <!-- N37&#45;&gt;N60 -->
 <g id="edge103" class="edge">
 <title>N37-&gt;N60</title>
-<g id="a_edge103"><a xlink:title="github.com/zalando/skipper/dataclients/kubernetes.(*Client).LoadUpdate ... regexp.(*Regexp).doExecute (0.02s)">
+<g id="a_edge103"><a xlink:title="github.com/ardaguclu/skipper/dataclients/kubernetes.(*Client).LoadUpdate ... regexp.(*Regexp).doExecute (0.02s)">
 <path fill="none" stroke="#b2b1ae" stroke-dasharray="1,5" d="M1980.738,-1766.3875C1884.9262,-1761.3472 1644.4572,-1741.8398 1644.4572,-1673 1644.4572,-1673 1644.4572,-1673 1644.4572,-1489 1644.4572,-1350.0573 1808.7413,-1391.9595 1860.4572,-1263 1878.8092,-1217.2371 1871.7995,-1160.18 1862.8946,-1120.8969"/>
 <polygon fill="#b2b1ae" stroke="#b2b1ae" points="1866.2723,-1119.9726 1860.5415,-1111.0614 1859.4644,-1121.6014 1866.2723,-1119.9726"/>
 </a>
 </g>
-<g id="a_edge103-label"><a xlink:title="github.com/zalando/skipper/dataclients/kubernetes.(*Client).LoadUpdate ... regexp.(*Regexp).doExecute (0.02s)">
+<g id="a_edge103-label"><a xlink:title="github.com/ardaguclu/skipper/dataclients/kubernetes.(*Client).LoadUpdate ... regexp.(*Regexp).doExecute (0.02s)">
 <text text-anchor="middle" x="1700.4572" y="-1424.3" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.02s</text>
 </a>
 </g>
@@ -2174,7 +2174,7 @@ function handleMouseUp(evt) {
 <!-- N78 -->
 <g id="node78" class="node">
 <title>N78</title>
-<g id="a_node78"><a xlink:title="github.com/zalando/skipper/dataclients/kubernetes.(*clusterClient).fetchClusterState (0.24s)">
+<g id="a_node78"><a xlink:title="github.com/ardaguclu/skipper/dataclients/kubernetes.(*clusterClient).fetchClusterState (0.24s)">
 <polygon fill="#edeae6" stroke="#b29d80" points="2057.9572,-1695 1980.9572,-1695 1980.9572,-1651 2057.9572,-1651 2057.9572,-1695"/>
 <text text-anchor="middle" x="2019.4572" y="-1684.6" font-family="Times,serif" font-size="8.00" fill="#000000">kubernetes</text>
 <text text-anchor="middle" x="2019.4572" y="-1675.6" font-family="Times,serif" font-size="8.00" fill="#000000">(*clusterClient)</text>
@@ -2186,12 +2186,12 @@ function handleMouseUp(evt) {
 <!-- N37&#45;&gt;N78 -->
 <g id="edge22" class="edge">
 <title>N37-&gt;N78</title>
-<g id="a_edge22"><a xlink:title="github.com/zalando/skipper/dataclients/kubernetes.(*Client).LoadUpdate ... github.com/zalando/skipper/dataclients/kubernetes.(*clusterClient).fetchClusterState (0.24s)">
+<g id="a_edge22"><a xlink:title="github.com/ardaguclu/skipper/dataclients/kubernetes.(*Client).LoadUpdate ... github.com/ardaguclu/skipper/dataclients/kubernetes.(*clusterClient).fetchClusterState (0.24s)">
 <path fill="none" stroke="#b29d80" stroke-dasharray="1,5" d="M2019.4572,-1745.9663C2019.4572,-1733.9427 2019.4572,-1718.8283 2019.4572,-1705.4785"/>
 <polygon fill="#b29d80" stroke="#b29d80" points="2022.9573,-1705.2433 2019.4572,-1695.2433 2015.9573,-1705.2433 2022.9573,-1705.2433"/>
 </a>
 </g>
-<g id="a_edge22-label"><a xlink:title="github.com/zalando/skipper/dataclients/kubernetes.(*Client).LoadUpdate ... github.com/zalando/skipper/dataclients/kubernetes.(*clusterClient).fetchClusterState (0.24s)">
+<g id="a_edge22-label"><a xlink:title="github.com/ardaguclu/skipper/dataclients/kubernetes.(*Client).LoadUpdate ... github.com/ardaguclu/skipper/dataclients/kubernetes.(*clusterClient).fetchClusterState (0.24s)">
 <text text-anchor="middle" x="2036.4572" y="-1716.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.24s</text>
 </a>
 </g>
@@ -2250,7 +2250,7 @@ function handleMouseUp(evt) {
 <!-- N41 -->
 <g id="node41" class="node">
 <title>N41</title>
-<g id="a_node41"><a xlink:title="github.com/zalando/skipper/routing.receiveFromClient (0.31s)">
+<g id="a_node41"><a xlink:title="github.com/ardaguclu/skipper/routing.receiveFromClient (0.31s)">
 <polygon fill="#ede9e4" stroke="#b29571" points="2057.9572,-1881 1980.9572,-1881 1980.9572,-1845 2057.9572,-1845 2057.9572,-1881"/>
 <text text-anchor="middle" x="2019.4572" y="-1870.1" font-family="Times,serif" font-size="8.00" fill="#000000">routing</text>
 <text text-anchor="middle" x="2019.4572" y="-1861.1" font-family="Times,serif" font-size="8.00" fill="#000000">receiveFromClient</text>
@@ -2261,12 +2261,12 @@ function handleMouseUp(evt) {
 <!-- N41&#45;&gt;N37 -->
 <g id="edge13" class="edge">
 <title>N41-&gt;N37</title>
-<g id="a_edge13"><a xlink:title="github.com/zalando/skipper/routing.receiveFromClient -&gt; github.com/zalando/skipper/dataclients/kubernetes.(*Client).LoadUpdate (0.31s)">
+<g id="a_edge13"><a xlink:title="github.com/ardaguclu/skipper/routing.receiveFromClient -&gt; github.com/ardaguclu/skipper/dataclients/kubernetes.(*Client).LoadUpdate (0.31s)">
 <path fill="none" stroke="#b29571" d="M2019.4572,-1844.683C2019.4572,-1832.1876 2019.4572,-1815.2931 2019.4572,-1800.542"/>
 <polygon fill="#b29571" stroke="#b29571" points="2022.9573,-1800.2732 2019.4572,-1790.2733 2015.9573,-1800.2733 2022.9573,-1800.2732"/>
 </a>
 </g>
-<g id="a_edge13-label"><a xlink:title="github.com/zalando/skipper/routing.receiveFromClient -&gt; github.com/zalando/skipper/dataclients/kubernetes.(*Client).LoadUpdate (0.31s)">
+<g id="a_edge13-label"><a xlink:title="github.com/ardaguclu/skipper/routing.receiveFromClient -&gt; github.com/ardaguclu/skipper/dataclients/kubernetes.(*Client).LoadUpdate (0.31s)">
 <text text-anchor="middle" x="2036.4572" y="-1811.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.31s</text>
 </a>
 </g>
@@ -2274,12 +2274,12 @@ function handleMouseUp(evt) {
 <!-- N42&#45;&gt;N58 -->
 <g id="edge126" class="edge">
 <title>N42-&gt;N58</title>
-<g id="a_edge126"><a xlink:title="github.com/zalando/skipper/logging.(*LoggingWriter).Flush ... runtime.getitab (0.01s)">
+<g id="a_edge126"><a xlink:title="github.com/ardaguclu/skipper/logging.(*LoggingWriter).Flush ... runtime.getitab (0.01s)">
 <path fill="none" stroke="#b2b2b0" stroke-dasharray="1,5" d="M1575.0871,-1405.887C1589.9174,-1347.637 1630.221,-1189.3331 1649.2495,-1114.5937"/>
 <polygon fill="#b2b2b0" stroke="#b2b2b0" points="1652.7129,-1115.1757 1651.7884,-1104.6213 1645.9293,-1113.4486 1652.7129,-1115.1757"/>
 </a>
 </g>
-<g id="a_edge126-label"><a xlink:title="github.com/zalando/skipper/logging.(*LoggingWriter).Flush ... runtime.getitab (0.01s)">
+<g id="a_edge126-label"><a xlink:title="github.com/ardaguclu/skipper/logging.(*LoggingWriter).Flush ... runtime.getitab (0.01s)">
 <text text-anchor="middle" x="1631.4572" y="-1251.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.01s</text>
 </a>
 </g>
@@ -2299,12 +2299,12 @@ function handleMouseUp(evt) {
 <!-- N42&#45;&gt;N80 -->
 <g id="edge23" class="edge">
 <title>N42-&gt;N80</title>
-<g id="a_edge23"><a xlink:title="github.com/zalando/skipper/logging.(*LoggingWriter).Flush ... net/http.(*chunkWriter).flush (0.24s)">
+<g id="a_edge23"><a xlink:title="github.com/ardaguclu/skipper/logging.(*LoggingWriter).Flush ... net/http.(*chunkWriter).flush (0.24s)">
 <path fill="none" stroke="#b29d80" stroke-dasharray="1,5" d="M1598.123,-1405.8373C1606.6755,-1398.6436 1615.8025,-1390.3533 1623.4572,-1382 1635.8014,-1368.5292 1647.7602,-1352.11 1657.1844,-1338.1175"/>
 <polygon fill="#b29d80" stroke="#b29d80" points="1660.1099,-1340.0388 1662.7055,-1329.7668 1654.2708,-1336.1782 1660.1099,-1340.0388"/>
 </a>
 </g>
-<g id="a_edge23-label"><a xlink:title="github.com/zalando/skipper/logging.(*LoggingWriter).Flush ... net/http.(*chunkWriter).flush (0.24s)">
+<g id="a_edge23-label"><a xlink:title="github.com/ardaguclu/skipper/logging.(*LoggingWriter).Flush ... net/http.(*chunkWriter).flush (0.24s)">
 <text text-anchor="middle" x="1663.4572" y="-1363.3" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.24s</text>
 </a>
 </g>
@@ -2414,12 +2414,12 @@ function handleMouseUp(evt) {
 <!-- N45&#45;&gt;N69 -->
 <g id="edge123" class="edge">
 <title>N45-&gt;N69</title>
-<g id="a_edge123"><a xlink:title="github.com/zalando/skipper/eskip.(*Route).Print ... runtime.convTstring (0.01s)">
+<g id="a_edge123"><a xlink:title="github.com/ardaguclu/skipper/eskip.(*Route).Print ... runtime.convTstring (0.01s)">
 <path fill="none" stroke="#b2b2b0" stroke-dasharray="1,5" d="M1304.2885,-1405.9755C1298.5987,-1390.2021 1289.7331,-1368.859 1278.4572,-1352 1245.7809,-1303.1443 1141.6576,-1197.0249 1094.4572,-1162 1074.6933,-1147.3343 1020.7875,-1120.3007 978.9235,-1100.1477"/>
 <polygon fill="#b2b2b0" stroke="#b2b2b0" points="980.1818,-1096.8696 969.6515,-1095.7016 977.1551,-1103.1814 980.1818,-1096.8696"/>
 </a>
 </g>
-<g id="a_edge123-label"><a xlink:title="github.com/zalando/skipper/eskip.(*Route).Print ... runtime.convTstring (0.01s)">
+<g id="a_edge123-label"><a xlink:title="github.com/ardaguclu/skipper/eskip.(*Route).Print ... runtime.convTstring (0.01s)">
 <text text-anchor="middle" x="1218.4572" y="-1251.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.01s</text>
 </a>
 </g>
@@ -2427,7 +2427,7 @@ function handleMouseUp(evt) {
 <!-- N79 -->
 <g id="node79" class="node">
 <title>N79</title>
-<g id="a_node79"><a xlink:title="github.com/zalando/skipper/eskip.argsString (0.10s)">
+<g id="a_node79"><a xlink:title="github.com/ardaguclu/skipper/eskip.argsString (0.10s)">
 <polygon fill="#edecea" stroke="#b2ab9d" points="1419.9572,-1325.5 1342.9572,-1325.5 1342.9572,-1289.5 1419.9572,-1289.5 1419.9572,-1325.5"/>
 <text text-anchor="middle" x="1381.4572" y="-1314.6" font-family="Times,serif" font-size="8.00" fill="#000000">eskip</text>
 <text text-anchor="middle" x="1381.4572" y="-1305.6" font-family="Times,serif" font-size="8.00" fill="#000000">argsString</text>
@@ -2438,12 +2438,12 @@ function handleMouseUp(evt) {
 <!-- N45&#45;&gt;N79 -->
 <g id="edge55" class="edge">
 <title>N45-&gt;N79</title>
-<g id="a_edge55"><a xlink:title="github.com/zalando/skipper/eskip.(*Route).Print ... github.com/zalando/skipper/eskip.argsString (0.10s)">
+<g id="a_edge55"><a xlink:title="github.com/ardaguclu/skipper/eskip.(*Route).Print ... github.com/ardaguclu/skipper/eskip.argsString (0.10s)">
 <path fill="none" stroke="#b2ab9d" stroke-dasharray="1,5" d="M1324.2963,-1405.8984C1336.0385,-1385.6851 1353.4339,-1355.7401 1365.9484,-1334.1973"/>
 <polygon fill="#b2ab9d" stroke="#b2ab9d" points="1368.9855,-1335.9369 1370.9822,-1325.5319 1362.9327,-1332.4207 1368.9855,-1335.9369"/>
 </a>
 </g>
-<g id="a_edge55-label"><a xlink:title="github.com/zalando/skipper/eskip.(*Route).Print ... github.com/zalando/skipper/eskip.argsString (0.10s)">
+<g id="a_edge55-label"><a xlink:title="github.com/ardaguclu/skipper/eskip.(*Route).Print ... github.com/ardaguclu/skipper/eskip.argsString (0.10s)">
 <text text-anchor="middle" x="1371.4572" y="-1363.3" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.10s</text>
 </a>
 </g>
@@ -2514,12 +2514,12 @@ function handleMouseUp(evt) {
 <!-- N47&#45;&gt;N6 -->
 <g id="edge105" class="edge">
 <title>N47-&gt;N6</title>
-<g id="a_edge105"><a xlink:title="github.com/zalando/skipper/filters/apiusagemonitoring.(*apiUsageMonitoringFilter).Response ... runtime.nanotime (0.02s)">
+<g id="a_edge105"><a xlink:title="github.com/ardaguclu/skipper/filters/apiusagemonitoring.(*apiUsageMonitoringFilter).Response ... runtime.nanotime (0.02s)">
 <path fill="none" stroke="#b2b1ae" stroke-dasharray="1,5" d="M995.9654,-1173.907C987.0062,-1169.158 977.1427,-1164.7459 967.4572,-1162 900.6419,-1143.0574 724.6875,-1149.5027 655.4572,-1144 589.5503,-1138.7614 573.3951,-1133.8325 507.4572,-1129 485.438,-1127.3862 125.7112,-1126.9613 110.4572,-1111 20.1205,-1016.4746 82.5523,-849.1077 126.8644,-759.19"/>
 <polygon fill="#b2b1ae" stroke="#b2b1ae" points="130.0149,-760.7151 131.3589,-750.2059 123.7546,-757.5833 130.0149,-760.7151"/>
 </a>
 </g>
-<g id="a_edge105-label"><a xlink:title="github.com/zalando/skipper/filters/apiusagemonitoring.(*apiUsageMonitoringFilter).Response ... runtime.nanotime (0.02s)">
+<g id="a_edge105-label"><a xlink:title="github.com/ardaguclu/skipper/filters/apiusagemonitoring.(*apiUsageMonitoringFilter).Response ... runtime.nanotime (0.02s)">
 <text text-anchor="middle" x="87.4572" y="-951.3" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.02s</text>
 </a>
 </g>
@@ -2527,12 +2527,12 @@ function handleMouseUp(evt) {
 <!-- N47&#45;&gt;N23 -->
 <g id="edge125" class="edge">
 <title>N47-&gt;N23</title>
-<g id="a_edge125"><a xlink:title="github.com/zalando/skipper/filters/apiusagemonitoring.(*apiUsageMonitoringFilter).Response ... runtime.newobject (0.01s)">
+<g id="a_edge125"><a xlink:title="github.com/ardaguclu/skipper/filters/apiusagemonitoring.(*apiUsageMonitoringFilter).Response ... runtime.newobject (0.01s)">
 <path fill="none" stroke="#b2b2b0" stroke-dasharray="1,5" d="M1022.786,-1173.7549C1013.2281,-1142.1862 1000.3364,-1083.2045 1019.4572,-1038 1027.3045,-1019.4477 1041.5671,-1003.0304 1056.2511,-989.7967"/>
 <polygon fill="#b2b2b0" stroke="#b2b2b0" points="1058.6472,-992.3521 1063.9366,-983.172 1054.0769,-987.05 1058.6472,-992.3521"/>
 </a>
 </g>
-<g id="a_edge125-label"><a xlink:title="github.com/zalando/skipper/filters/apiusagemonitoring.(*apiUsageMonitoringFilter).Response ... runtime.newobject (0.01s)">
+<g id="a_edge125-label"><a xlink:title="github.com/ardaguclu/skipper/filters/apiusagemonitoring.(*apiUsageMonitoringFilter).Response ... runtime.newobject (0.01s)">
 <text text-anchor="middle" x="1036.4572" y="-1070.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.01s</text>
 </a>
 </g>
@@ -2551,12 +2551,12 @@ function handleMouseUp(evt) {
 <!-- N47&#45;&gt;N54 -->
 <g id="edge85" class="edge">
 <title>N47-&gt;N54</title>
-<g id="a_edge85"><a xlink:title="github.com/zalando/skipper/filters/apiusagemonitoring.(*apiUsageMonitoringFilter).Response ... encoding/json.Unmarshal (0.04s)">
+<g id="a_edge85"><a xlink:title="github.com/ardaguclu/skipper/filters/apiusagemonitoring.(*apiUsageMonitoringFilter).Response ... encoding/json.Unmarshal (0.04s)">
 <path fill="none" stroke="#b2b0aa" stroke-dasharray="1,5" d="M1085.7991,-1182.6248C1112.7994,-1176.2012 1145.7805,-1168.5049 1175.4572,-1162 1286.227,-1137.7201 1315.2673,-1137.7888 1425.4572,-1111 1452.2919,-1104.4761 1481.9633,-1096.1587 1506.0772,-1089.1119"/>
 <polygon fill="#b2b0aa" stroke="#b2b0aa" points="1507.1,-1092.4594 1515.7058,-1086.2796 1505.1245,-1085.7439 1507.1,-1092.4594"/>
 </a>
 </g>
-<g id="a_edge85-label"><a xlink:title="github.com/zalando/skipper/filters/apiusagemonitoring.(*apiUsageMonitoringFilter).Response ... encoding/json.Unmarshal (0.04s)">
+<g id="a_edge85-label"><a xlink:title="github.com/ardaguclu/skipper/filters/apiusagemonitoring.(*apiUsageMonitoringFilter).Response ... encoding/json.Unmarshal (0.04s)">
 <text text-anchor="middle" x="1360.4572" y="-1132.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.04s</text>
 </a>
 </g>
@@ -2564,12 +2564,12 @@ function handleMouseUp(evt) {
 <!-- N47&#45;&gt;N60 -->
 <g id="edge104" class="edge">
 <title>N47-&gt;N60</title>
-<g id="a_edge104"><a xlink:title="github.com/zalando/skipper/filters/apiusagemonitoring.(*apiUsageMonitoringFilter).Response ... regexp.(*Regexp).doExecute (0.02s)">
+<g id="a_edge104"><a xlink:title="github.com/ardaguclu/skipper/filters/apiusagemonitoring.(*apiUsageMonitoringFilter).Response ... regexp.(*Regexp).doExecute (0.02s)">
 <path fill="none" stroke="#b2b1ae" stroke-dasharray="1,5" d="M1085.7886,-1180.5702C1112.6435,-1173.7138 1145.5048,-1166.247 1175.4572,-1162 1329.6758,-1140.1331 1370.6587,-1161.2903 1525.4572,-1144 1611.0714,-1134.4373 1632.3769,-1129.7547 1716.4572,-1111 1741.3021,-1105.4582 1768.4489,-1098.2244 1791.7009,-1091.6597"/>
 <polygon fill="#b2b1ae" stroke="#b2b1ae" points="1792.751,-1094.9999 1801.4095,-1088.8941 1790.8332,-1088.2677 1792.751,-1094.9999"/>
 </a>
 </g>
-<g id="a_edge104-label"><a xlink:title="github.com/zalando/skipper/filters/apiusagemonitoring.(*apiUsageMonitoringFilter).Response ... regexp.(*Regexp).doExecute (0.02s)">
+<g id="a_edge104-label"><a xlink:title="github.com/ardaguclu/skipper/filters/apiusagemonitoring.(*apiUsageMonitoringFilter).Response ... regexp.(*Regexp).doExecute (0.02s)">
 <text text-anchor="middle" x="1647.4572" y="-1132.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.02s</text>
 </a>
 </g>
@@ -2577,12 +2577,12 @@ function handleMouseUp(evt) {
 <!-- N47&#45;&gt;N69 -->
 <g id="edge124" class="edge">
 <title>N47-&gt;N69</title>
-<g id="a_edge124"><a xlink:title="github.com/zalando/skipper/filters/apiusagemonitoring.(*apiUsageMonitoringFilter).Response ... runtime.convTstring (0.01s)">
+<g id="a_edge124"><a xlink:title="github.com/ardaguclu/skipper/filters/apiusagemonitoring.(*apiUsageMonitoringFilter).Response ... runtime.convTstring (0.01s)">
 <path fill="none" stroke="#b2b2b0" stroke-dasharray="1,5" d="M991.7995,-1173.8692C979.7171,-1165.623 967.0526,-1155.4484 957.4572,-1144 949.6266,-1134.6572 943.1851,-1123.1427 938.1375,-1112.1924"/>
 <polygon fill="#b2b2b0" stroke="#b2b2b0" points="941.248,-1110.5677 934.0607,-1102.7835 934.825,-1113.3507 941.248,-1110.5677"/>
 </a>
 </g>
-<g id="a_edge124-label"><a xlink:title="github.com/zalando/skipper/filters/apiusagemonitoring.(*apiUsageMonitoringFilter).Response ... runtime.convTstring (0.01s)">
+<g id="a_edge124-label"><a xlink:title="github.com/ardaguclu/skipper/filters/apiusagemonitoring.(*apiUsageMonitoringFilter).Response ... runtime.convTstring (0.01s)">
 <text text-anchor="middle" x="974.4572" y="-1132.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.01s</text>
 </a>
 </g>
@@ -2654,12 +2654,12 @@ function handleMouseUp(evt) {
 <!-- N51&#45;&gt;N23 -->
 <g id="edge131" class="edge">
 <title>N51-&gt;N23</title>
-<g id="a_edge131"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToRequest.func1 ... runtime.newobject (0.01s)">
+<g id="a_edge131"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToRequest.func1 ... runtime.newobject (0.01s)">
 <path fill="none" stroke="#b2b2b0" stroke-dasharray="1,5" d="M686.3208,-1291.7766C699.4299,-1284.9656 712.3891,-1275.5913 720.4572,-1263 752.6961,-1212.6868 691.2454,-1173.2016 731.4572,-1129 762.1404,-1095.2724 795.7113,-1137.9954 832.4572,-1111 861.9345,-1089.3444 841.0774,-1059.7877 870.4572,-1038 905.3256,-1012.1419 925.1345,-1033.2997 966.4572,-1020 995.3665,-1010.6955 1026.0926,-996.7881 1051.2846,-984.2224"/>
 <polygon fill="#b2b2b0" stroke="#b2b2b0" points="1052.956,-987.2994 1060.3018,-979.6646 1049.7982,-981.052 1052.956,-987.2994"/>
 </a>
 </g>
-<g id="a_edge131-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToRequest.func1 ... runtime.newobject (0.01s)">
+<g id="a_edge131-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToRequest.func1 ... runtime.newobject (0.01s)">
 <text text-anchor="middle" x="748.4572" y="-1132.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.01s</text>
 </a>
 </g>
@@ -2667,12 +2667,12 @@ function handleMouseUp(evt) {
 <!-- N51&#45;&gt;N30 -->
 <g id="edge96" class="edge">
 <title>N51-&gt;N30</title>
-<g id="a_edge96"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToRequest.func1 ... runtime.selectgo (0.03s)">
+<g id="a_edge96"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToRequest.func1 ... runtime.selectgo (0.03s)">
 <path fill="none" stroke="#b2b1ac" stroke-dasharray="1,5" d="M643.4443,-1280.8871C647.7795,-1227.8279 659.6607,-1105.343 683.4572,-1005 684.2535,-1001.642 685.1832,-998.1906 686.1898,-994.7457"/>
 <polygon fill="#b2b1ac" stroke="#b2b1ac" points="689.5501,-995.7265 689.1835,-985.138 682.867,-993.6441 689.5501,-995.7265"/>
 </a>
 </g>
-<g id="a_edge96-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToRequest.func1 ... runtime.selectgo (0.03s)">
+<g id="a_edge96-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToRequest.func1 ... runtime.selectgo (0.03s)">
 <text text-anchor="middle" x="677.4572" y="-1132.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.03s</text>
 </a>
 </g>
@@ -2680,12 +2680,12 @@ function handleMouseUp(evt) {
 <!-- N51&#45;&gt;N43 -->
 <g id="edge130" class="edge">
 <title>N51-&gt;N43</title>
-<g id="a_edge130"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToRequest.func1 ... net/http.(*persistConn).roundTrip (0.01s)">
+<g id="a_edge130"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToRequest.func1 ... net/http.(*persistConn).roundTrip (0.01s)">
 <path fill="none" stroke="#b2b2b0" stroke-dasharray="1,5" d="M607.2051,-1280.793C590.1425,-1267.4889 569.1536,-1251.1234 550.181,-1236.3301"/>
 <polygon fill="#b2b2b0" stroke="#b2b2b0" points="552.2289,-1233.4887 542.1906,-1230.0999 547.9246,-1239.009 552.2289,-1233.4887"/>
 </a>
 </g>
-<g id="a_edge130-label"><a xlink:title="github.com/zalando/skipper/proxy.(*Proxy).applyFiltersToRequest.func1 ... net/http.(*persistConn).roundTrip (0.01s)">
+<g id="a_edge130-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*Proxy).applyFiltersToRequest.func1 ... net/http.(*persistConn).roundTrip (0.01s)">
 <text text-anchor="middle" x="600.4572" y="-1251.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.01s</text>
 </a>
 </g>
@@ -2731,7 +2731,7 @@ function handleMouseUp(evt) {
 <!-- N53 -->
 <g id="node53" class="node">
 <title>N53</title>
-<g id="a_node53"><a xlink:title="github.com/zalando/skipper/dataclients/kubernetes.(*clusterClient).getJSON (0.23s)">
+<g id="a_node53"><a xlink:title="github.com/ardaguclu/skipper/dataclients/kubernetes.(*clusterClient).getJSON (0.23s)">
 <polygon fill="#edeae6" stroke="#b29e82" points="2057.9572,-1583 1980.9572,-1583 1980.9572,-1539 2057.9572,-1539 2057.9572,-1583"/>
 <text text-anchor="middle" x="2019.4572" y="-1572.6" font-family="Times,serif" font-size="8.00" fill="#000000">kubernetes</text>
 <text text-anchor="middle" x="2019.4572" y="-1563.6" font-family="Times,serif" font-size="8.00" fill="#000000">(*clusterClient)</text>
@@ -2743,12 +2743,12 @@ function handleMouseUp(evt) {
 <!-- N53&#45;&gt;N39 -->
 <g id="edge60" class="edge">
 <title>N53-&gt;N39</title>
-<g id="a_edge60"><a xlink:title="github.com/zalando/skipper/dataclients/kubernetes.(*clusterClient).getJSON -&gt; io.Copy (0.09s)">
+<g id="a_edge60"><a xlink:title="github.com/ardaguclu/skipper/dataclients/kubernetes.(*clusterClient).getJSON -&gt; io.Copy (0.09s)">
 <path fill="none" stroke="#b2ac9f" d="M2042.4494,-1538.9541C2049.9505,-1532.7227 2058.6318,-1526.4377 2067.4572,-1522 2173.5852,-1468.6347 2214.4644,-1495.606 2326.4572,-1456 2331.3442,-1454.2717 2336.3747,-1452.2986 2341.3513,-1450.218"/>
 <polygon fill="#b2ac9f" stroke="#b2ac9f" points="2343.0204,-1453.3092 2350.8031,-1446.1203 2340.236,-1446.8867 2343.0204,-1453.3092"/>
 </a>
 </g>
-<g id="a_edge60-label"><a xlink:title="github.com/zalando/skipper/dataclients/kubernetes.(*clusterClient).getJSON -&gt; io.Copy (0.09s)">
+<g id="a_edge60-label"><a xlink:title="github.com/ardaguclu/skipper/dataclients/kubernetes.(*clusterClient).getJSON -&gt; io.Copy (0.09s)">
 <text text-anchor="middle" x="2282.4572" y="-1492.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.09s</text>
 <text text-anchor="middle" x="2282.4572" y="-1477.8" font-family="Times,serif" font-size="14.00" fill="#000000"> (inline)</text>
 </a>
@@ -2757,12 +2757,12 @@ function handleMouseUp(evt) {
 <!-- N53&#45;&gt;N54 -->
 <g id="edge43" class="edge">
 <title>N53-&gt;N54</title>
-<g id="a_edge43"><a xlink:title="github.com/zalando/skipper/dataclients/kubernetes.(*clusterClient).getJSON -&gt; encoding/json.Unmarshal (0.14s)">
+<g id="a_edge43"><a xlink:title="github.com/ardaguclu/skipper/dataclients/kubernetes.(*clusterClient).getJSON -&gt; encoding/json.Unmarshal (0.14s)">
 <path fill="none" stroke="#b2a895" d="M1982.3595,-1538.9457C1969.3841,-1529.6125 1955.7516,-1517.708 1946.4572,-1504 1907.0576,-1445.8909 1937.164,-1413.586 1903.4572,-1352 1873.6868,-1297.6064 1864.4749,-1278.4471 1810.4572,-1248 1772.6405,-1226.6846 1752.997,-1249.9782 1714.4572,-1230 1653.7466,-1198.5289 1600.6798,-1136.5142 1573.5856,-1101.0482"/>
 <polygon fill="#b2a895" stroke="#b2a895" points="1576.0726,-1098.5314 1567.268,-1092.6381 1570.4758,-1102.7357 1576.0726,-1098.5314"/>
 </a>
 </g>
-<g id="a_edge43-label"><a xlink:title="github.com/zalando/skipper/dataclients/kubernetes.(*clusterClient).getJSON -&gt; encoding/json.Unmarshal (0.14s)">
+<g id="a_edge43-label"><a xlink:title="github.com/ardaguclu/skipper/dataclients/kubernetes.(*clusterClient).getJSON -&gt; encoding/json.Unmarshal (0.14s)">
 <text text-anchor="middle" x="1909.4572" y="-1303.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.14s</text>
 </a>
 </g>
@@ -2952,12 +2952,12 @@ function handleMouseUp(evt) {
 <!-- N66&#45;&gt;N36 -->
 <g id="edge32" class="edge">
 <title>N66-&gt;N36</title>
-<g id="a_edge32"><a xlink:title="github.com/zalando/skipper/proxy.(*proxyTracing).logFilterEvent -&gt; github.com/zalando/skipper/proxy.(*proxyTracing).logEvent (0.20s)">
+<g id="a_edge32"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*proxyTracing).logFilterEvent -&gt; github.com/ardaguclu/skipper/proxy.(*proxyTracing).logEvent (0.20s)">
 <path fill="none" stroke="#b2a188" d="M839.9997,-1405.8984C857.8853,-1386.6554 883.9685,-1358.5927 903.7074,-1337.3558"/>
 <polygon fill="#b2a188" stroke="#b2a188" points="906.4212,-1339.577 910.6656,-1329.8695 901.2939,-1334.8114 906.4212,-1339.577"/>
 </a>
 </g>
-<g id="a_edge32-label"><a xlink:title="github.com/zalando/skipper/proxy.(*proxyTracing).logFilterEvent -&gt; github.com/zalando/skipper/proxy.(*proxyTracing).logEvent (0.20s)">
+<g id="a_edge32-label"><a xlink:title="github.com/ardaguclu/skipper/proxy.(*proxyTracing).logFilterEvent -&gt; github.com/ardaguclu/skipper/proxy.(*proxyTracing).logEvent (0.20s)">
 <text text-anchor="middle" x="911.4572" y="-1370.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.20s</text>
 <text text-anchor="middle" x="911.4572" y="-1355.8" font-family="Times,serif" font-size="14.00" fill="#000000"> (inline)</text>
 </a>
@@ -3148,12 +3148,12 @@ function handleMouseUp(evt) {
 <!-- N78&#45;&gt;N53 -->
 <g id="edge24" class="edge">
 <title>N78-&gt;N53</title>
-<g id="a_edge24"><a xlink:title="github.com/zalando/skipper/dataclients/kubernetes.(*clusterClient).fetchClusterState ... github.com/zalando/skipper/dataclients/kubernetes.(*clusterClient).getJSON (0.23s)">
+<g id="a_edge24"><a xlink:title="github.com/ardaguclu/skipper/dataclients/kubernetes.(*clusterClient).fetchClusterState ... github.com/ardaguclu/skipper/dataclients/kubernetes.(*clusterClient).getJSON (0.23s)">
 <path fill="none" stroke="#b29e82" stroke-dasharray="1,5" d="M2019.4572,-1650.8724C2019.4572,-1634.382 2019.4572,-1611.6145 2019.4572,-1593.1217"/>
 <polygon fill="#b29e82" stroke="#b29e82" points="2022.9573,-1593.0816 2019.4572,-1583.0816 2015.9573,-1593.0817 2022.9573,-1593.0816"/>
 </a>
 </g>
-<g id="a_edge24-label"><a xlink:title="github.com/zalando/skipper/dataclients/kubernetes.(*clusterClient).fetchClusterState ... github.com/zalando/skipper/dataclients/kubernetes.(*clusterClient).getJSON (0.23s)">
+<g id="a_edge24-label"><a xlink:title="github.com/ardaguclu/skipper/dataclients/kubernetes.(*clusterClient).fetchClusterState ... github.com/ardaguclu/skipper/dataclients/kubernetes.(*clusterClient).getJSON (0.23s)">
 <text text-anchor="middle" x="2036.4572" y="-1621.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.23s</text>
 </a>
 </g>
@@ -3161,12 +3161,12 @@ function handleMouseUp(evt) {
 <!-- N79&#45;&gt;N16 -->
 <g id="edge61" class="edge">
 <title>N79-&gt;N16</title>
-<g id="a_edge61"><a xlink:title="github.com/zalando/skipper/eskip.argsString ... fmt.Sprintf (0.09s)">
+<g id="a_edge61"><a xlink:title="github.com/ardaguclu/skipper/eskip.argsString ... fmt.Sprintf (0.09s)">
 <path fill="none" stroke="#b2ac9f" stroke-dasharray="1,5" d="M1420.0292,-1299.5574C1447.6516,-1294.0007 1485.765,-1286.6003 1519.4572,-1281 1576.1283,-1271.5801 1592.1864,-1278.6681 1647.4572,-1263 1685.8475,-1252.1172 1727.1734,-1233.5752 1757.1866,-1218.7526"/>
 <polygon fill="#b2ac9f" stroke="#b2ac9f" points="1759.1385,-1221.6897 1766.5156,-1214.0852 1756.0064,-1215.4295 1759.1385,-1221.6897"/>
 </a>
 </g>
-<g id="a_edge61-label"><a xlink:title="github.com/zalando/skipper/eskip.argsString ... fmt.Sprintf (0.09s)">
+<g id="a_edge61-label"><a xlink:title="github.com/ardaguclu/skipper/eskip.argsString ... fmt.Sprintf (0.09s)">
 <text text-anchor="middle" x="1707.4572" y="-1251.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 0.09s</text>
 </a>
 </g>

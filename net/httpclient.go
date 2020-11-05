@@ -9,10 +9,10 @@ import (
 	"strings"
 	"time"
 
+	"github.com/ardaguclu/skipper/logging"
+	"github.com/ardaguclu/skipper/secrets"
 	"github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/ext"
-	"github.com/zalando/skipper/logging"
-	"github.com/zalando/skipper/secrets"
 )
 
 const (

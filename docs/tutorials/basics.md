@@ -40,7 +40,7 @@ also be exported in [Prometheus](https://prometheus.io) format.
 ### Route definition
 
 A route consists of an ID, predicates, filters and a backend and is
-most often written in [eskip syntax](https://godoc.org/github.com/zalando/skipper/eskip).
+most often written in [eskip syntax](https://godoc.org/github.com/ardaguclu/skipper/eskip).
 
 Syntax:
 
@@ -252,7 +252,7 @@ The local build will write into `./bin/` directory.
 ### CI build
 
 The current used CI flow to build the official docker container, you
-can see in [delivery.yaml](https://github.com/zalando/skipper/blob/master/delivery.yaml).
+can see in [delivery.yaml](https://github.com/ardaguclu/skipper/blob/master/delivery.yaml).
 Official release versions you will find at
 `registry.opensource.zalan.do/pathfinder/skipper:${RELEASE_VERSION}`,
 where `${RELEASE_VERSION}` is the git tag got by `$(git describe --tags --always --dirty)`.

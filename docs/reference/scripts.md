@@ -55,7 +55,7 @@ for `debug` - the following modules have been preloaded and can be used with e.g
  with something different than `&http.Client{}`
 * `url`  [gluaurl](https://github.com/cjoudrey/gluaurl)
 * `json` [gopher-json](https://github.com/layeh/gopher-json)
-* `base64` [lua base64](https://github.com/zalando/skipper/tree/master/script/base64)
+* `base64` [lua base64](https://github.com/ardaguclu/skipper/tree/master/script/base64)
 
 For differences between the standard modules and the gopher-lua implementation
 check the [gopher-lua documentation](https://github.com/yuin/gopher-lua#differences-between-lua-and-gopherlua).

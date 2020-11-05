@@ -19,25 +19,25 @@ import (
 	"strings"
 	"time"
 
+	"github.com/ardaguclu/skipper/circuit"
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/filters"
+	al "github.com/ardaguclu/skipper/filters/accesslog"
+	circuitfilters "github.com/ardaguclu/skipper/filters/circuit"
+	flowidFilter "github.com/ardaguclu/skipper/filters/flowid"
+	ratelimitfilters "github.com/ardaguclu/skipper/filters/ratelimit"
+	tracingfilter "github.com/ardaguclu/skipper/filters/tracing"
+	"github.com/ardaguclu/skipper/loadbalancer"
+	"github.com/ardaguclu/skipper/logging"
+	"github.com/ardaguclu/skipper/metrics"
+	"github.com/ardaguclu/skipper/proxy/fastcgi"
+	"github.com/ardaguclu/skipper/ratelimit"
+	"github.com/ardaguclu/skipper/rfc"
+	"github.com/ardaguclu/skipper/routing"
+	"github.com/ardaguclu/skipper/scheduler"
+	"github.com/ardaguclu/skipper/tracing"
 	ot "github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/ext"
-	"github.com/zalando/skipper/circuit"
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/filters"
-	al "github.com/zalando/skipper/filters/accesslog"
-	circuitfilters "github.com/zalando/skipper/filters/circuit"
-	flowidFilter "github.com/zalando/skipper/filters/flowid"
-	ratelimitfilters "github.com/zalando/skipper/filters/ratelimit"
-	tracingfilter "github.com/zalando/skipper/filters/tracing"
-	"github.com/zalando/skipper/loadbalancer"
-	"github.com/zalando/skipper/logging"
-	"github.com/zalando/skipper/metrics"
-	"github.com/zalando/skipper/proxy/fastcgi"
-	"github.com/zalando/skipper/ratelimit"
-	"github.com/zalando/skipper/rfc"
-	"github.com/zalando/skipper/routing"
-	"github.com/zalando/skipper/scheduler"
-	"github.com/zalando/skipper/tracing"
 )
 
 const (
@@ -989,7 +989,7 @@ func (p *Proxy) makeBackendRequest(ctx *context) (*http.Response, *proxyError) {
 					code: http.StatusServiceUnavailable,
 				}
 			} else if !nerr.Timeout() && nerr.Temporary() {
-				p.log.Errorf("Backend error see https://github.com/zalando/skipper/issues/768: %v", err)
+				p.log.Errorf("Backend error see https://github.com/ardaguclu/skipper/issues/768: %v", err)
 				p.tracing.setTag(ctx.proxySpan, HTTPStatusCodeTag, uint16(http.StatusServiceUnavailable))
 				return nil, &proxyError{
 					err:  err,
@@ -1006,7 +1006,7 @@ func (p *Proxy) makeBackendRequest(ctx *context) (*http.Response, *proxyError) {
 
 		if cerr := req.Context().Err(); cerr != nil {
 			// deadline exceeded or canceled in stdlib, proxy client closed request
-			// see https://github.com/zalando/skipper/issues/687#issuecomment-405557503
+			// see https://github.com/ardaguclu/skipper/issues/687#issuecomment-405557503
 			return nil, &proxyError{err: cerr, code: 499}
 		}
 
@@ -1244,7 +1244,7 @@ func (p *Proxy) serveResponse(ctx *context) {
 
 	if err := ctx.Request().Context().Err(); err != nil {
 		// deadline exceeded or canceled in stdlib, client closed request
-		// see https://github.com/zalando/skipper/pull/864
+		// see https://github.com/ardaguclu/skipper/pull/864
 		p.log.Infof("Client request: %v", err)
 		ctx.response.StatusCode = 499
 		p.tracing.setTag(ctx.proxySpan, ClientRequestStateTag, ClientRequestCanceled)

@@ -15,13 +15,13 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
+	"github.com/ardaguclu/skipper"
+	"github.com/ardaguclu/skipper/dataclients/kubernetes"
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/proxy"
+	"github.com/ardaguclu/skipper/ratelimit"
+	"github.com/ardaguclu/skipper/swarm"
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/zalando/skipper"
-	"github.com/zalando/skipper/dataclients/kubernetes"
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/proxy"
-	"github.com/zalando/skipper/ratelimit"
-	"github.com/zalando/skipper/swarm"
 )
 
 type Config struct {

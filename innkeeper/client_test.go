@@ -9,7 +9,7 @@ import (
 	"path"
 	"testing"
 
-	"github.com/zalando/skipper/eskip"
+	"github.com/ardaguclu/skipper/eskip"
 )
 
 const testAuthenticationToken = "test token"

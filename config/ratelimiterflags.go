@@ -8,7 +8,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/zalando/skipper/ratelimit"
+	"github.com/ardaguclu/skipper/ratelimit"
 )
 
 const ratelimitUsage = `set global rate limit settings, e.g. -ratelimit type=client,max-hits=20,time-window=60s
@@ -17,7 +17,7 @@ const ratelimitUsage = `set global rate limit settings, e.g. -ratelimit type=cli
 	max-hits: the number of hits a ratelimiter can get
 	time-window: the duration of the sliding window for the rate limiter
 	group: defines the ratelimit group, which can be the same for different routes.
-	(see also: https://godoc.org/github.com/zalando/skipper/ratelimit)`
+	(see also: https://godoc.org/github.com/ardaguclu/skipper/ratelimit)`
 
 const enableRatelimitUsage = `enable ratelimit`
 

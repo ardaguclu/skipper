@@ -8,11 +8,11 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/filters/filtertest"
-	"github.com/zalando/skipper/metrics/metricstest"
-	"github.com/zalando/skipper/routing"
-	"github.com/zalando/skipper/routing/testdataclient"
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/filters/filtertest"
+	"github.com/ardaguclu/skipper/metrics/metricstest"
+	"github.com/ardaguclu/skipper/routing"
+	"github.com/ardaguclu/skipper/routing/testdataclient"
 )
 
 var time0 = time.Now().Truncate(time.Second).UTC()

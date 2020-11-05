@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/proxy/proxytest"
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/proxy/proxytest"
 )
 
 func TestInlineContentArgs(t *testing.T) {

@@ -1,7 +1,7 @@
 # Introduction
 
 This is the documentation page of
-[Skipper](https://github.com/zalando/skipper). Skipper is an HTTP
+[Skipper](https://github.com/ardaguclu/skipper). Skipper is an HTTP
 router and reverse proxy for service composition. It's designed to
 handle large amounts of dynamically configured HTTP route definitions
 (>800000 routes) with detailed lookup conditions, and flexible

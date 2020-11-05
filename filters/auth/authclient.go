@@ -11,9 +11,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/net"
 	"github.com/opentracing/opentracing-go"
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/net"
 )
 
 const (

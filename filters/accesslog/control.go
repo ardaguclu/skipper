@@ -1,6 +1,6 @@
 package accesslog
 
-import "github.com/zalando/skipper/filters"
+import "github.com/ardaguclu/skipper/filters"
 
 const (
 	// DisableAccessLogName is the filter name seen by the user

@@ -5,14 +5,14 @@ base64 provides an easy way to encode and decode base64 strings from within
 
 # Installation
 
-    go get github.com/zalando/skipper/script/base64
+    go get github.com/ardaguclu/skipper/script/base64
 
 # Usage
 ```go
 package main
 
 import "github.com/yuin/gopher-lua"
-import "github.com/zalando/skipper/script/base64"
+import "github.com/ardaguclu/skipper/script/base64"
 
 var script string = `
 local base64 = require("base64")

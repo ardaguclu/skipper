@@ -15,11 +15,12 @@
 package builtin
 
 import (
-	"github.com/zalando/skipper/filters/filtertest"
 	"net/http"
 	"net/url"
 	"strings"
 	"testing"
+
+	"github.com/ardaguclu/skipper/filters/filtertest"
 )
 
 func TestCreateStripQueryFilter(t *testing.T) {

@@ -9,10 +9,10 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/filters/builtin"
-	"github.com/zalando/skipper/filters/sed"
-	"github.com/zalando/skipper/proxy/proxytest"
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/filters/builtin"
+	"github.com/ardaguclu/skipper/filters/sed"
+	"github.com/ardaguclu/skipper/proxy/proxytest"
 )
 
 type testItem struct {

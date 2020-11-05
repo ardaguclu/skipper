@@ -2,8 +2,9 @@ package main
 
 import (
 	"errors"
-	"github.com/zalando/skipper/eskip"
-	etcdclient "github.com/zalando/skipper/etcd"
+
+	"github.com/ardaguclu/skipper/eskip"
+	etcdclient "github.com/ardaguclu/skipper/etcd"
 )
 
 type writeClient interface {

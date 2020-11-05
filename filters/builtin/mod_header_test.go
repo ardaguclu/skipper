@@ -1,10 +1,11 @@
 package builtin
 
 import (
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/filters/filtertest"
 	"net/http"
 	"testing"
+
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/filters/filtertest"
 )
 
 type createTestItemHost struct {

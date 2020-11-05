@@ -4,7 +4,7 @@ Package tracing provides filters to instrument distributed tracing.
 package tracing
 
 import (
-	"github.com/zalando/skipper/filters"
+	"github.com/ardaguclu/skipper/filters"
 )
 
 const (

@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"net/http/httptest"
 
+	"github.com/ardaguclu/skipper/logging"
 	"github.com/yookoala/gofast"
-	"github.com/zalando/skipper/logging"
 )
 
 type RoundTripper struct {

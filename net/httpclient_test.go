@@ -9,8 +9,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/zalando/skipper/secrets"
-	"github.com/zalando/skipper/tracing/tracers/basic"
+	"github.com/ardaguclu/skipper/secrets"
+	"github.com/ardaguclu/skipper/tracing/tracers/basic"
 )
 
 var testToken = []byte("mytoken1")

@@ -8,14 +8,14 @@ import (
 	"testing"
 	"time"
 
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/logging/loggingtest"
+	"github.com/ardaguclu/skipper/proxy/proxytest"
+	"github.com/ardaguclu/skipper/routing"
+	"github.com/ardaguclu/skipper/routing/testdataclient"
+	"github.com/ardaguclu/skipper/secrets/secrettest"
 	"github.com/stretchr/testify/assert"
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/logging/loggingtest"
-	"github.com/zalando/skipper/proxy/proxytest"
-	"github.com/zalando/skipper/routing"
-	"github.com/zalando/skipper/routing/testdataclient"
-	"github.com/zalando/skipper/secrets/secrettest"
 )
 
 func TestCreateOIDCQueryClaimsFilter(t *testing.T) {

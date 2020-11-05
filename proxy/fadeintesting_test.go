@@ -9,12 +9,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/filters/fadein"
-	"github.com/zalando/skipper/loadbalancer"
-	"github.com/zalando/skipper/proxy"
-	"github.com/zalando/skipper/routing"
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/filters/fadein"
+	"github.com/ardaguclu/skipper/loadbalancer"
+	"github.com/ardaguclu/skipper/proxy"
+	"github.com/ardaguclu/skipper/routing"
 )
 
 /*

@@ -66,7 +66,7 @@ geoip/  glide.lock  glide.yaml  ldapauth/  Makefile  noop/  plugin_test.go
 % cd plugins/filters/geoip
 % GO111MODULE=on go build -buildmode=plugin -o geoip.so geoip.go
 % cd -
-~/go/src/github.com/zalando/skipper
+~/go/src/github.com/ardaguclu/skipper
 ```
 
 Start a pseudo backend that shows all headers in plain:
@@ -161,7 +161,7 @@ An example `noop` plugin looks like
 package main
 
 import (
-	"github.com/zalando/skipper/filters"
+	"github.com/ardaguclu/skipper/filters"
 )
 
 type noopSpec struct{}
@@ -213,7 +213,7 @@ An example `MatchAll` plugin looks like
 package main
 
 import (
-	"github.com/zalando/skipper/routing"
+	"github.com/ardaguclu/skipper/routing"
 	"net/http"
 )
 
@@ -251,8 +251,8 @@ A `noop` data client looks like
 package main
 
 import (
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/routing"
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/routing"
 )
 
 func InitDataClient([]string) (routing.DataClient, error) {
@@ -297,10 +297,10 @@ import (
 	ot "github.com/opentracing/opentracing-go"
 	maxminddb "github.com/oschwald/maxminddb-golang"
 
-	"github.com/zalando/skipper/filters"
-	snet "github.com/zalando/skipper/net"
-	"github.com/zalando/skipper/predicates"
-	"github.com/zalando/skipper/routing"
+	"github.com/ardaguclu/skipper/filters"
+	snet "github.com/ardaguclu/skipper/net"
+	"github.com/ardaguclu/skipper/predicates"
+	"github.com/ardaguclu/skipper/routing"
 )
 
 type geoipSpec struct {

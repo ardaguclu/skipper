@@ -1,13 +1,14 @@
 package main
 
 import (
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/eskipfile"
-	etcdclient "github.com/zalando/skipper/etcd"
-	innkeeperclient "github.com/zalando/skipper/innkeeper"
 	"io"
 	"io/ioutil"
 	"os"
+
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/eskipfile"
+	etcdclient "github.com/ardaguclu/skipper/etcd"
+	innkeeperclient "github.com/ardaguclu/skipper/innkeeper"
 )
 
 type readClient interface {

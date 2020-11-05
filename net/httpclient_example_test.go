@@ -6,9 +6,9 @@ import (
 	"net/http/httptest"
 	"time"
 
+	"github.com/ardaguclu/skipper/net"
+	"github.com/ardaguclu/skipper/secrets"
 	"github.com/lightstep/lightstep-tracer-go"
-	"github.com/zalando/skipper/net"
-	"github.com/zalando/skipper/secrets"
 )
 
 func ExampleTransport() {

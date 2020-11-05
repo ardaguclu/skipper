@@ -1,7 +1,7 @@
 # Egress Proxy
 
 **Disclaimer**: Egress features are probably not feature
-complete. Please create [Github Issues](https://github.com/zalando/skipper/issues)
+complete. Please create [Github Issues](https://github.com/ardaguclu/skipper/issues)
 to show your ideas about this topic.
 
 The picture below shows an authentication use case with Bearer token
@@ -153,10 +153,10 @@ spec:
 ## Future - TODOs
 
 We want to experiment in how to best use skipper as egress proxy.  One
-idea is to implement [forward proxy via HTTP CONNECT](https://github.com/zalando/skipper/issues/929)
+idea is to implement [forward proxy via HTTP CONNECT](https://github.com/ardaguclu/skipper/issues/929)
 and being able to use the routing to inject the right Authorization headers with the
 [bearerinjector filter](filters.md#bearerinjector), for example.
 
 If you have ideas please add your thoughts in
-[one of the issues](https://github.com/zalando/skipper/labels/egress),
+[one of the issues](https://github.com/ardaguclu/skipper/labels/egress),
 that match your idea or create a new one.

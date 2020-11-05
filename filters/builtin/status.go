@@ -1,6 +1,6 @@
 package builtin
 
-import "github.com/zalando/skipper/filters"
+import "github.com/ardaguclu/skipper/filters"
 
 type statusSpec struct{}
 

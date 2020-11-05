@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zalando/skipper/filters/filtertest"
+	"github.com/ardaguclu/skipper/filters/filtertest"
 )
 
 const testDelay = 12 * time.Millisecond

@@ -27,10 +27,11 @@ Examples:
 package query
 
 import (
-	"github.com/zalando/skipper/predicates"
-	"github.com/zalando/skipper/routing"
 	"net/http"
 	"regexp"
+
+	"github.com/ardaguclu/skipper/predicates"
+	"github.com/ardaguclu/skipper/routing"
 )
 
 type matchType int

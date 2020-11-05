@@ -3,7 +3,7 @@ package definitions_test
 import (
 	"testing"
 
-	"github.com/zalando/skipper/dataclients/kubernetes/kubernetestest"
+	"github.com/ardaguclu/skipper/dataclients/kubernetes/kubernetestest"
 )
 
 func TestRouteGroupValidation(t *testing.T) {

@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/loadbalancer"
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/loadbalancer"
 )
 
 // adding Kubernetes specific backend types here. To be discussed.

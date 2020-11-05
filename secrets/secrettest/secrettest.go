@@ -3,7 +3,7 @@ package secrettest
 import (
 	"time"
 
-	"github.com/zalando/skipper/secrets"
+	"github.com/ardaguclu/skipper/secrets"
 )
 
 type TestRegistry struct {

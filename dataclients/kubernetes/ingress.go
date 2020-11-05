@@ -7,11 +7,11 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/ardaguclu/skipper/dataclients/kubernetes/definitions"
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/predicates/primitive"
+	"github.com/ardaguclu/skipper/predicates/traffic"
 	log "github.com/sirupsen/logrus"
-	"github.com/zalando/skipper/dataclients/kubernetes/definitions"
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/predicates/primitive"
-	"github.com/zalando/skipper/predicates/traffic"
 )
 
 const (
@@ -188,7 +188,7 @@ func convertPathRule(
 		log.Debugf("convertPathRule: Found %d endpoints %s for %s", len(eps), targetPort, svcName)
 	}
 	if len(eps) == 0 || err == errEndpointNotFound {
-		// add shunt route https://github.com/zalando/skipper/issues/1525
+		// add shunt route https://github.com/ardaguclu/skipper/issues/1525
 		log.Errorf("convertPathRule: add shuntroute to return 502 for ingress %s/%s service %s with %d endpoints: %v", ns, name, svcName, len(eps), err)
 		r := &eskip.Route{
 			Id:          routeID(ns, name, host, prule.Path, svcName),
@@ -429,7 +429,7 @@ func computeBackendWeights(backendWeights map[string]float64, rule *definitions.
 }
 
 // TODO: default filters not applied to 'extra' routes from the custom route annotations. Is it on purpose?
-// https://github.com/zalando/skipper/issues/1287
+// https://github.com/ardaguclu/skipper/issues/1287
 func (ing *ingress) addSpecRule(ic ingressContext, ru *definitions.Rule) error {
 	if ru.Http == nil {
 		ic.logger.Warn("invalid ingress item: rule missing http definitions")
@@ -518,7 +518,7 @@ func (ing *ingress) convertDefaultBackend(state *clusterState, i *definitions.In
 	}
 
 	if len(eps) == 0 || err == errEndpointNotFound {
-		// add shunt route https://github.com/zalando/skipper/issues/1525
+		// add shunt route https://github.com/ardaguclu/skipper/issues/1525
 		log.Errorf("convertDefaultBackend: add shuntroute to return 502 for ingress %s/%s service %s with %d endpoints: %v", ns, name, svcName, len(eps), err)
 		r := &eskip.Route{
 			Id: routeID(ns, name, "", "", ""),

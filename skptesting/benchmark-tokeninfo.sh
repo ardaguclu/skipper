@@ -5,7 +5,7 @@ if [ "$1" == -help ]; then
 	exit 0
 fi
 
-source $GOPATH/src/github.com/zalando/skipper/skptesting/benchmark.inc
+source $GOPATH/src/github.com/ardaguclu/skipper/skptesting/benchmark.inc
 
 check_deps
 

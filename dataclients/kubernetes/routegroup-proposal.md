@@ -5,7 +5,7 @@ Status: open
 Owners: @aryszka @szuecs
 
 This proposal will be kept up to date, if you like to discuss it
-please use https://github.com/zalando/skipper/issues/660
+please use https://github.com/ardaguclu/skipper/issues/660
 
 Disclaimer:
 Skipper's `kubernetes` dataclient will also support Ingress in the

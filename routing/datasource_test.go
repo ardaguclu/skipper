@@ -4,10 +4,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/logging"
-	"github.com/zalando/skipper/logging/loggingtest"
-	"github.com/zalando/skipper/routing/testdataclient"
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/logging"
+	"github.com/ardaguclu/skipper/logging/loggingtest"
+	"github.com/ardaguclu/skipper/routing/testdataclient"
 )
 
 func TestNoMultipleTreePredicates(t *testing.T) {

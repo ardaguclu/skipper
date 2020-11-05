@@ -19,9 +19,10 @@ package methods
 import (
 	"errors"
 	"fmt"
-	"github.com/zalando/skipper/routing"
 	"net/http"
 	"strings"
+
+	"github.com/ardaguclu/skipper/routing"
 )
 
 const Name = "Methods"

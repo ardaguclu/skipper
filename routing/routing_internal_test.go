@@ -3,8 +3,8 @@ package routing
 import (
 	"testing"
 
+	"github.com/ardaguclu/skipper/eskip"
 	"github.com/google/go-cmp/cmp"
-	"github.com/zalando/skipper/eskip"
 )
 
 func TestSlice(t *testing.T) {

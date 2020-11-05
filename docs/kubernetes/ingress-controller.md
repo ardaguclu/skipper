@@ -213,7 +213,7 @@ You should have a base understanding of [Kubernetes](https://kubernetes.io) and
 Prerequisites:
 
 1. You should checkout the git repository to have access to the
-manifests: `git clone https://github.com/zalando/skipper.git`
+manifests: `git clone https://github.com/ardaguclu/skipper.git`
 1. You should enter the cloned directory: `cd skipper`
 1. You have to choose how to install skipper-ingress. You can install
 it as [dameonset](#dameonset) or as [deployment](#deployment).
@@ -251,7 +251,7 @@ kubectl create -f docs/kubernetes/deploy/daemonset
 ```
 
 Please check, that you are using the [latest
-release](https://github.com/zalando/skipper/releases/latest), we do
+release](https://github.com/ardaguclu/skipper/releases/latest), we do
 not maintain the **latest** tag.
 
 #### Deployment

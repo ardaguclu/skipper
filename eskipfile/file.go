@@ -3,7 +3,7 @@ package eskipfile
 import (
 	"io/ioutil"
 
-	"github.com/zalando/skipper/eskip"
+	"github.com/ardaguclu/skipper/eskip"
 )
 
 // Client contains the route definitions from an eskip file, not implementing file watch. Use the Open function

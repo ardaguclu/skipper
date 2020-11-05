@@ -3,8 +3,8 @@ package main
 import (
 	"net/http"
 
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/routing"
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/routing"
 )
 
 // this fails to load, because it implements multiple Init* functions

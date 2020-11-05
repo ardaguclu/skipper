@@ -8,10 +8,10 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/filters/builtin"
+	"github.com/ardaguclu/skipper/proxy/proxytest"
 	log "github.com/sirupsen/logrus"
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/filters/builtin"
-	"github.com/zalando/skipper/proxy/proxytest"
 )
 
 func testBackend(token string, code int) *httptest.Server {

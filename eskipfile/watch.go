@@ -5,7 +5,7 @@ import (
 	"os"
 	"reflect"
 
-	"github.com/zalando/skipper/eskip"
+	"github.com/ardaguclu/skipper/eskip"
 )
 
 type watchResponse struct {

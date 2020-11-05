@@ -7,7 +7,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/zalando/skipper/filters"
+	"github.com/ardaguclu/skipper/filters"
 )
 
 type pipedResponse struct {

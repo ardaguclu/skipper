@@ -5,8 +5,8 @@ import (
 	"sync"
 	"time"
 
+	"github.com/ardaguclu/skipper/net"
 	log "github.com/sirupsen/logrus"
-	"github.com/zalando/skipper/net"
 )
 
 const (

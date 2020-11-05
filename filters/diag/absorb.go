@@ -4,9 +4,9 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/filters/flowid"
-	"github.com/zalando/skipper/logging"
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/filters/flowid"
+	"github.com/ardaguclu/skipper/logging"
 )
 
 // AbsorbName contains the name of the absorb filter.

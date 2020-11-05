@@ -23,8 +23,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/zalando/skipper/predicates"
-	"github.com/zalando/skipper/routing"
+	"github.com/ardaguclu/skipper/predicates"
+	"github.com/ardaguclu/skipper/routing"
 )
 
 const (

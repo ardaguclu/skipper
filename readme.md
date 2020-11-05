@@ -1,10 +1,10 @@
-[![Build Status](https://github.com/zalando/skipper/workflows/ci/badge.svg)](https://github.com/zalando/skipper/actions?query=branch%3Amaster)
+[![Build Status](https://github.com/ardaguclu/skipper/workflows/ci/badge.svg)](https://github.com/ardaguclu/skipper/actions?query=branch%3Amaster)
 [![Doc](https://img.shields.io/badge/-userdocs-darkblue.svg)](https://opensource.zalando.com/skipper)
-[![GoDoc](https://godoc.org/github.com/zalando/skipper?status.svg)](https://godoc.org/github.com/zalando/skipper)
+[![GoDoc](https://godoc.org/github.com/ardaguclu/skipper?status.svg)](https://godoc.org/github.com/ardaguclu/skipper)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Go Report Card](https://goreportcard.com/badge/zalando/skipper)](https://goreportcard.com/report/zalando/skipper)
 [![codecov](https://codecov.io/gh/zalando/skipper/branch/master/graph/badge.svg)](https://codecov.io/gh/zalando/skipper)
-[![GitHub release](https://img.shields.io/github/release/zalando/skipper.svg)](https://github.com/zalando/skipper/releases)
+[![GitHub release](https://img.shields.io/github/release/zalando/skipper.svg)](https://github.com/ardaguclu/skipper/releases)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/2461/badge)](https://bestpractices.coreinfrastructure.org/en/projects/2461)
 
 <p><img height="180" alt="Skipper" src="https://raw.githubusercontent.com/zalando/skipper/master/img/skipper-h180.png"></p>
@@ -28,7 +28,7 @@ Skipper
 - optionally acts as a final endpoint (shunt), e.g. as a static file server or a mock backend for diagnostics
 - updates routing rules without downtime, while supporting multiple types of data sources — including
   [etcd](https://github.com/coreos/etcd), [Kubernetes Ingress](https://opensource.zalando.com/skipper/data-clients/kubernetes/), [Innkeeper (deprecated)](https://github.com/zalando/innkeeper), [static files](https://opensource.zalando.com/skipper/data-clients/eskip-file/), [route string](https://opensource.zalando.com/skipper/data-clients/route-string/) and
-  [custom configuration sources](https://godoc.org/github.com/zalando/skipper/predicates/#source)
+  [custom configuration sources](https://godoc.org/github.com/ardaguclu/skipper/predicates/#source)
 - can serve as a
   [Kubernetes Ingress controller](https://zalando.github.io/skipper/data-clients/kubernetes/)
   without reloads. You can use it in combination with a controller that will route public traffic to
@@ -36,7 +36,7 @@ Skipper
 - shipped with eskip: a descriptive configuration language designed for routing rules
 
 Skipper provides a default executable command with a few built-in filters. However, its primary use case is to
-be extended with custom filters, predicates or data sources. [Go here for additional documentation](https://godoc.org/github.com/zalando/skipper).
+be extended with custom filters, predicates or data sources. [Go here for additional documentation](https://godoc.org/github.com/ardaguclu/skipper).
 
 A few examples for extending Skipper:
 
@@ -49,7 +49,7 @@ A few examples for extending Skipper:
 
 In order to build and run Skipper, only the latest version of Go needs to be installed. Skipper can use
 Innkeeper or Etcd as data sources for routes, or for the simplest cases, a local configuration file. See more
-details in the documentation: https://godoc.org/github.com/zalando/skipper.
+details in the documentation: https://godoc.org/github.com/ardaguclu/skipper.
 
 
 #### Installation
@@ -63,7 +63,7 @@ Skipper is 'go get' compatible. If needed, create a Go workspace first:
 
 Get the Skipper packages:
 
-    GO111MODULE=on go get github.com/zalando/skipper/...
+    GO111MODULE=on go get github.com/ardaguclu/skipper/...
 
 
 #### Running
@@ -110,18 +110,18 @@ Skipper will then be available on http://localhost:9090
 Skipper can be used as an authentication proxy, to check incoming
 requests with Basic auth or an OAuth2 provider including audit
 logging. See the documentation at:
-[https://godoc.org/github.com/zalando/skipper/filters/auth](https://godoc.org/github.com/zalando/skipper/filters/auth).
+[https://godoc.org/github.com/ardaguclu/skipper/filters/auth](https://godoc.org/github.com/ardaguclu/skipper/filters/auth).
 
 
 #### Working with the code
 
 Working with the code requires Go1.11 or a higher version. Getting the code with the test dependencies (`-t` switch):
 
-    GO111MODULE=on go get -t github.com/zalando/skipper/...
+    GO111MODULE=on go get -t github.com/ardaguclu/skipper/...
 
 Build and test all packages:
 
-    cd src/github.com/zalando/skipper
+    cd src/github.com/ardaguclu/skipper
     make deps
     make install
     make shortcheck
@@ -160,23 +160,23 @@ can be found in our Kubernetes configuration https://github.com/zalando-incubato
 ### Documentation
 
 [Skipper's Documentation](https://opensource.zalando.com/skipper) and
-[Godoc developer documentation](https://godoc.org/github.com/zalando/skipper),
+[Godoc developer documentation](https://godoc.org/github.com/ardaguclu/skipper),
 includes information about [deployment use cases](https://opensource.zalando.com/skipper/operation/deployment/)
 and detailed information on these topics:
 
-- The [Routing](https://godoc.org/github.com/zalando/skipper/routing) Mechanism
+- The [Routing](https://godoc.org/github.com/ardaguclu/skipper/routing) Mechanism
 - Matching Requests
 - [Filters](https://opensource.zalando.com/skipper/reference/filters/) - Augmenting Requests and Responses
 - Service Backends
 - Route Definitions
-- Data Sources: [eskip file](https://godoc.org/github.com/zalando/skipper/eskipfile), [etcd](https://godoc.org/github.com/zalando/skipper/etcd), [Kubernetes](https://godoc.org/github.com/zalando/skipper/dataclients/kubernetes), [Route string](https://godoc.org/github.com/zalando/skipper/dataclients/routestring)
-- [Circuit Breakers](https://godoc.org/github.com/zalando/skipper/filters/circuit)
+- Data Sources: [eskip file](https://godoc.org/github.com/ardaguclu/skipper/eskipfile), [etcd](https://godoc.org/github.com/ardaguclu/skipper/etcd), [Kubernetes](https://godoc.org/github.com/ardaguclu/skipper/dataclients/kubernetes), [Route string](https://godoc.org/github.com/ardaguclu/skipper/dataclients/routestring)
+- [Circuit Breakers](https://godoc.org/github.com/ardaguclu/skipper/filters/circuit)
 - Extending It with Customized [Predicates](https://opensource.zalando.com/skipper/reference/predicates/), [Filters](https://opensource.zalando.com/skipper/reference/filters/), can be done by [Plugins](https://opensource.zalando.com/skipper/reference/plugins/) or [Lua Scripts](https://opensource.zalando.com/skipper/reference/scripts/)
 - [Predicates](https://opensource.zalando.com/skipper/reference/predicates/) - additional predicates to match a route
-- [Proxy Packages](https://godoc.org/github.com/zalando/skipper/proxy)
-- [Logging](https://godoc.org/github.com/zalando/skipper/logging) and [Metrics](https://godoc.org/github.com/zalando/skipper/metrics)
+- [Proxy Packages](https://godoc.org/github.com/ardaguclu/skipper/proxy)
+- [Logging](https://godoc.org/github.com/ardaguclu/skipper/logging) and [Metrics](https://godoc.org/github.com/ardaguclu/skipper/metrics)
 - Performance Considerations
-- [Rate Limiters](https://godoc.org/github.com/zalando/skipper/reference/filters/#ratelimit)
+- [Rate Limiters](https://godoc.org/github.com/ardaguclu/skipper/reference/filters/#ratelimit)
 - [Opentracing plugin](https://github.com/skipper-plugins/opentracing/) or extend [create your own](https://opensource.zalando.com/skipper/reference/plugins/#opentracing-plugins)
 - [WAF plugin](https://github.com/jptosso/coraza-waf) - Web Application Firewall filter for Skipper routes
 
@@ -241,7 +241,7 @@ You should have a base understanding of [Kubernetes](https://kubernetes.io) and
 
 ### Packaging support
 
-See https://github.com/zalando/skipper/blob/master/packaging/readme.md
+See https://github.com/ardaguclu/skipper/blob/master/packaging/readme.md
 
 Skipper uses Go modules, so you might need to add `GO111MODULE=on` in
 your custom build process.
@@ -267,7 +267,7 @@ does not work anymore, because of slack changes as far as we know.
 
 We do our proposals open in [Skipper's Google drive](https://drive.google.com/drive/folders/0B9LwJMF9koB-ZEk4bEhZal9uOWM).
 If you want to make a proposal feel free to create an
-[issue](https://github.com/zalando/skipper/issues) and if it is a
+[issue](https://github.com/ardaguclu/skipper/issues) and if it is a
 bigger change we will invite you to a document, such that we can work together.
 
 ### Users

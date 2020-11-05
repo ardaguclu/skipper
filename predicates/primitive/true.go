@@ -3,7 +3,7 @@ package primitive
 import (
 	"net/http"
 
-	"github.com/zalando/skipper/routing"
+	"github.com/ardaguclu/skipper/routing"
 )
 
 const (

@@ -8,8 +8,8 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/ardaguclu/skipper/pathmux"
 	"github.com/dimfeld/httppath"
-	"github.com/zalando/skipper/pathmux"
 )
 
 type leafRequestMatcher struct {

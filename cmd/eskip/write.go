@@ -15,7 +15,7 @@
 package main
 
 import (
-	"github.com/zalando/skipper/eskip"
+	"github.com/ardaguclu/skipper/eskip"
 )
 
 type (

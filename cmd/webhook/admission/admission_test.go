@@ -8,9 +8,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
+	"github.com/ardaguclu/skipper/dataclients/kubernetes/definitions"
 	"github.com/stretchr/testify/assert"
 	zv1 "github.com/szuecs/routegroup-client/apis/zalando.org/v1"
-	"github.com/zalando/skipper/dataclients/kubernetes/definitions"
 	admissionsv1 "k8s.io/api/admission/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"

@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"strconv"
 
+	"github.com/ardaguclu/skipper/dataclients/kubernetes/definitions"
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/routing"
 	log "github.com/sirupsen/logrus"
-	"github.com/zalando/skipper/dataclients/kubernetes/definitions"
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/routing"
 )
 
 const (

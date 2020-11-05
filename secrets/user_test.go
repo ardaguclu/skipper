@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zalando/skipper/secrets/secrettest"
+	"github.com/ardaguclu/skipper/secrets/secrettest"
 )
 
 func TestEncryptDecrypt(t *testing.T) {

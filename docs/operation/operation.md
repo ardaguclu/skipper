@@ -178,8 +178,8 @@ default timeout of 2s, which can be changed by the flag
 ## Monitoring
 
 Monitoring is one of the most important things you need to run in
-production and skipper has a [godoc page](https://godoc.org/github.com/zalando/skipper)
-for the [metrics package](https://godoc.org/github.com/zalando/skipper/metrics),
+production and skipper has a [godoc page](https://godoc.org/github.com/ardaguclu/skipper)
+for the [metrics package](https://godoc.org/github.com/ardaguclu/skipper/metrics),
 describing options and most keys you will find in the metrics handler
 endpoint. The default is listening on `:9911/metrics`. You can modify
 the listen port with the `-support-listener` flag. Metrics can exposed
@@ -478,7 +478,7 @@ information and tags to the tracer:
 
 The best tested tracer is the lightstep tracer, because we use it in
 our setup. In case you miss something for your chosen tracer, please
-open an issue or pull request in our [repository](https://github.com/zalando/skipper).
+open an issue or pull request in our [repository](https://github.com/ardaguclu/skipper).
 
 Skipper creates up to 5 different
 [spans](https://godoc.org/github.com/opentracing/opentracing-go#Span):
@@ -615,7 +615,7 @@ Kubernetes API, use the following option:
 
 Skipper allows you to get some runtime insights. You can get the
 current routing table from skipper with in the
-[eskip file format](https://godoc.org/github.com/zalando/skipper/eskip):
+[eskip file format](https://godoc.org/github.com/ardaguclu/skipper/eskip):
 
 ```
 curl localhost:9911/routes
@@ -750,7 +750,7 @@ On failure conditions, Skipper will return HTTP status code:
 
 - 503 if the queue is full, which is expected on the route with a failing backend
 - 502 if queue access times out, because the queue access was not fast enough
-- 500 on unknown errors, please create [an issue](https://github.com/zalando/skipper/issues/new/choose)
+- 500 on unknown errors, please create [an issue](https://github.com/ardaguclu/skipper/issues/new/choose)
 
 ### The problem
 
@@ -779,7 +779,7 @@ capable of responding some requests fast enough.
 Skipper has two filters [`lifo()`](../reference/filters/#lifo) and
 [`lifoGroup()`](../reference/filters/#lifogroup), that can limit
 the number of requests for a route.  A [documented load
-test](https://github.com/zalando/skipper/pull/1030#issuecomment-485714338)
+test](https://github.com/ardaguclu/skipper/pull/1030#issuecomment-485714338)
 shows the behavior with an enabled `lifo(100,100,"10s")` filter for
 all routes, that was added by default. You can do this, if you pass
 the following flag to skipper:

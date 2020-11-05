@@ -77,7 +77,7 @@ The following roles are defined in the project:
 ### Maintainer
 
 Maintainers are listed in
-[MAINTAINERS](https://github.com/zalando/skipper/blob/master/MAINTAINERS)
+[MAINTAINERS](https://github.com/ardaguclu/skipper/blob/master/MAINTAINERS)
 and are responsible for the healthiness of the project as stated in
 the sections above.
 

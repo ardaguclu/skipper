@@ -1,8 +1,8 @@
 package tracing
 
 import (
+	"github.com/ardaguclu/skipper/filters"
 	opentracing "github.com/opentracing/opentracing-go"
-	"github.com/zalando/skipper/filters"
 )
 
 const (

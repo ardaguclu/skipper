@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/ardaguclu/skipper/eskip"
 	"github.com/sanity-io/litter"
-	"github.com/zalando/skipper/eskip"
 )
 
 func TestRouteString(t *testing.T) {

@@ -11,7 +11,7 @@ import (
 	yaml2 "github.com/ghodss/yaml"
 	"github.com/go-yaml/yaml"
 
-	"github.com/zalando/skipper/dataclients/kubernetes"
+	"github.com/ardaguclu/skipper/dataclients/kubernetes"
 )
 
 var errInvalidFixture = errors.New("invalid fixture")

@@ -75,7 +75,7 @@ If using IAM Roles for Service Accounts please take a look at the [AWS Documenta
 ## Installation
 
 ```sh
-git clone https://github.com/zalando/skipper.git
+git clone https://github.com/ardaguclu/skipper.git
 cd skipper/packaging/helm/skipper-aws
 helm install --name skipper-aws .
 ```

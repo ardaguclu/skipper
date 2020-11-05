@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"testing"
 
+	"github.com/ardaguclu/skipper/filters/filtertest"
 	"github.com/google/go-cmp/cmp"
-	"github.com/zalando/skipper/filters/filtertest"
 )
 
 const (

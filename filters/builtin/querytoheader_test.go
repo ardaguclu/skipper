@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/zalando/skipper/filters/filtertest"
+	"github.com/ardaguclu/skipper/filters/filtertest"
 )
 
 func TestQueryToHeaderFilter_Request(t *testing.T) {

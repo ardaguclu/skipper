@@ -9,10 +9,10 @@ import (
 	"sync"
 	"time"
 
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/net"
+	"github.com/ardaguclu/skipper/routing"
 	log "github.com/sirupsen/logrus"
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/net"
-	"github.com/zalando/skipper/routing"
 )
 
 // Algorithm indicates the used load balancing algorithm.

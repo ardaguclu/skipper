@@ -10,7 +10,7 @@ package testdataclient
 import (
 	"errors"
 
-	"github.com/zalando/skipper/eskip"
+	"github.com/ardaguclu/skipper/eskip"
 )
 
 type incomingUpdate struct {

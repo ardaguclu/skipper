@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/zalando/skipper/filters"
+	"github.com/ardaguclu/skipper/filters"
 )
 
 type noopSpec struct{}

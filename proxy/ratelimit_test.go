@@ -9,11 +9,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/filters/builtin"
-	"github.com/zalando/skipper/proxy"
-	"github.com/zalando/skipper/proxy/proxytest"
-	"github.com/zalando/skipper/ratelimit"
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/filters/builtin"
+	"github.com/ardaguclu/skipper/proxy"
+	"github.com/ardaguclu/skipper/proxy/proxytest"
+	"github.com/ardaguclu/skipper/ratelimit"
 )
 
 func TestWithoutRateLimit(t *testing.T) {

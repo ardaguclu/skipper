@@ -9,10 +9,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zalando/skipper/eskip"
-	"github.com/zalando/skipper/filters"
-	"github.com/zalando/skipper/net"
-	"github.com/zalando/skipper/proxy/proxytest"
+	"github.com/ardaguclu/skipper/eskip"
+	"github.com/ardaguclu/skipper/filters"
+	"github.com/ardaguclu/skipper/net"
+	"github.com/ardaguclu/skipper/proxy/proxytest"
 )
 
 func introspectionEndpointGetToken(r *http.Request) (string, error) {

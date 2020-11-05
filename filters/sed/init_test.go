@@ -5,7 +5,7 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/zalando/skipper/filters"
+	"github.com/ardaguclu/skipper/filters"
 )
 
 func TestSedInit(t *testing.T) {

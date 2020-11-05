@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/zalando/skipper/dataclients/kubernetes/definitions"
+	"github.com/ardaguclu/skipper/dataclients/kubernetes/definitions"
 )
 
 func TestGetTargetPort(t *testing.T) {

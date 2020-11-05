@@ -1,15 +1,15 @@
 /*
 Package circuit provides filters to control the circuit breaker settings on the route level.
 
-For detailed documentation of the circuit breakers, see https://godoc.org/github.com/zalando/skipper/circuit.
+For detailed documentation of the circuit breakers, see https://godoc.org/github.com/ardaguclu/skipper/circuit.
 */
 package circuit
 
 import (
 	"time"
 
-	"github.com/zalando/skipper/circuit"
-	"github.com/zalando/skipper/filters"
+	"github.com/ardaguclu/skipper/circuit"
+	"github.com/ardaguclu/skipper/filters"
 )
 
 const (
