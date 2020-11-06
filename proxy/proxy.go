@@ -1424,12 +1424,12 @@ func shouldLog(statusCode int, filter *al.AccessLogFilter) bool {
 // http.Handler implementation
 func (p *Proxy) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	lw := logging.NewLoggingWriter(w)
-	p.log.Debugf("LW1 %+v", lw)
+	p.log.Debugf("LW1 %+v", lw.GetInternal())
 
 	p.metrics.IncCounter("incoming." + r.Proto)
 	var ctx *context
 
-	p.log.Debugf("LW2 %+v", lw)
+	p.log.Debugf("LW2 %+v", lw.GetInternal())
 	var span ot.Span
 	wireContext, err := p.tracing.tracer.Extract(ot.HTTPHeaders, ot.HTTPHeadersCarrier(r.Header))
 	if err == nil {
@@ -1439,15 +1439,16 @@ func (p *Proxy) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		err = nil
 	}
 	defer func() {
-		p.log.Debugf("Defer func 1")
+		p.log.Debugf("LW12 %+v", lw.GetInternal())
 		if ctx != nil && ctx.proxySpan != nil {
 			ctx.proxySpan.Finish()
 		}
 		span.Finish()
+		p.log.Debugf("LW13 %+v", lw.GetInternal())
 	}()
 
 	defer func() {
-		p.log.Debugf("Defer func 2")
+		p.log.Debugf("LW14 %+v", lw.GetInternal())
 		accessLogEnabled, ok := ctx.stateBag[al.AccessLogEnabledKey].(*al.AccessLogFilter)
 
 		if !ok {
@@ -1472,30 +1473,32 @@ func (p *Proxy) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 			logging.LogAccess(entry, additionalData)
 		}
+
+		p.log.Debugf("LW15 %+v", lw.GetInternal())
 		// This flush is required in I/O error
 		if ctx.successfulUpgrade {
 			lw.Flush()
 		}
 	}()
 
-	p.log.Debugf("LW3 %+v", lw)
+	p.log.Debugf("LW3 %+v", lw.GetInternal())
 	if p.flags.patchPath() {
 		r.URL.Path = rfc.PatchPath(r.URL.Path, r.URL.RawPath)
 	}
 
-	p.log.Debugf("LW4 %+v", lw)
+	p.log.Debugf("LW4 %+v", lw.GetInternal())
 	p.tracing.setTag(span, SpanKindTag, SpanKindServer)
 	p.setCommonSpanInfo(r.URL, r, span)
 	r = r.WithContext(ot.ContextWithSpan(r.Context(), span))
 
-	p.log.Debugf("LW5 %+v", lw)
+	p.log.Debugf("LW5 %+v", lw.GetInternal())
 	ctx = newContext(lw, r, p)
 	ctx.startServe = time.Now()
 	ctx.tracer = p.tracing.tracer
-	p.log.Debugf("LW6 %+v", lw)
+	p.log.Debugf("LW6 %+v", lw.GetInternal())
 
 	defer func() {
-		p.log.Debugf("ServeHTTP Defer Func 3")
+		p.log.Debugf("LW16 %+v", lw.GetInternal())
 		if ctx.response != nil && ctx.response.Body != nil {
 			p.log.Debugf("ServeHTTP Defer Func response closed")
 			err := ctx.response.Body.Close()
@@ -1503,20 +1506,21 @@ func (p *Proxy) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 				p.log.Errorf("error during closing the response body: %+v", err)
 			}
 		}
+		p.log.Debugf("LW17 %+v", lw.GetInternal())
 	}()
 
 	err = p.do(ctx)
-	p.log.Debugf("LW7 %+v", lw)
+	p.log.Debugf("LW7 %+v", lw.GetInternal())
 
 	if err != nil {
-		p.log.Debugf("LW8 %+v", lw)
+		p.log.Debugf("LW8 %+v", lw.GetInternal())
 		p.tracing.setTag(span, ErrorTag, true)
 		p.errorResponse(ctx, err)
-		p.log.Debugf("LW9 %+v", lw)
+		p.log.Debugf("LW9 %+v", lw.GetInternal())
 		return
 	}
 
-	p.log.Debugf("LW10 %+v", lw)
+	p.log.Debugf("LW10 %+v", lw.GetInternal())
 	p.serveResponse(ctx)
 	p.metrics.MeasureServe(
 		ctx.route.Id,
@@ -1525,7 +1529,7 @@ func (p *Proxy) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		ctx.response.StatusCode,
 		ctx.startServe,
 	)
-	p.log.Debugf("LW11 %+v", lw)
+	p.log.Debugf("LW11 %+v", lw.GetInternal())
 }
 
 // Close causes the proxy to stop closing idle

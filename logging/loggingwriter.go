@@ -23,6 +23,10 @@ func (lw *LoggingWriter) Write(data []byte) (count int, err error) {
 	return
 }
 
+func (lw *LoggingWriter) GetInternal() http.ResponseWriter {
+	return lw.writer
+}
+
 func (lw *LoggingWriter) WriteHeader(code int) {
 	lw.writer.WriteHeader(code)
 	if code == 0 {
