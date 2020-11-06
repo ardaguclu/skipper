@@ -856,6 +856,7 @@ func (p *Proxy) sendError(c *context, id string, code int) {
 }
 
 func (p *Proxy) makeUpgradeRequest(ctx *context, req *http.Request) error {
+	p.log.Debugf("MUR1 %+v", ctx.GetInternal())
 	backendURL := req.URL
 
 	reverseProxy := httputil.NewSingleHostReverseProxy(backendURL)
@@ -871,11 +872,12 @@ func (p *Proxy) makeUpgradeRequest(ctx *context, req *http.Request) error {
 		auditLogHook:    p.auditLogHook,
 	}
 
-	p.log.Debugf("connection will be upgraded")
+	p.log.Debugf("MUR2 %+v", ctx.GetInternal())
 	upgradeProxy.serveHTTP(ctx.responseWriter, req)
 	ctx.successfulUpgrade = true
-	p.log.Debugf("makeUpgradeRequest %+v", ctx.responseWriter)
+	p.log.Debugf("MUR3 %+v", ctx.GetInternal())
 	p.log.Debugf("finished upgraded protocol %s session", getUpgradeRequest(ctx.request))
+	p.log.Debugf("MUR4 %+v", ctx.GetInternal())
 	return nil
 }
 
