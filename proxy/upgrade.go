@@ -66,16 +66,20 @@ func (p *upgradeProxy) serveHTTP(w http.ResponseWriter, req *http.Request) {
 	// https://tools.ietf.org/html/rfc2616#section-14.42
 	// https://tools.ietf.org/html/rfc7230#section-6.7
 	// and https://tools.ietf.org/html/rfc6455 (websocket)
+	log.Debugf("SH1")
 	if (req.ProtoMajor <= 1 && req.ProtoMinor < 1) ||
 		!isUpgradeRequest(req) ||
 		req.Header.Get("Upgrade") == "" {
+		log.Debugf("SH2")
 		w.WriteHeader(http.StatusBadRequest)
 		w.Write([]byte(http.StatusText(http.StatusBadRequest)))
 		return
 	}
 
 	backendConn, err := p.dialBackend(req)
+	log.Debugf("SH3")
 	if err != nil {
+		log.Debugf("SH4")
 		log.Errorf("Error connecting to backend: %s", err)
 		w.WriteHeader(http.StatusServiceUnavailable)
 		w.Write([]byte(http.StatusText(http.StatusServiceUnavailable)))
@@ -83,39 +87,52 @@ func (p *upgradeProxy) serveHTTP(w http.ResponseWriter, req *http.Request) {
 	}
 	defer backendConn.Close()
 
+	log.Debugf("SH5")
 	err = req.Write(backendConn)
+	log.Debugf("SH6")
 	if err != nil {
+		log.Debugf("SH7")
 		log.Errorf("Error writing request to backend: %s", err)
 		w.WriteHeader(http.StatusInternalServerError)
 		w.Write([]byte(http.StatusText(http.StatusInternalServerError)))
 		return
 	}
 
+	log.Debugf("SH8")
 	// Audit-Log
 	if p.useAuditLog {
+		log.Debugf("SH9")
 		auditlog := &auditLog{req.Method, req.URL.Path, req.URL.RawQuery, req.URL.Fragment}
 		auditJSON, err := json.Marshal(auditlog)
 		if err == nil {
+			log.Debugf("SH10")
 			_, err = p.auditLogErr.Write(auditJSON)
 		}
 		if err != nil {
+			log.Debugf("SH11")
 			log.Errorf("Could not write audit-log, caused by: %v", err)
 			w.WriteHeader(http.StatusInternalServerError)
 			w.Write([]byte(http.StatusText(http.StatusInternalServerError)))
 			return
 		}
+		log.Debugf("SH12")
 	}
 
+	log.Debugf("SH13")
 	resp, err := http.ReadResponse(bufio.NewReader(backendConn), req)
+	log.Debugf("SH14")
 	if err != nil {
+		log.Debugf("SH15")
 		log.Errorf("Error reading response from backend: %s", err)
 		w.WriteHeader(http.StatusInternalServerError)
 		w.Write([]byte(http.StatusText(http.StatusInternalServerError)))
 		return
 	}
 	defer resp.Body.Close()
+	log.Debugf("SH16")
 
 	if resp.StatusCode == http.StatusUnauthorized {
+		log.Debugf("SH17")
 		log.Debugf("Got unauthorized error from backend for: %s %s", req.Method, req.URL)
 		w.WriteHeader(http.StatusUnauthorized)
 		w.Write([]byte(http.StatusText(http.StatusUnauthorized)))
@@ -123,6 +140,7 @@ func (p *upgradeProxy) serveHTTP(w http.ResponseWriter, req *http.Request) {
 	}
 
 	if resp.StatusCode != http.StatusSwitchingProtocols {
+		log.Debugf("SH8")
 		log.Debugf("Got invalid status code from backend: %d", resp.StatusCode)
 		w.WriteHeader(resp.StatusCode)
 		_, err := io.Copy(w, resp.Body)
@@ -134,7 +152,9 @@ func (p *upgradeProxy) serveHTTP(w http.ResponseWriter, req *http.Request) {
 	}
 
 	requestHijackedConn, _, err := w.(http.Hijacker).Hijack()
+	log.Debugf("SH19")
 	if err != nil {
+		log.Debugf("SH20")
 		log.Errorf("Error hijacking request connection: %s", err)
 		w.WriteHeader(http.StatusInternalServerError)
 		w.Write([]byte(http.StatusText(http.StatusInternalServerError)))
@@ -144,8 +164,10 @@ func (p *upgradeProxy) serveHTTP(w http.ResponseWriter, req *http.Request) {
 	// NOTE: from this point forward, we own the connection and we can't use
 	// w.Header(), w.Write(), or w.WriteHeader any more
 
+	log.Debugf("SH21")
 	err = resp.Write(requestHijackedConn)
 	if err != nil {
+		log.Debugf("SH22")
 		log.Errorf("Error writing backend response to client: %s", err)
 		return
 	}
@@ -154,13 +176,15 @@ func (p *upgradeProxy) serveHTTP(w http.ResponseWriter, req *http.Request) {
 	wg.Add(2)
 
 	if p.useAuditLog {
-		log.Debugf("Upgrade use audit log")
+		log.Debugf("SH23")
 		copyAsync(&wg, backendConn, requestHijackedConn, p.auditLogOut)
 	} else {
+		log.Debugf("SH24")
 		log.Debugf("Upgrade not use audit log")
 		copyAsync(&wg, backendConn, requestHijackedConn)
 	}
 
+	log.Debugf("SH25")
 	copyAsync(&wg, requestHijackedConn, backendConn)
 	log.Debugf("Successfully upgraded to protocol %s by user request", getUpgradeRequest(req))
 	// Wait for goroutine to finish, such that the established connection does not break.
