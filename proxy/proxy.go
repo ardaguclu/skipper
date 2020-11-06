@@ -880,6 +880,7 @@ func (p *Proxy) makeUpgradeRequest(ctx *context, req *http.Request) error {
 }
 
 func (p *Proxy) makeBackendRequest(ctx *context) (*http.Response, *proxyError) {
+	p.log.Debugf("MBR1 %+v", ctx.GetInternal())
 	var err error
 	req, endpoint, err := mapRequest(ctx.request, ctx.route, ctx.outgoingHost, p.flags.HopHeadersRemoval(), ctx.StateBag())
 	if err != nil {
@@ -887,29 +888,36 @@ func (p *Proxy) makeBackendRequest(ctx *context) (*http.Response, *proxyError) {
 		return nil, &proxyError{err: err}
 	}
 
+	p.log.Debugf("MBR2 %+v", ctx.GetInternal())
+
 	if endpoint != nil {
 		endpoint.Metrics.IncInflightRequest()
 		defer endpoint.Metrics.DecInflightRequest()
 	}
 
+	p.log.Debugf("MBR3 %+v", ctx.GetInternal())
+
 	if p.experimentalUpgrade && isUpgradeRequest(req) {
-		p.log.Debugf("upgrade is needed %v", req)
+		p.log.Debugf("MBR4 %+v", ctx.GetInternal())
 		if err = p.makeUpgradeRequest(ctx, req); err != nil {
+			p.log.Debugf("MBR5 %+v", ctx.GetInternal())
 			p.log.Debugf("update request error occurred %v", err)
 			return nil, &proxyError{err: err}
 		}
 
-		p.log.Debugf("no upgrade error occurred and returned")
+		p.log.Debugf("MBR6 %+v", ctx.GetInternal())
 		// We are not owner of the connection anymore.
 		return nil, &proxyError{handled: true}
 	}
 
+	p.log.Debugf("MBR7 %+v", ctx.GetInternal())
 	bag := ctx.StateBag()
 	spanName, ok := bag[tracingfilter.OpenTracingProxySpanKey].(string)
 	if !ok {
 		spanName = "proxy"
 	}
 	ctx.proxySpan = tracing.CreateSpan(spanName, req.Context(), p.tracing.tracer)
+	p.log.Debugf("MBR8 %+v", ctx.GetInternal())
 
 	p.tracing.
 		setTag(ctx.proxySpan, SpanKindTag, SpanKindClient).
@@ -920,14 +928,19 @@ func (p *Proxy) makeBackendRequest(ctx *context) (*http.Response, *proxyError) {
 	u.RawQuery = ""
 	p.setCommonSpanInfo(u, req, ctx.proxySpan)
 
+	p.log.Debugf("MBR9 %+v", ctx.GetInternal())
+
 	carrier := ot.HTTPHeadersCarrier(req.Header)
 	_ = p.tracing.tracer.Inject(ctx.proxySpan.Context(), ot.HTTPHeaders, carrier)
 
+	p.log.Debugf("MBR10 %+v", ctx.GetInternal())
 	req = req.WithContext(ot.ContextWithSpan(req.Context(), ctx.proxySpan))
 
 	p.metrics.IncCounter("outgoing." + req.Proto)
 	ctx.proxySpan.LogKV("http_roundtrip", StartEvent)
 	req = injectClientTrace(req, ctx.proxySpan)
+
+	p.log.Debugf("MBR11 %+v", ctx.GetInternal())
 
 	var response *http.Response
 	switch req.URL.Scheme {
@@ -962,6 +975,7 @@ func (p *Proxy) makeBackendRequest(ctx *context) (*http.Response, *proxyError) {
 		response, err = p.roundTripper.RoundTrip(req)
 	}
 
+	p.log.Debugf("MBR12 %+v", ctx.GetInternal())
 	ctx.proxySpan.LogKV("http_roundtrip", EndEvent)
 	if err != nil {
 		p.tracing.setTag(ctx.proxySpan, ErrorTag, true)
@@ -1014,6 +1028,7 @@ func (p *Proxy) makeBackendRequest(ctx *context) (*http.Response, *proxyError) {
 		p.log.Errorf("Unexpected error from Go stdlib net/http package during roundtrip: %v", err)
 		return nil, &proxyError{err: err}
 	}
+	p.log.Debugf("MBR13 %+v", ctx.GetInternal())
 	p.tracing.setTag(ctx.proxySpan, HTTPStatusCodeTag, uint16(response.StatusCode))
 	return response, nil
 }
