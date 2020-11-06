@@ -151,7 +151,7 @@ func (p *upgradeProxy) serveHTTP(w http.ResponseWriter, req *http.Request) {
 		return
 	}
 
-	requestHijackedConn, _, err := w.(http.Hijacker).Hijack()
+	requestHijackedConn, readWriter, err := w.(http.Hijacker).Hijack()
 	log.Debugf("SH19")
 	if err != nil {
 		log.Debugf("SH20")
@@ -160,6 +160,7 @@ func (p *upgradeProxy) serveHTTP(w http.ResponseWriter, req *http.Request) {
 		w.Write([]byte(http.StatusText(http.StatusInternalServerError)))
 		return
 	}
+	defer readWriter.Flush()
 	defer requestHijackedConn.Close()
 	// NOTE: from this point forward, we own the connection and we can't use
 	// w.Header(), w.Write(), or w.WriteHeader any more
