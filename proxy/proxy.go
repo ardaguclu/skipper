@@ -1087,16 +1087,20 @@ func newRatelimitError(settings ratelimit.Settings, retryAfter int) error {
 }
 
 func (p *Proxy) do(ctx *context) error {
+	p.log.Debugf("DO1 %+v", ctx.responseWriter)
 	if ctx.executionCounter > p.maxLoops {
 		return errMaxLoopbacksReached
 	}
 	defer func() {
+		p.log.Debugf("DO2 %+v", ctx.responseWriter)
 		pendingLIFO, _ := ctx.StateBag()[scheduler.LIFOKey].([]func())
 		for _, done := range pendingLIFO {
 			done()
 		}
+		p.log.Debugf("DO3 %+v", ctx.responseWriter)
 	}()
 
+	p.log.Debugf("DO4 %+v", ctx.responseWriter)
 	// proxy global setting
 	if !ctx.wasExecuted() {
 		if settings, retryAfter := p.limiters.Check(ctx.request); retryAfter > 0 {
@@ -1104,6 +1108,8 @@ func (p *Proxy) do(ctx *context) error {
 			return rerr
 		}
 	}
+
+	p.log.Debugf("DO5 %+v", ctx.responseWriter)
 	// every time the context is used for a request the context executionCounter is incremented
 	// a context executionCounter equal to zero represents a root context.
 	ctx.executionCounter++
@@ -1119,15 +1125,20 @@ func (p *Proxy) do(ctx *context) error {
 		return errRouteLookupFailed
 	}
 
+	p.log.Debugf("DO6 %+v", ctx.responseWriter)
 	ctx.applyRoute(route, params, p.flags.PreserveHost())
+	p.log.Debugf("DO7 %+v", ctx.responseWriter)
 
 	processedFilters := p.applyFiltersToRequest(ctx.route.Filters, ctx)
 
+	p.log.Debugf("DO8 %+v", ctx.responseWriter)
 	// per route rate limit
 	if settings, retryAfter := p.checkRatelimit(ctx); retryAfter > 0 {
 		rerr := newRatelimitError(settings, retryAfter)
 		return rerr
 	}
+
+	p.log.Debugf("DO9 %+v", ctx.responseWriter)
 
 	if ctx.deprecatedShunted() {
 		p.log.Debugf("deprecated shunting detected in route: %s", ctx.route.Id)
@@ -1141,6 +1152,7 @@ func (p *Proxy) do(ctx *context) error {
 		}
 		ctx.ensureDefaultResponse()
 	} else if ctx.route.BackendType == eskip.LoopBackend {
+		p.log.Debugf("DO10 %+v", ctx.responseWriter)
 		loopCTX := ctx.clone()
 		if err := p.do(loopCTX); err != nil {
 			return err
@@ -1156,16 +1168,19 @@ func (p *Proxy) do(ctx *context) error {
 
 		ctx.outgoingDebugRequest = debugReq
 		ctx.setResponse(&http.Response{Header: make(http.Header)}, p.flags.PreserveOriginal())
+		p.log.Debugf("DO11 %+v", ctx.responseWriter)
 	} else {
-
+		p.log.Debugf("DO12 %+v", ctx.responseWriter)
 		done, allow := p.checkBreaker(ctx)
 		if !allow {
 			tracing.LogKV("circuit_breaker", "open", ctx.request.Context())
 			return errCircuitBreakerOpen
 		}
 
+		p.log.Debugf("DO13 %+v", ctx.responseWriter)
 		backendStart := time.Now()
 		rsp, perr := p.makeBackendRequest(ctx)
+		p.log.Debugf("DO14 %+v", ctx.responseWriter)
 		if perr != nil {
 			p.log.Debugf("perr1")
 			if done != nil {
@@ -1174,7 +1189,7 @@ func (p *Proxy) do(ctx *context) error {
 
 			p.metrics.IncErrorsBackend(ctx.route.Id)
 
-			p.log.Debugf("perr2")
+			p.log.Debugf("DO15 %+v", ctx.responseWriter)
 			if retryable(ctx.Request()) && perr.DialError() && ctx.route.BackendType == eskip.LBBackend {
 				p.log.Debugf("perr3")
 				if ctx.proxySpan != nil {
@@ -1187,6 +1202,7 @@ func (p *Proxy) do(ctx *context) error {
 				perr = nil
 				var perr2 *proxyError
 				rsp, perr2 = p.makeBackendRequest(ctx)
+				p.log.Debugf("DO17 %+v", ctx.responseWriter)
 				if perr2 != nil {
 					p.log.Errorf("Failed to do retry backend request: %v", perr2)
 					if perr2.code >= http.StatusInternalServerError {
@@ -1195,12 +1211,12 @@ func (p *Proxy) do(ctx *context) error {
 					return perr2
 				}
 			} else {
-				p.log.Debugf("perr4")
+				p.log.Debugf("DO16 %+v", ctx.responseWriter)
 				return perr
 			}
 		}
 
-		p.log.Debugf("perr5")
+		p.log.Debugf("DO18 %+v", ctx.responseWriter)
 		if rsp.StatusCode >= http.StatusInternalServerError {
 			p.metrics.MeasureBackend5xx(backendStart)
 		}
@@ -1209,15 +1225,16 @@ func (p *Proxy) do(ctx *context) error {
 			done(rsp.StatusCode < http.StatusInternalServerError)
 		}
 
-		p.log.Debugf("perr6")
+		p.log.Debugf("DO19 %+v", ctx.responseWriter)
 		ctx.setResponse(rsp, p.flags.PreserveOriginal())
 		p.metrics.MeasureBackend(ctx.route.Id, backendStart)
 		p.metrics.MeasureBackendHost(ctx.route.Host, backendStart)
 	}
 
-	p.log.Debugf("perr7")
+	p.log.Debugf("DO20 %+v", ctx.responseWriter)
 	addBranding(ctx.response.Header)
 	p.applyFiltersToResponse(processedFilters, ctx)
+	p.log.Debugf("DO21 %+v", ctx.responseWriter)
 	return nil
 }
 
