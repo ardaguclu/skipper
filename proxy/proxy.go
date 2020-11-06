@@ -1424,10 +1424,12 @@ func shouldLog(statusCode int, filter *al.AccessLogFilter) bool {
 // http.Handler implementation
 func (p *Proxy) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	lw := logging.NewLoggingWriter(w)
+	p.log.Debugf("LW1 %+v", lw)
 
 	p.metrics.IncCounter("incoming." + r.Proto)
 	var ctx *context
 
+	p.log.Debugf("LW2 %+v", lw)
 	var span ot.Span
 	wireContext, err := p.tracing.tracer.Extract(ot.HTTPHeaders, ot.HTTPHeadersCarrier(r.Header))
 	if err == nil {
@@ -1476,19 +1478,21 @@ func (p *Proxy) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		}
 	}()
 
-	p.log.Debugf("ServeHTTP patchPath")
+	p.log.Debugf("LW3 %+v", lw)
 	if p.flags.patchPath() {
 		r.URL.Path = rfc.PatchPath(r.URL.Path, r.URL.RawPath)
 	}
 
+	p.log.Debugf("LW4 %+v", lw)
 	p.tracing.setTag(span, SpanKindTag, SpanKindServer)
 	p.setCommonSpanInfo(r.URL, r, span)
 	r = r.WithContext(ot.ContextWithSpan(r.Context(), span))
 
-	p.log.Debugf("ServeHTTP created new context")
+	p.log.Debugf("LW5 %+v", lw)
 	ctx = newContext(lw, r, p)
 	ctx.startServe = time.Now()
 	ctx.tracer = p.tracing.tracer
+	p.log.Debugf("LW6 %+v", lw)
 
 	defer func() {
 		p.log.Debugf("ServeHTTP Defer Func 3")
@@ -1502,13 +1506,17 @@ func (p *Proxy) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	}()
 
 	err = p.do(ctx)
+	p.log.Debugf("LW7 %+v", lw)
 
 	if err != nil {
+		p.log.Debugf("LW8 %+v", lw)
 		p.tracing.setTag(span, ErrorTag, true)
 		p.errorResponse(ctx, err)
+		p.log.Debugf("LW9 %+v", lw)
 		return
 	}
 
+	p.log.Debugf("LW10 %+v", lw)
 	p.serveResponse(ctx)
 	p.metrics.MeasureServe(
 		ctx.route.Id,
@@ -1517,6 +1525,7 @@ func (p *Proxy) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		ctx.response.StatusCode,
 		ctx.startServe,
 	)
+	p.log.Debugf("LW11 %+v", lw)
 }
 
 // Close causes the proxy to stop closing idle
