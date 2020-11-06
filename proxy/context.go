@@ -9,6 +9,8 @@ import (
 	"net/url"
 	"time"
 
+	"github.com/ardaguclu/skipper/logging"
+
 	"github.com/ardaguclu/skipper/filters"
 	"github.com/ardaguclu/skipper/metrics"
 	"github.com/ardaguclu/skipper/routing"
@@ -24,6 +26,7 @@ type flushedResponseWriter interface {
 
 type context struct {
 	responseWriter       flushedResponseWriter
+	ll                   *logging.LoggingWriter
 	request              *http.Request
 	response             *http.Response
 	route                *routing.Route
@@ -130,9 +133,11 @@ func newContext(
 	w flushedResponseWriter,
 	r *http.Request,
 	p *Proxy,
+	ll *logging.LoggingWriter,
 ) *context {
 	c := &context{
 		responseWriter: w,
+		ll:             ll,
 		request:        r,
 		stateBag:       make(map[string]interface{}),
 		outgoingHost:   r.Host,
@@ -157,6 +162,10 @@ func (c *context) applyRoute(route *routing.Route, params map[string]string, pre
 	}
 
 	c.pathParams = appendParams(c.pathParams, params)
+}
+
+func (c *context) GetInternal() http.ResponseWriter {
+	return c.ll.GetInternal()
 }
 
 func (c *context) ensureDefaultResponse() {
