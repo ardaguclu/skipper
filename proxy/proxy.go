@@ -1510,7 +1510,7 @@ func (p *Proxy) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		p.log.Debugf("LW15 %+v", lw.GetInternal())
 		// This flush is required in I/O error
 		if ctx.successfulUpgrade {
-			lw.Flush()
+			//lw.Flush()
 		}
 	}()
 
